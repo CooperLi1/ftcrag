@@ -23,6 +23,10 @@ type FinalModelOutput = {
   usedSourceNumbers: number[];
 };
 
+type ParsedFinalModelOutput = FinalModelOutput & {
+  ok: boolean;
+};
+
 const PLANNER_MODEL = process.env.GEMINI_PLANNER_MODEL ?? "gemini-2.0-flash-lite";
 const EASY_NONCODE_MODEL = process.env.GEMINI_EASY_NONCODE_MODEL ?? "gemini-2.0-flash";
 const EASY_CODE_MODEL = process.env.GEMINI_EASY_CODE_MODEL ?? "gemini-2.0-flash";
@@ -161,12 +165,13 @@ function getSourceFragmentsByNumber(
   });
 }
 
-function parseFinalModelOutput(raw: string): FinalModelOutput {
+function parseFinalModelOutput(raw: string): ParsedFinalModelOutput {
   const jsonText = extractJsonObject(raw);
   if (!jsonText) {
     return {
-      answer: raw.trim(),
+      answer: "",
       usedSourceNumbers: [],
+      ok: false,
     };
   }
 
@@ -180,13 +185,32 @@ function parseFinalModelOutput(raw: string): FinalModelOutput {
     return {
       answer,
       usedSourceNumbers,
+      ok: answer.length > 0,
     };
   } catch {
     return {
-      answer: raw.trim(),
+      answer: "",
       usedSourceNumbers: [],
+      ok: false,
     };
   }
+}
+
+function extractAnswerFallbackText(raw: string): string {
+  const match = raw.match(/"answer"\s*:\s*"([\s\S]*?)"(?:\s*,|\s*})/);
+  if (match?.[1]) {
+    return match[1]
+      .replace(/\\"/g, "\"")
+      .replace(/\\n/g, "\n")
+      .trim();
+  }
+
+  const stripped = raw
+    .replace(/^[\s`]*\{?[\s\S]*?"answer"\s*:\s*/i, "")
+    .replace(/"usedSourceNumbers"[\s\S]*$/i, "")
+    .replace(/[{}[\]"]/g, "")
+    .trim();
+  return stripped;
 }
 
 export async function POST(req: Request) {
@@ -215,6 +239,9 @@ export async function POST(req: Request) {
       "You are a routing planner for a RAG assistant.",
       "Default season assumption: if the user does not specify a season/year, assume they mean the current FTC season, DECODE.",
       "If user/context clearly indicates another season, use that instead.",
+      "You have full conversation context. Resolve pronouns, shorthand, and follow-up references using prior turns.",
+      "Treat this as a multi-turn dialog, not an isolated one-shot prompt.",
+      "If the latest question depends on earlier turns, set needsConversationContext=true.",
       "Read the conversation carefully and ground your decision in the actual user wording instead of assumptions.",
       "When uncertain, be conservative and escalate complexity.",
       "Return only valid JSON with this exact schema:",
@@ -290,9 +317,34 @@ export async function POST(req: Request) {
     maxOutputTokens: 2048,
     responseMimeType: "application/json",
   });
-  const parsedFinal = parseFinalModelOutput(finalAnswer);
-  const visibleAnswer = parsedFinal.answer || "I’m sorry, I couldn’t generate a complete answer.";
-  const sourceFragments = getSourceFragmentsByNumber(contextChunks, parsedFinal.usedSourceNumbers);
+  let parsedFinal = parseFinalModelOutput(finalAnswer);
+  if (!parsedFinal.ok) {
+    try {
+      const repaired = await generateGeminiText({
+        model: finalModel,
+        systemInstruction: [
+          "You are a strict JSON formatter.",
+          "Given malformed model output, return only valid JSON with this exact schema:",
+          '{ "answer": string, "usedSourceNumbers": number[] }',
+          "Do not add commentary.",
+        ].join("\n"),
+        userPrompt: `Malformed output:\n${finalAnswer}`,
+        temperature: 0,
+        maxOutputTokens: 800,
+        responseMimeType: "application/json",
+      });
+      parsedFinal = parseFinalModelOutput(repaired);
+    } catch {
+      // Ignore repair failure; fallback below.
+    }
+  }
+
+  const visibleAnswer =
+    parsedFinal.answer || extractAnswerFallbackText(finalAnswer) || "I’m sorry, I couldn’t generate a complete answer.";
+  const sourceFragments = getSourceFragmentsByNumber(
+    contextChunks,
+    parsedFinal.ok ? parsedFinal.usedSourceNumbers : []
+  );
   const metadataMarker =
     `\n\n<<RAG_CONTEXT_JSON>>${JSON.stringify({ sourceFragments })}<<END_RAG_CONTEXT_JSON>>`;
 
