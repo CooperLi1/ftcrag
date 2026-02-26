@@ -10,6 +10,7 @@ import { PanelLeft } from "lucide-react";
 export interface MessageType {
     role: "user" | "assistant";
     content: string;
+    sourceFragments?: { title: string; url: string | null; excerpt: string }[];
 }
 
 interface Conversation {
@@ -20,6 +21,46 @@ interface Conversation {
 }
 
 const STORAGE_KEY = "ftc-chat-conversations";
+const RAG_CONTEXT_START = "<<RAG_CONTEXT_JSON>>";
+const RAG_CONTEXT_END = "<<END_RAG_CONTEXT_JSON>>";
+
+function parseAssistantPayload(raw: string): {
+    content: string;
+    sourceFragments?: { title: string; url: string | null; excerpt: string }[];
+} {
+    const start = raw.indexOf(RAG_CONTEXT_START);
+    if (start === -1) return { content: raw };
+
+    const end = raw.indexOf(RAG_CONTEXT_END, start + RAG_CONTEXT_START.length);
+    if (end === -1) {
+        return { content: raw.slice(0, start) };
+    }
+
+    const content = raw.slice(0, start);
+    const jsonText = raw.slice(start + RAG_CONTEXT_START.length, end);
+
+    try {
+        const parsed = JSON.parse(jsonText) as {
+            sourceFragments?: { title?: string; url?: string | null; excerpt?: string }[];
+        };
+        const sourceFragments = Array.isArray(parsed.sourceFragments)
+            ? parsed.sourceFragments
+                .filter((item) => typeof item?.excerpt === "string")
+                .map((item) => ({
+                    title: typeof item.title === "string" && item.title.trim() ? item.title.trim() : "Source",
+                    url: typeof item.url === "string" && item.url.trim() ? item.url.trim() : null,
+                    excerpt: item.excerpt ?? "",
+                }))
+            : [];
+
+        return {
+            content,
+            sourceFragments: sourceFragments.length > 0 ? sourceFragments : undefined,
+        };
+    } catch {
+        return { content };
+    }
+}
 
 export function ChatInterface() {
     const [conversations, setConversations] = useState<Conversation[]>([]);
@@ -28,6 +69,7 @@ export function ChatInterface() {
     const scrollRef = useRef<HTMLDivElement>(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+    const [deleteTarget, setDeleteTarget] = useState<{ id: string; title: string } | null>(null);
 
     // Load from localStorage
     useEffect(() => {
@@ -54,6 +96,10 @@ export function ChatInterface() {
     }, [conversations, isLoaded]);
 
     const createNewChat = () => {
+        if (activeChat && activeChat.messages.length === 0) {
+            return;
+        }
+
         const newChat: Conversation = {
             id: crypto.randomUUID(),
             title: "New Chat",
@@ -70,7 +116,14 @@ export function ChatInterface() {
     // If we've loaded and there are no conversations, create one
     useEffect(() => {
         if (isLoaded && conversations.length === 0) {
-            createNewChat();
+            const initialChat: Conversation = {
+                id: crypto.randomUUID(),
+                title: "New Chat",
+                messages: [],
+                updatedAt: Date.now(),
+            };
+            setConversations([initialChat]);
+            setActiveConversationId(initialChat.id);
         }
     }, [isLoaded, conversations.length]);
 
@@ -80,6 +133,29 @@ export function ChatInterface() {
         setActiveConversationId(id);
         if (typeof window !== "undefined" && window.matchMedia("(max-width: 767px)").matches) {
             setIsSidebarOpen(false);
+        }
+    };
+
+    const handleDeleteConversation = (id: string) => {
+        const chatToDelete = conversations.find((c) => c.id === id);
+        if (!chatToDelete) return;
+        setDeleteTarget({ id: chatToDelete.id, title: chatToDelete.title || "this chat" });
+    };
+
+    const confirmDeleteConversation = () => {
+        if (!deleteTarget) return;
+        const deletingId = deleteTarget.id;
+        const nextConversations = conversations.filter((c) => c.id !== deletingId);
+        setConversations(nextConversations);
+        setDeleteTarget(null);
+
+        if (nextConversations.length === 0) {
+            setActiveConversationId("");
+            return;
+        }
+
+        if (activeConversationId === deletingId) {
+            setActiveConversationId(nextConversations[0].id);
         }
     };
 
@@ -100,7 +176,7 @@ export function ChatInterface() {
             c.id === activeChat.id
                 ? {
                     ...c,
-                    messages: updatedMessages,
+                    messages: [...updatedMessages, { role: "assistant", content: "" }],
                     title: c.messages.length === 0 ? content.slice(0, 30) : c.title,
                     updatedAt: Date.now()
                 }
@@ -121,11 +197,6 @@ export function ChatInterface() {
             const reader = response.body?.getReader();
             let assistantContent = "";
 
-            // Add placeholder for assistant
-            setConversations(prev => prev.map(c =>
-                c.id === activeChat.id ? { ...c, messages: [...c.messages, { role: "assistant", content: "" }] } : c
-            ));
-
             if (reader) {
                 while (true) {
                     const { done, value } = await reader.read();
@@ -135,13 +206,32 @@ export function ChatInterface() {
 
                     setConversations(prev => prev.map(c =>
                         c.id === activeChat.id
-                            ? { ...c, messages: c.messages.map((m, i) => i === c.messages.length - 1 ? { ...m, content: assistantContent } : m) }
+                            ? {
+                                ...c,
+                                messages: c.messages.map((m, i) => {
+                                    if (i !== c.messages.length - 1) return m;
+                                    const parsed = parseAssistantPayload(assistantContent);
+                                    return { ...m, content: parsed.content, sourceFragments: parsed.sourceFragments };
+                                }),
+                            }
                             : c
                     ));
                 }
             }
         } catch (error) {
             console.error(error);
+            setConversations(prev => prev.map(c =>
+                c.id === activeChat.id
+                    ? {
+                        ...c,
+                        messages: c.messages.map((m, i) =>
+                            i === c.messages.length - 1 && m.role === "assistant" && !m.content
+                                ? { ...m, content: "I ran into an error while generating a response. Please try again." }
+                                : m
+                        ),
+                    }
+                    : c
+            ));
         } finally {
             setIsLoading(false);
         }
@@ -153,6 +243,7 @@ export function ChatInterface() {
                 conversations={conversations.map(c => ({ id: c.id, title: c.title }))}
                 activeId={activeConversationId}
                 onSelect={handleSelectConversation}
+                onDelete={handleDeleteConversation}
                 onNewChat={createNewChat}
                 isOpen={isSidebarOpen}
                 onClose={() => setIsSidebarOpen(false)}
@@ -179,7 +270,15 @@ export function ChatInterface() {
                             </div>
                         )}
                         {activeChat?.messages.map((msg, i) => (
-                            <Message key={i} message={msg} />
+                            <Message
+                                key={i}
+                                message={msg}
+                                loadingLabel={
+                                    isLoading && msg.role === "assistant" && i === (activeChat.messages.length - 1)
+                                        ? "Thinking..."
+                                        : undefined
+                                }
+                            />
                         ))}
                     </div>
                 </div>
@@ -190,6 +289,36 @@ export function ChatInterface() {
                     </p>
                 </div>
             </main>
+            {deleteTarget && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+                    <button
+                        onClick={() => setDeleteTarget(null)}
+                        aria-label="Close delete confirmation"
+                        className="absolute inset-0 bg-black/40"
+                    />
+                    <div className="relative w-full max-w-md rounded-2xl border border-border-custom bg-background p-5 shadow-2xl space-y-4">
+                        <h2 className="text-lg font-semibold">Delete chat?</h2>
+                        <p className="text-sm text-text-muted">
+                            This will permanently delete <span className="font-medium text-foreground">&quot;{deleteTarget.title}&quot;</span>.
+                            This action cannot be undone.
+                        </p>
+                        <div className="flex items-center justify-end gap-2 pt-1">
+                            <button
+                                onClick={() => setDeleteTarget(null)}
+                                className="rounded-lg border border-border-custom px-3 py-2 text-sm hover:bg-message-user/80"
+                            >
+                                Cancel
+                            </button>
+                            <button
+                                onClick={confirmDeleteConversation}
+                                className="rounded-lg bg-red-600 px-3 py-2 text-sm text-white hover:bg-red-700"
+                            >
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

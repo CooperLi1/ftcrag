@@ -1,12 +1,13 @@
 "use client";
 
-import { Plus, MessageSquare, X } from "lucide-react";
+import { Plus, MessageSquare, Trash2, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 
 interface SidebarProps {
     conversations: { id: string; title: string }[];
     activeId: string;
     onSelect: (id: string) => void;
+    onDelete: (id: string) => void;
     onNewChat: () => void;
     isOpen: boolean;
     onClose: () => void;
@@ -16,6 +17,7 @@ function SidebarContent({
     conversations,
     activeId,
     onSelect,
+    onDelete,
     onNewChat,
     onClose,
     mobile,
@@ -23,6 +25,7 @@ function SidebarContent({
     conversations: { id: string; title: string }[];
     activeId: string;
     onSelect: (id: string) => void;
+    onDelete: (id: string) => void;
     onNewChat: () => void;
     onClose: () => void;
     mobile: boolean;
@@ -50,20 +53,31 @@ function SidebarContent({
                 </div>
             </div>
 
-            <nav className="flex-1 overflow-y-auto p-2 space-y-1.5">
+            <nav className="flex-1 min-h-0 overflow-y-auto p-2 space-y-1.5">
                 <div className="text-[10px] uppercase tracking-widest text-text-muted px-3 py-3 font-semibold">Recent</div>
                 {conversations.map((chat) => (
-                    <button
+                    <div
                         key={chat.id}
-                        onClick={() => onSelect(chat.id)}
-                        className={`flex items-center gap-2 w-full px-3 py-2.5 rounded-xl transition-colors text-sm text-left ${activeId === chat.id
+                        className={`group flex items-center gap-1 w-full rounded-xl transition-colors text-sm ${activeId === chat.id
                             ? "bg-message-user text-foreground"
                             : "text-text-muted hover:bg-message-user/80 hover:text-foreground"
                             }`}
                     >
-                        <MessageSquare className="w-4 h-4 opacity-50 flex-shrink-0" />
-                        <span className="truncate">{chat.title}</span>
-                    </button>
+                        <button
+                            onClick={() => onSelect(chat.id)}
+                            className="flex items-center gap-2 flex-1 min-w-0 px-3 py-2.5 text-left"
+                        >
+                            <MessageSquare className="w-4 h-4 opacity-50 flex-shrink-0" />
+                            <span className="truncate">{chat.title}</span>
+                        </button>
+                        <button
+                            onClick={() => onDelete(chat.id)}
+                            aria-label={`Delete ${chat.title}`}
+                            className="mr-1 p-1.5 rounded-md opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 hover:bg-black/10 dark:hover:bg-white/10 transition-opacity"
+                        >
+                            <Trash2 className="w-3.5 h-3.5" />
+                        </button>
+                    </div>
                 ))}
             </nav>
 
@@ -75,15 +89,16 @@ function SidebarContent({
     );
 }
 
-export function Sidebar({ conversations, activeId, onSelect, onNewChat, isOpen, onClose }: SidebarProps) {
+export function Sidebar({ conversations, activeId, onSelect, onDelete, onNewChat, isOpen, onClose }: SidebarProps) {
     return (
         <>
             <div className={`hidden md:flex transition-[width] duration-200 ${isOpen ? "w-72" : "w-0"}`}>
-                <aside className="h-full w-72 bg-sidebar border-r border-border-custom/80 flex-col overflow-hidden">
+                <aside className="h-full w-72 bg-sidebar border-r border-border-custom/80 flex flex-col overflow-hidden">
                     <SidebarContent
                         conversations={conversations}
                         activeId={activeId}
                         onSelect={onSelect}
+                        onDelete={onDelete}
                         onNewChat={onNewChat}
                         onClose={onClose}
                         mobile={false}
@@ -102,6 +117,7 @@ export function Sidebar({ conversations, activeId, onSelect, onNewChat, isOpen, 
                         conversations={conversations}
                         activeId={activeId}
                         onSelect={onSelect}
+                        onDelete={onDelete}
                         onNewChat={onNewChat}
                         onClose={onClose}
                         mobile
