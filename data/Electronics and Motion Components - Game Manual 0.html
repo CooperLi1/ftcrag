@@ -1,0 +1,2490 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://gm0.org/en/latest/docs/power-and-electronics/index.html -->
+<html class="" lang="en" data-content_root="../../" data-readthedocs-tool="sphinx" data-readthedocs-tool-theme="furo"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 7 Free";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 7 Free";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 7 Pro";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 7 Pro";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 7 Duotone";
+  --fa-font-duotone-regular: normal 400 1em/1 "Font Awesome 7 Duotone";
+  --fa-font-duotone-light: normal 300 1em/1 "Font Awesome 7 Duotone";
+  --fa-font-duotone-thin: normal 100 1em/1 "Font Awesome 7 Duotone";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 7 Brands";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 7 Sharp";
+  --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 7 Sharp";
+  --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 7 Sharp";
+  --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 7 Sharp";
+  --fa-font-sharp-duotone-solid: normal 900 1em/1 "Font Awesome 7 Sharp Duotone";
+  --fa-font-sharp-duotone-regular: normal 400 1em/1 "Font Awesome 7 Sharp Duotone";
+  --fa-font-sharp-duotone-light: normal 300 1em/1 "Font Awesome 7 Sharp Duotone";
+  --fa-font-sharp-duotone-thin: normal 100 1em/1 "Font Awesome 7 Sharp Duotone";
+  --fa-font-slab-regular: normal 400 1em/1 "Font Awesome 7 Slab";
+  --fa-font-slab-press-regular: normal 400 1em/1 "Font Awesome 7 Slab Press";
+  --fa-font-whiteboard-semibold: normal 600 1em/1 "Font Awesome 7 Whiteboard";
+  --fa-font-thumbprint-light: normal 300 1em/1 "Font Awesome 7 Thumbprint";
+  --fa-font-notdog-solid: normal 900 1em/1 "Font Awesome 7 Notdog";
+  --fa-font-notdog-duo-solid: normal 900 1em/1 "Font Awesome 7 Notdog Duo";
+  --fa-font-etch-solid: normal 900 1em/1 "Font Awesome 7 Etch";
+  --fa-font-jelly-regular: normal 400 1em/1 "Font Awesome 7 Jelly";
+  --fa-font-jelly-fill-regular: normal 400 1em/1 "Font Awesome 7 Jelly Fill";
+  --fa-font-jelly-duo-regular: normal 400 1em/1 "Font Awesome 7 Jelly Duo";
+  --fa-font-chisel-regular: normal 400 1em/1 "Font Awesome 7 Chisel";
+  --fa-font-utility-semibold: normal 600 1em/1 "Font Awesome 7 Utility";
+  --fa-font-utility-duo-semibold: normal 600 1em/1 "Font Awesome 7 Utility Duo";
+  --fa-font-utility-fill-semibold: normal 600 1em/1 "Font Awesome 7 Utility Fill";
+}
+
+.svg-inline--fa {
+  box-sizing: content-box;
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+  width: var(--fa-width, 1.25em);
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285714em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left,
+.svg-inline--fa .fa-pull-start {
+  float: inline-start;
+  margin-inline-end: var(--fa-pull-margin, 0.3em);
+}
+.svg-inline--fa.fa-pull-right,
+.svg-inline--fa .fa-pull-end {
+  float: inline-end;
+  margin-inline-start: var(--fa-pull-margin, 0.3em);
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  inset-inline-start: calc(-1 * var(--fa-li-width, 2em));
+  inset-block-start: 0.25em; /* syncing vertical alignment with Web Font rendering */
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: var(--fa-width, 1.25em);
+}
+.fa-layers .svg-inline--fa {
+  inset: 0;
+  margin: auto;
+  position: absolute;
+  transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  transform: scale(var(--fa-counter-scale, 0.25));
+  transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: calc(10 / 16 * 1em); /* converts a 10px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 10 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 10 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-xs {
+  font-size: calc(12 / 16 * 1em); /* converts a 12px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 12 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 12 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-sm {
+  font-size: calc(14 / 16 * 1em); /* converts a 14px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 14 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 14 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-lg {
+  font-size: calc(20 / 16 * 1em); /* converts a 20px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 20 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 20 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-xl {
+  font-size: calc(24 / 16 * 1em); /* converts a 24px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 24 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 24 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-2xl {
+  font-size: calc(32 / 16 * 1em); /* converts a 32px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 32 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 32 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-width-auto {
+  --fa-width: auto;
+}
+
+.fa-fw,
+.fa-width-fixed {
+  --fa-width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-inline-start: var(--fa-li-margin, 2.5em);
+  padding-inline-start: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  inset-inline-start: calc(-1 * var(--fa-li-width, 2em));
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+/* Heads Up: Bordered Icons will not be supported in the future!
+  - This feature will be deprecated in the next major release of Font Awesome (v8)!
+  - You may continue to use it in this version *v7), but it will not be supported in Font Awesome v8.
+*/
+/* Notes:
+* --@{v.$css-prefix}-border-width = 1/16 by default (to render as ~1px based on a 16px default font-size)
+* --@{v.$css-prefix}-border-padding =
+  ** 3/16 for vertical padding (to give ~2px of vertical whitespace around an icon considering it's vertical alignment)
+  ** 4/16 for horizontal padding (to give ~4px of horizontal whitespace around an icon)
+*/
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.0625em);
+  box-sizing: var(--fa-border-box-sizing, content-box);
+  padding: var(--fa-border-padding, 0.1875em 0.25em);
+}
+
+.fa-pull-left,
+.fa-pull-start {
+  float: inline-start;
+  margin-inline-end: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right,
+.fa-pull-end {
+  float: inline-end;
+  margin-inline-start: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  animation-name: fa-beat;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  animation-name: fa-bounce;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  animation-name: fa-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  animation-name: fa-beat-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  animation-name: fa-flip;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  animation-name: fa-shake;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  animation-name: fa-spin;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 2s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  animation-name: fa-spin;
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+  .fa-bounce,
+  .fa-fade,
+  .fa-beat-fade,
+  .fa-flip,
+  .fa-pulse,
+  .fa-shake,
+  .fa-spin,
+  .fa-spin-pulse {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-shake {
+  0% {
+    transform: rotate(-15deg);
+  }
+  4% {
+    transform: rotate(15deg);
+  }
+  8%, 24% {
+    transform: rotate(-18deg);
+  }
+  12%, 28% {
+    transform: rotate(18deg);
+  }
+  16% {
+    transform: rotate(-22deg);
+  }
+  20% {
+    transform: rotate(22deg);
+  }
+  32% {
+    transform: rotate(-12deg);
+  }
+  36% {
+    transform: rotate(12deg);
+  }
+  40%, 100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  transform: rotate(var(--fa-rotate-angle, 0));
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.svg-inline--fa.fa-inverse {
+  fill: var(--fa-inverse, #fff);
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  --fa-width: 1.25em;
+  height: 1em;
+  width: var(--fa-width);
+}
+.svg-inline--fa.fa-stack-2x {
+  --fa-width: 2.5em;
+  height: 2em;
+  width: var(--fa-width);
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  inset: 0;
+  margin: auto;
+  position: absolute;
+  z-index: var(--fa-stack-z-index, auto);
+}</style><link rel="icon" type="image/png" href="https://gm0.org/en/latest/_static/assets/favicon/favicon-96x96.png" sizes="96x96">
+    <link href="https://gm0.org/en/latest/_static/assets/favicon/favicon.svg" rel="icon" type="image/svg+xml">
+    <link rel="icon" type="image/x-icon" href="https://gm0.org/en/latest/_static/assets/favicon/favicon-dark.ico" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/x-icon" href="https://gm0.org/en/latest/_static/assets/favicon/favicon.ico" media="(prefers-color-scheme: light)">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://gm0.org/en/latest/_static/assets/favicon/apple-touch-icon.png" type="image/png">
+    <link rel="manifest" href="https://gm0.org/en/latest/_static/assets/favicon/site.webmanifest"><meta property="og:title" content="Electronics and Motion Components">
+<meta property="og:type" content="website">
+<meta property="og:url" content="docs/power-and-electronics/index.html">
+<meta property="og:site_name" content="Game Manual 0">
+<meta property="og:description" content="This chapter contains information on electric power and electronics of the robot, including information on wiring, batteries, motors, and control system. Wiring Guide, Connectors and Wires, Control...">
+<meta property="og:image" content="https://raw.githubusercontent.com/gamemanual0/gm0/main/source/_static/assets/gm0-logo.png">
+<meta property="og:image:alt" content="Game Manual 0">
+<meta name="description" content="This chapter contains information on electric power and electronics of the robot, including information on wiring, batteries, motors, and control system. Wiring Guide, Connectors and Wires, Control...">
+<meta property="og:ignore_canonical" content="true">
+<meta name="theme-color" content="#F47F27">
+<link rel="index" title="Index" href="https://gm0.org/en/latest/genindex.html"><link rel="search" title="Search" href="https://gm0.org/en/latest/search.html"><link rel="next" title="Wiring Guide" href="https://gm0.org/en/latest/docs/power-and-electronics/wiring.html"><link rel="prev" title="Mini Turrets" href="https://gm0.org/en/latest/docs/common-mechanisms/turrets/mini-turret.html">
+
+    <!-- Generated with Sphinx 8.0.2 and Furo 2024.08.06 -->
+        <title>Electronics and Motion Components - Game Manual 0</title>
+      <link rel="stylesheet" type="text/css" href="./Electronics and Motion Components - Game Manual 0_files/pygments.css">
+    <link rel="stylesheet" type="text/css" href="./Electronics and Motion Components - Game Manual 0_files/furo.css">
+    <link rel="stylesheet" type="text/css" href="./Electronics and Motion Components - Game Manual 0_files/graphviz.css">
+    <link rel="stylesheet" type="text/css" href="./Electronics and Motion Components - Game Manual 0_files/sphinx-design.min.css">
+    <link rel="stylesheet" type="text/css" href="./Electronics and Motion Components - Game Manual 0_files/furo-extensions.css">
+    <link rel="stylesheet" type="text/css" href="./Electronics and Motion Components - Game Manual 0_files/custom.css">
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --font-stack: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  --admonition-font-size: 1rem;
+  --admonition-title-font-size: 1rem;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-background-primary: #1f2022;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-background-primary: #1f2022;
+  
+      }
+    }
+  }
+</style><script async="" type="text/javascript" src="./Electronics and Motion Components - Game Manual 0_files/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="game-manual-zero"><meta name="readthedocs-version-slug" content="latest"><meta name="readthedocs-resolver-filename" content="/docs/power-and-electronics/index.html"><meta name="readthedocs-http-status" content="200"><style>/* stylelint-disable */
+/* stylelint-enable */
+/** Buttons
+---------------------------------------------------------*/
+:root {
+  --transparent: rgba(255, 255, 255, 0);
+  --white: hsl(0, 0%, 100%);
+  --th-white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --th-black: hsl(0, 0%, 0%);
+  --lightGrey: hsl(0, 0%, 94%);
+  --th-grey-white: hsl(210, 10%, 97%);
+  --th-grey-light: hsl(210, 10%, 94.8%);
+  --th-grey-medium: hsl(212, 10%, 94%);
+  --th-grey: hsl(216, 22%, 91%);
+  --th-grey-dark: hsl(221, 20%, 78%);
+  --th-slate: hsl(221, 20%, 33%);
+  --th-slate-light: hsl(222, 20%, 45%);
+  --th-slate-dark: hsl(222, 22%, 18%);
+  --th-slate-alt: #333F57;
+  --th-slate-hover:#3E4A62;
+  --th-slate-dark-hover800:hsl(220, 22%, 24%);
+  --th-slate-dark-active800:hsl(219, 24%, 26%);
+  --th-slate-dark-hover600:hsl(222, 22%, 21%);
+  --th-slate-dark-active600:hsl(221, 24%, 23%);
+  --th-cool-grey-600: hsl(203, 16%, 44%);
+  --th-cool-grey-700: hsl(204, 18%, 30%);
+  --th-cool-grey-750: hsl(203, 18%, 32%);
+  --th-cool-grey-800: hsl(209, 20%, 25%);
+  --th-cool-grey-850: hsl(209, 20%, 21%);
+  --th-cool-grey-900: hsl(210, 24%, 16%);
+  --fontColorDark: var( --th-slate-dark);
+  --fontColorWhite: hsl(0, 0%, 100%);
+  --list-item-hover:hsl(225, 20%, 96%);
+  --list-item-light-hover: hsl(210, 20%, 98%);
+  --list-item-hover-dark:hsla(222, 22%, 18%, 0.50);
+  --list-item-light-hover-dark: hsla(222, 20%, 33%, 0.50);
+  --greyTransparent: hsla(222, 22%, 18%, 0.12);
+  --whiteTransparent: hsla(0, 0%, 100%, 0.12);
+  --defaultColor: hsl(220, 20%, 91%);
+  --defaultColorHover: hsl(220, 19%, 78%);
+  --defaultColorActive: hsl(220, 19%, 68%);
+  --defaultColorSelected: hsl(221, 20%, 75%);
+  --buttonBorderColor: 2px solid hsl(220, 20%, 91%);
+  --buttonBorderColorHover: 2px solid hsl(220, 19%, 78%);
+  --buttonBorderColorActive: 2px solid hsl(220, 19%, 68%);
+  --buttonBorderColorSelected: 2px solid hsl(221, 20%, 75%);
+  --iconFillColor: var( --th-slate-dark );
+  --primaryColor: hsl(211, 100%, 45%);
+  --primaryColorHover: hsl(211, 100%, 35%);
+  --primaryColorActive: hsl(211, 100%, 25%);
+  --primaryButtonBorder: 2px solid hsl(211, 100%, 45%);
+  --primaryButtonBorderHover: 2px solid hsl(211, 100%, 35%);
+  --primaryButtonBorderActive: 2px solid hsl(211, 100%, 25%);
+  --secondaryColor: var(--th-slate);
+  --secondaryColorHover: hsl(221, 20%, 23%);
+  --secondaryColorActive: hsl(221, 20%, 13%);
+  --secondaryButtonBorderColor: 2px solid var(--th-slate);
+  --secondaryButtonBorderColorHover: 2px solid hsl(221, 20%, 23%);
+  --secondaryButtonBorderColorActive: 2px solid hsl(221, 20%, 13%);
+  --disabledColor: hsl(0, 0%, 50%);
+  --disabledBackgroundColor: hsl(0, 0%, 95%);
+  --brandColorGreen: hsl(76, 60%, 52%);
+  --brandColorGreenActive: hsl(76, 62%, 40%);
+  --primaryColorGreen: hsl(79, 100%, 24%);
+  --primaryColorGreenHover: hsl(79, 100%, 14%);
+  --primaryColorGreenActive: hsl(79, 100%, 4%);
+  --buttonBorderGreen: 2px solid hsl(79, 100%, 24%);
+  --buttonBorderGreenHover: 2px solid hsl(79, 100%, 14%);
+  --buttonBorderGreenActive: 2px solid hsl(79, 100%, 4%);
+  --brandColorPink: hsl(344, 98%, 59%);
+  --primaryColorPink: #e12362;
+  --primaryColorPinkHover: hsl(340, 76%, 41%);
+  --primaryColorPinkActive: hsl(340, 76%, 31%);
+  --buttonBorderPink: 2px solid hsl(340, 76%, 51%);
+  --buttonBorderPinkHover: 2px solid hsl(340, 76%, 41%);
+  --buttonBorderPinkActive: 2px solid hsl(340, 76%, 31%);
+  --brandColorTeal: hsl(180, 85%, 34%);
+  --primaryColorTeal: hsl(184, 50%, 35%);
+  --primaryColorTealHover: hsl(184, 50%, 25%);
+  --primaryColorTealActive: hsl(184, 50%, 15%);
+  --buttonBorderTeal: 2px solid hsl(184, 50%, 35%);
+  --buttonBorderTealHover: 2px solid hsl(184, 50%, 25%);
+  --buttonBorderTealActive: 2px solid hsl(184, 50%, 15%);
+  --brandColorPurple: hsl(264, 100%, 68%);
+  --primaryColorPurple: hsl(264, 83%, 62%);
+  --primaryColorPurpleHover: hsl(264, 83%, 52%);
+  --primaryColorPurpleActive: hsl(264, 83%, 42%);
+  --buttonBorderPurple: 2px solid hsl(264, 83%, 62%);
+  --buttonBorderPurpleHover: 2px solid hsl(264, 83%, 52%);
+  --buttonBorderPurpleActive: 2px solid hsl(264, 83%, 42%);
+  --brandColorOrange: hsl(33, 94%, 48%);
+  --primaryColorOrange: hsl(15, 79%, 45%);
+  --primaryColorOrangeHover: hsl(15, 80%, 35%);
+  --primaryColorOrangeActive: hsl(15, 80%, 25%);
+  --buttonBorderOrange: 2px solid hsl(15, 79%, 45%);
+  --buttonBorderOrangeHover: 2px solid hsl(15, 80%, 35%);
+  --buttonBorderOrangeActive: 2px solid hsl(15, 80%, 25%);
+  --brandColorBlue: hsl(197, 100%, 50%);
+  --brandColorBlueActive: hsl(197, 100%, 39%);
+  --brandColorBlueWCAG: hsl(197, 100%, 42%);
+  --primaryColorBlue: hsl(201, 100%, 37%);
+  --primaryColorBlueHover: hsl(201, 100%, 27%);
+  --primaryColorBlueActive: hsl(201, 100%, 17%);
+  --buttonBorderBlue: 2px solid hsl(201, 100%, 37%);
+  --buttonBorderBlueHover: 2px solid hsl(201, 100%, 27%);
+  --buttonBorderBlueActive: 2px solid hsl(201, 100%, 17%);
+  --BrandcolorYellow: hsl(41, 90%, 61%);
+  --primaryColorReachDeck: hsl(209, 100%, 39%);
+  --primaryColorReachDeckHover: hsl(209, 100%, 29%);
+  --primaryColorReachDeckActive: hsl(209, 100%, 19%);
+  --buttonBorderReachDeck: 2px solid hsl(209, 100%, 39%);
+  --buttonBorderReachDeckHover: 2px solid hsl(209, 100%, 29%);
+  --buttonBorderReachDeckActive: 2px solid hsl(209, 100%, 19%);
+  --reachDeckEditorColor: hsl(112, 100%, 26%);
+  --launchpadButtonLight: hsl(210, 10%, 96%);
+  --launchpadButtonLightHover: hsl(220, 8%, 92%);
+  --launchpadButtonLightActive:hsl(0, 0%, 90%);
+  --ContrastPinkOrbitNoteHover: hsl(343, 81%, 48%);
+  --ContrastPinkOrbitNoteActive: hsl(345, 96%, 42%);
+  --ContrastButtonBorderPink: hsl(345, 96%, 42%);
+  --primaryColorClaroNavy: hsl(207, 74%, 27%);
+  --primaryColorClaroNavyHover: hsl(206, 83%, 21%);
+  --primaryColorClaroNavyActive: hsl(206, 89%, 17%);
+  --buttonBorderClaro: 2px solid hsl(207, 74%, 27%);
+  --buttonBorderClaroHover: 2px solid hsl(206, 83%, 21%);
+  --buttonBorderClaroActive: 2px solid hsl(206, 89%, 17%);
+  --primaryColorClaroBlue: hsl(201, 100%, 37%);
+  --primaryColorClaroBlueHover: hsl(201, 100%, 31%);
+  --primaryColorClaroBlueActive: hsl(201, 100%, 27%);
+  --claroDark: hsl(218, 54%, 20%);
+  --claroGrey: hsl(217, 31%, 68%);
+  --claroBlue: hsl(191, 88%, 40%);
+  --claroBlueAlt: hsl(188, 78%, 50%);
+  --claroGreen: hsl(75, 63%, 51%);
+  --altColor: var(--claroGreen);
+  --altColorHover: hsl(75, 70%, 40%);
+  --altColorActive: hsl(75, 77%, 33%);
+  --altButtonBorderColor: 2px solid var(--claroGreen);
+  --altButtonBorderColorHover: 2px solid hsl(75, 70%, 40%);
+  --altButtonBorderColorActive: 2px solid hsl(75, 77%, 33%);
+  --brandColorLingdys: hsl(0, 82%, 49%);
+  --primaryColorLingdys: hsl(217, 34%, 38%);
+  --primaryColorLingdysHover: hsl(217, 37%, 24%);
+  --primaryColorLingdysActive: hsl(217, 39%, 18%);
+  --buttonBorderLingdys: 2px solid hsl(217, 34%, 38%);
+  --buttonBorderLingdysHover: 2px solid hsl(217, 37%, 24%);
+  --buttonBorderLingdysActive: 2px solid hsl(217, 39%, 18%);
+  --brandColorAppWriter: #F70790;
+  --primaryColorAppWriter: #D8087F;
+  --primaryColorAppWriterHover:#B40669;
+  --primaryColorAppWriterActive: #9F055C;
+  --buttonBorderAppwriter: 2px solid #D8087F;
+  --buttonBorderAppwriterHover: 2px solid #B40669;
+  --buttonBorderAppWriterActive: 2px solid #9F055C;
+  --iconToggleFillOrbitNote: hsl(196, 99%, 50%);
+  --textColor: var( --th-slate-dark );
+  --textColorLight: var( --th-white );
+  --border: 1px solid var( --th-grey );
+  --borderDark: 1px solid var( --th-grey-dark );
+  --infoColor: hsl(194, 77%, 24%);
+  --successColor: hsla(134, 71%, 43%, 0.584);
+  --errorColor: hsl(0, 71%, 51%);
+  --warningColor: hsl(45, 97%, 51%);
+  --infoBackgroundColor: hsl(180, 100%, 99%);
+  --successBackgroundColor: hsl(78, 100%, 98%);
+  --errorBackgroundColor: hsl(0, 100%, 98%);
+  --warningBackgroundColor: hsl(35, 100%, 98%);
+  --notificationDarkModeBackground: hsl(218, 22%, 37%);
+  --infoBorderColor: hsl(191, 44%, 82%);
+  --successBorderColor: hsl(100, 28%, 69%);
+  --errorBorderColor: hsl(0, 37%, 73%);
+  --warningBorderColor: hsl(41, 30%, 71%);
+  --notificationDarkModeBorder: hsl(217, 19%, 41%);
+  --infoTitleColor: hsl(194, 77%, 24%);
+  --successTitleColor: hsl(121, 48%, 23%);
+  --errorTitleColor: hsl(1, 47%, 40%);
+  --warningTitleColor: hsl(37, 92%, 25%);
+  --infoWarningColor: hsl(194, 77%, 24%);
+  --successWarningColor: hsla(121, 48%, 23%, 0.8);
+  --errorWarningColor: hsla(1, 47%, 40%, 0.8);
+  --warningWarningColor: hsla(37, 92%, 25%, 0.8);
+  --line-height-base: 1.5;
+  --zindex-modal: 1050;
+  --modal-dialog-margin: 2rem;
+  --modal-content-border-radius: 1px;
+  --buttonBorderRadius: 30px;
+  --buttonRoundness: 30px;
+  --buttonLinkTextColor: var( --primaryColor)!important;
+  --buttonLinkIconColor: var( --primaryColor)!important;
+  --buttonNoBackgroundTextColor: var( --th-slate-dark);
+  --buttonNoBackgroundIconColor: var( --th-slate-dark);
+  --buttonNoBackgroundColor: transparent;
+  --buttonNoBackgroundColorHover: var(--icon-button-background-hover-color);
+  --buttonNoBackgroundColorActive: var(--icon-button-background-active-color);
+  --buttonNoBackgroundBorder: 2px solid transparent;
+  --buttonNoBackgroundBorderHover: 2px solid transparent;
+  --buttonNoBackgroundBorderActive: 2px solid transparent;
+  --activeDotColor: inherit;
+  --themeColorDefault: var(--defaultColor);
+  --themeColorGroundworks: var(--primaryColor);
+  --themeColorReadWrite: var(--primaryColorPurple);
+  --themeColorEquatio: var(--primaryColorBlue);
+  --themeColorBrowsealoud: var(--primaryColorOrange);
+  --themeColorWriq: var(--primaryColorTeal);
+  --themeColorFluencyTutor: var(--primaryColorGreen);
+  --themeColorSnapVerter: var(--primaryColorGreen);
+  --themeColorSpeechStream: var(--primaryColorPink);
+  --themeColorTexthelp: var(--primaryColorTeal);
+  --themeColorReachDeck: var(--primaryColorReachDeck);
+  --themeColorPdfReader: var(--primaryColorBlue);
+  --uniloginBackgroundColor: #F7F7F7;
+  --uniloginWindowBackgroundColor: var(--primaryColorBlue);
+  --line-height-base: 1.5;
+  --zindex-modal: 1050;
+  --modal-dialog-margin: 2em;
+  --modal-content-border-radius: 1px;
+  --modal-inner-padding: 1.5em;
+  --modal-title-padding: 1.5em;
+  --modal-title-line-height: var(--line-height-base);
+  --modal-content-bg: #fff;
+  --modal-content-border-color: rgba(0, 0, 0, .2);
+  --modal-content-fallback-border-color: #999;
+  --modal-backdrop-bg: #000;
+  --modal-backdrop-opacity: .5;
+  --modal-header-border-color: #e5e5e5;
+  --modal-footer-border-color: var(--modal-header-border-color);
+  --modal-header-background-color: #f5f5f5;
+  --select-border: 1px solid #DADADA;
+  --select-background: hsl(0, 0%, 100%);
+  --select-background-color: #efefef;
+  --select-background-color-hover: hsl(0, 0%, 97%);
+  --input-border: 1px solid #DADADA;
+  --input-background-color: #ffffff;
+  --settings-title-color: var(--primaryColor);
+  --settings-item-background-color: var(--th-white);
+  --settings-item-background-hover-color: var(--th-grey-medium);
+  --settings-item-background-active-color: var(--th-grey);
+  --list-group-background-color: transparent;
+  --list-group-item-background-color: var(--th-white);
+  --list-group-item-background-hover-color: var(--th-grey-light);
+  --list-group-item-background-active-color: var(--th-grey);
+  --list-group-item-icon-color: var(--th-slate-dark);
+  --ListGroupSearchItemColor: var(--th-white);
+  --ListGroupSearchItemColorHover: #f9fafb;
+  --ListGroupSearchItemTextColor: var(--th-slate);
+  --ListGroupSearchItemBorderColor: hsla(0, 0%, 0%, 0.15);
+  --ListGroupSearchItemAsideColor: hsl(0, 0%, 95%);
+  --ListGroupSearchItemAsideTextColor: #000;
+  --toolbar-button-disabled: hsl(0, 0%, 96.1%);
+  --toolbar-button-background: hsl(0, 0%, 96.1%);
+  --toolbar-button-hover-background: hsl(0, 0%, 80%);
+  --toolbar-button-color: hsl(0, 0%, 0%);
+  --toolbar-button-hover-active-background: hsl(0, 0%, 70.2%);
+  --toolbar-button-default-size: 43px;
+  --toolbar-button-focus-color: hsl(213, 71.3%, 60.4%);
+  --toolbar-button-svg-color: hsl(0, 0%, 29%);
+  --toolbar-button-toggle-color: hsl(264, 100%, 68%);
+  --panel-inner-padding: .7em;
+  --icon-button-background-default-color: hsla(0, 0%, 0%, 0.077);
+  --icon-button-background-hover-color: hsla(0, 0%, 0%, 0.125);
+  --icon-button-background-active-color: hsla(0, 0%, 0%, 0.187);
+  --icon-button-background-default-color-dark: rgba(255, 255, 255, 0.077);
+  --icon-button-background-hover-color-dark: rgba(255, 255, 255, 0.146);
+  --icon-button-background-active-color-dark: rgba(255, 255, 255, 0.221);
+  --icon-button-border-color: solid 2px transparent;
+  --menuIconFillColor: var(--th-slate);
+  --cardIconFillColor: var(--th-slate);
+  --default-menu-notify-background-colour: hsl(264, 100%, 68%);
+  --toolbarButtonBackgroundColor: var( --defaultColor);
+  --toolbarButtonBackgroundHoverColor: var( --icon-button-background-hover-color);
+  --toolbarButtonBackgroundActiveColor: var( --icon-button-background-active-color);
+  --toolbarIconHoverFill: var( --th-slate);
+  --toolbarIconToggleFill: var( --primaryColor);
+  --dashboardContentBackgroundColor: #fff;
+  --dashboardHeaderBackgroundColor: #fff;
+  --dashboardSidebarBorderTopColor: var( --lightGrey);
+  --dashboardTextColor: var(--th-slate);
+  --dashboardTitleTextColor: var(--fontColorDark);
+  --dashboardSubTitleTextColor: var(--th-slate-light);
+  --dashboardCardBackgroundColor: var(--white);
+  --dashboardCardBackgroundHoverColor: var(--th-grey-light);
+  --dashboardCardBackgroundActiveColor: var(--lightGrey);
+  --dashboardCardHighlightColor: var(--primaryColor);
+  --dashboardCardBorderColor: var(--lightGrey);
+  --dashboardCardFooterLinkColor: var(--primaryColor);
+  --dashboardCardAuditorColor: hsl(208, 100%, 43%);
+  --dashboardCardAuditorLabelColor: hsl(208, 100%, 43%);
+  --dashboardCardEditorLabelColor: var(--reachDeckEditorColor);
+  --dashboardCardToolbarColor: var(--primaryColorOrange);
+  --dashboardCardToolbarLabelColor: var(--primaryColorOrange);
+  --dashboardPaneBackgroundColor: #fcfcfc;
+  --dashboardPaneBorderColor: rgba(92, 106, 138, 0.4);
+  --dashboardPaneDashedBorderColor: var(--dashboardDashedBorderLight);
+  --dashboardDashedBorderLight: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%235C6A8ACC' stroke-width='2' stroke-dasharray='4%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  --dashboardDashedBorderDark: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23323E52FF' stroke-width='2' stroke-dasharray='4%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  --icon-opacity: 1;
+  --accordionBackgroundColor: #fff;
+  --accordionTextColor: #484848;
+  --accordionTextBottomColor: #484848;
+  --accordionIconColor: var(--toolbarWhite);
+  --accordionBackgroundColorHover: #f9fafb;
+  --tableBackgroundColor: none;
+  --tableBackgroundHeaderColor: #F9FAFB;
+  --tableBackgroundAltColor: #f7f7f7;
+  --tableBackgroundHoverColor: hsl(210, 20%, 98%);
+  --tableBorderColor: #E2E2E3;
+  --tableTextColor: #484848;
+}
+
+/* stylelint-disable */
+/* stylelint-enable */
+.th-wq,
+.th-th {
+  --toolbarBackgroundColor: var(--defaultColor);
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorWriq);
+  --themeColorSecondary: var(--secondaryColor);
+  --dashboardTopColor: var(--brandColorTeal);
+  --dashboardTitleColor: var(--themeColorWriq);
+  --iconFillColor: var(--white);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorTeal);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorTealHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorTealActive);
+  --primaryButtonBorderActive: var(--buttonBorderTealActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderTeal);
+  --primaryButtonBorderHover: var(--buttonBorderTealHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --secondaryButtonBackgroundColor: var(--secondaryColor);
+  --secondaryButtonBackgroundHoverColor: var(--secondaryColorHover);
+  --secondaryButtonBackgroundActiveColor: var(--secondaryColorActive);
+  --secondaryButtonTextColor: var(--fontColorWhite);
+  --secondaryButtonTextHoverColor: var(--fontColorWhite);
+  --secondaryButtonTextActiveColor: var(--fontColorWhite);
+  --secondaryButtonTextVisitedColor: var(--fontColorWhite);
+  --secondaryButtonBorder: var(--secondaryButtonBorder);
+  --secondaryButtonBorderHover: var(--secondaryButtonBorderColorHover);
+  --secondaryButtonBorderRadius: var(--buttonRoundness);
+  --secondaryButtonIconFillColor: var(--white);
+  --table-hover-item: var(--list-item-light-hover);
+  --settingsTitleColor: var(--themeColorPrimary);
+}
+
+.th-rw,
+.th-wa {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorReadWrite);
+  --themeColorSecondary: var(--secondaryColor);
+  --toolbarBackgroundColor: var(--defaultColor);
+  --toolbarIconFill: var(--th-slate);
+  --toolbarIconHoverFill: var(--th-slate);
+  --toolbarIconActiveFill: var(--th-slate);
+  --toolbarIconToggledHoverFill: var(--primaryColorPurple);
+  --toolbarIconToggleFill: var(--primaryColorPurple);
+  --toolbarIconToggleHoverFill: var(--primaryColorPurple);
+  --dashboardTopColor: var(--brandColorPurple);
+  --dashboardTitleColor: var(--themeColorReadWrite);
+  --iconFillColor: var(--th-slate-dark);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderActive: var(--buttonBorderColorActive);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorPurple);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorPurpleHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorPurpleActive);
+  --primaryButtonBorderActive: var(--buttonBorderPurpleActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderPurple);
+  --primaryButtonBorderHover: var(--buttonBorderPurpleHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --secondaryButtonBackgroundColor: var(--secondaryColor);
+  --secondaryButtonBackgroundHoverColor: var(--secondaryColorHover);
+  --secondaryButtonBackgroundActiveColor: var(--secondaryColorActive);
+  --secondaryButtonTextColor: var(--fontColorWhite);
+  --secondaryButtonTextHoverColor: var(--fontColorWhite);
+  --secondaryButtonTextActiveColor: var(--fontColorWhite);
+  --secondaryButtonTextVisitedColor: var(--fontColorWhite);
+  --secondaryButtonBorder: var(--secondaryButtonBorder);
+  --secondaryButtonBorderHover: var(--secondaryButtonBorderColorHover);
+  --secondaryButtonBorderRadius: var(--buttonRoundness);
+  --secondaryButtonIconFillColor: var(--white);
+  --table-hover-item: var(--list-item-light-hover);
+  --settingsTitleColor: var(--themeColorPrimary);
+  --menuNotifyBackgroundColour: var(--brandColorPurple);
+  --uniloginBackgroundColor: #FAF7FF;
+  --uniloginWindowBackgroundColor: var(--primaryColorPurple);
+}
+
+.th-pr {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorPdfReader);
+  --themeColorSecondary: var(--secondaryColor);
+  --primaryButtonBackgroundColor: var(--primaryColorBlue);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorBlueHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorBlueActive);
+  --primaryButtonBorderActive: var(--buttonBorderBlueActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderBlue);
+  --primaryButtonBorderHover: var(--buttonBorderBlueHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --toolbarBackgroundColor: var(--th-grey);
+  --toolbarButtonBackgroundColor: var(--th-grey);
+  --toolbarButtonBackgroundHoverColor: var(--ContrastPinkOrbitNoteHover);
+  --toolbarButtonBackgroundActiveColor: var(--ContrastPinkOrbitNoteActive);
+  --toolbarButtonBorderActive: var(--ContrastButtonBorderPink);
+  --toolbarIconFill: var(--th-slate);
+  --toolbarIconHoverFill: var(--white);
+  --toolbarIconActiveFill: var(--white);
+  --toolbarIconToggleFill: var(--ContrastPinkOrbitNoteActive);
+  --toolbarIconToggleHoverFill: var(--white);
+  --toolbarIconToggledHoverFill: var(--white);
+  --iconButtonBackgroundDefaultColor: var(--icon-button-background-default-color);
+  --iconButtonBackgroundHoverColor: var(--icon-button-background-hover-color);
+  --iconButtonBackgroundActiveColor: var(--icon-button-background-active-color);
+  --iconButtonBorderColor: 2px solid transparent;
+  --iconFillColor: var(--th-slate);
+  --panelBackgroundColor: var(--th-grey-light);
+  --panelBackgroundColorLight: var(--white);
+  --panelBackgroundColorDark: var(--th-grey);
+  --fontColor: var(--th-slate-dark);
+  --borderColor: 1px solid var(--th-grey-dark);
+  --settingsTitleColor: var(--themeColorPrimary);
+  --menuNotifyBackgroundColour: var(--brandColorPink);
+  --dashboardTopColor: var(--primaryColorBlue);
+  --dashboardTitleColor: var(--themeColorEquatio);
+  --cardIconFillColor: var(--primaryColorBlue);
+}
+
+.th-eq {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorEquatio);
+  --themeColorSecondary: var(--secondaryColor);
+  --dashboardTopColor: var(--brandColorBlue);
+  --dashboardTitleColor: var(--themeColorEquatio);
+  --iconFillColor: var(--th-slate-dark);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorBlue);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorBlueHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorBlueActive);
+  --primaryButtonBorderActive: var(--buttonBorderBlueActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderBlue);
+  --primaryButtonBorderHover: var(--buttonBorderBlueHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --secondaryButtonBackgroundColor: var(--secondaryColor);
+  --secondaryButtonBackgroundHoverColor: var(--secondaryColorHover);
+  --secondaryButtonBackgroundActiveColor: var(--secondaryColorActive);
+  --secondaryButtonTextColor: var(--fontColorWhite);
+  --secondaryButtonTextHoverColor: var(--fontColorWhite);
+  --secondaryButtonTextActiveColor: var(--fontColorWhite);
+  --secondaryButtonTextVisitedColor: var(--fontColorWhite);
+  --secondaryButtonBorder: var(--secondaryButtonBorder);
+  --secondaryButtonBorderHover: var(--secondaryButtonBorderColorHover);
+  --secondaryButtonBorderRadius: var(--buttonRoundness);
+  --secondaryButtonIconFillColor: var(--white);
+  --table-hover-item: var(--list-item-light-hover);
+  --settingsTitleColor: var(--themeColorPrimary);
+  --uniloginBackgroundColor: #F2F9FF;
+  --uniloginWindowBackgroundColor: var(--brandColorBlueWCAG);
+}
+
+.th-ba {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorBrowsealoud);
+  --themeColorSecondary: var(--secondaryColor);
+  --toolbarBackgroundColor: var(--th-grey);
+  --toolbarIconButtonFillColor: var(--th-slate);
+  --toolbarButtonBackgroundColor: var(--th-grey);
+  --toolbarButtonBackgroundHoverColor: var(--primaryColorOrangeHover);
+  --toolbarButtonBackgroundActiveColor: var(--primaryColorOrangeActive);
+  --toolbarButtonBorderActive: var(--buttonBorderOrange);
+  --toolbarIconFill: var(--th-slate);
+  --toolbarIconHoverFill: var(--th-slate);
+  --toolbarIconActiveFill: var(--primaryColorBlue);
+  --toolbarIconToggleFill: var(--primaryColorBlue);
+  --toolbarIconToggleHoverFill: var(--white);
+  --dashboardTopColor: var(--brandColorOrange);
+  --dashboardTitleColor: var(--themeColorBrowsealoud);
+  --iconFillColor: var(--white);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorOrange);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorOrangeHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorOrangeActive);
+  --primaryButtonBorderActive: var(--buttonBorderOrangeActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderOrange);
+  --primaryButtonBorderHover: var(--buttonBorderOrangeHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --secondaryButtonBackgroundColor: var(--secondaryColor);
+  --secondaryButtonBackgroundHoverColor: var(--secondaryColorHover);
+  --secondaryButtonBackgroundActiveColor: var(--secondaryColorActive);
+  --secondaryButtonTextColor: var(--fontColorWhite);
+  --secondaryButtonTextHoverColor: var(--fontColorWhite);
+  --secondaryButtonTextActiveColor: var(--fontColorWhite);
+  --secondaryButtonTextVisitedColor: var(--fontColorWhite);
+  --secondaryButtonBorder: var(--secondaryButtonBorder);
+  --secondaryButtonBorderHover: var(--secondaryButtonBorderColorHover);
+  --secondaryButtonBorderRadius: var(--buttonRoundness);
+  --secondaryButtonIconFillColor: var(--white);
+  --table-hover-item: var(--list-item-light-hover);
+  --settingsTitleColor: var(--themeColorPrimary);
+  --menuNotifyBackgroundColour: var(--white);
+}
+.th-ba .gw-menu-notification--inline {
+  --menuNotifyBackgroundColour: var(--themeColorBrowsealoud);
+}
+
+.th-at {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorReachDeck);
+  --themeColorSecondary: var(--secondaryColor);
+  --toolbarBackgroundColor: var(--defaultColor);
+  --toolbarIconFill: var(--th-slate);
+  --toolbarIconHoverFill: var(--th-slate);
+  --toolbarIconActiveFill: var(--th-slate);
+  --toolbarIconToggledHoverFill: var(--primaryColorBlue);
+  --toolbarIconToggleFill: var(--primaryColorBlue);
+  --toolbarIconToggleHoverFill: var(--primaryColorBlue);
+  --dashboardTopColor: var(--th-grey);
+  --dashboardTitleColor: var(--th-slate-dark);
+  --iconFillColor: var(--th-slate-dark);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorReachDeck);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorReachDeckHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorReachDeckActive);
+  --primaryButtonBorderActive: var(--buttonBorderReachDeckActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderReachDeck);
+  --primaryButtonBorderHover: var(--buttonBorderReachDeckHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --secondaryButtonBackgroundColor: var(--secondaryColor);
+  --secondaryButtonBackgroundHoverColor: var(--secondaryColorHover);
+  --secondaryButtonBackgroundActiveColor: var(--secondaryColorActive);
+  --secondaryButtonTextColor: var(--fontColorWhite);
+  --secondaryButtonTextHoverColor: var(--fontColorWhite);
+  --secondaryButtonTextActiveColor: var(--fontColorWhite);
+  --secondaryButtonTextVisitedColor: var(--fontColorWhite);
+  --secondaryButtonBorder: var(--secondaryButtonBorder);
+  --secondaryButtonBorderHover: var(--secondaryButtonBorderColorHover);
+  --secondaryButtonBorderRadius: var(--buttonRoundness);
+  --secondaryButtonIconFillColor: var(--white);
+  --dashboardTopColor: #E12362;
+  --dashboardContentBackgroundColor: #F2F5F9;
+  --tableBackgroundHeaderColor: #DFE1E5;
+  --table-hover-item: var(--list-item-light-hover);
+  --settingsTitleColor: var(--themeColorPrimary);
+}
+
+.th-rd {
+  font-size: 10px;
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorReachDeck);
+  --themeColorSecondary: var(--secondaryColor);
+  --toolbarBackgroundColor: var(--defaultColor);
+  --toolbarIconFill: var(--th-slate);
+  --toolbarIconHoverFill: var(--th-slate);
+  --toolbarIconActiveFill: var(--th-slate);
+  --toolbarIconToggledHoverFill: var(--primaryColorBlue);
+  --toolbarIconToggleFill: var(--primaryColorBlue);
+  --toolbarIconToggleHoverFill: var(--primaryColorBlue);
+  --dashboardTopColor: var(--th-grey);
+  --dashboardTitleColor: var(--th-slate-dark);
+  --iconFillColor: var(--th-slate-dark);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorReachDeck);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorReachDeckHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorReachDeckActive);
+  --primaryButtonBorderActive: var(--buttonBorderReachDeckActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderReachDeck);
+  --primaryButtonBorderHover: var(--buttonBorderReachDeckHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --secondaryButtonBackgroundColor: var(--secondaryColor);
+  --secondaryButtonBackgroundHoverColor: var(--secondaryColorHover);
+  --secondaryButtonBackgroundActiveColor: var(--secondaryColorActive);
+  --secondaryButtonTextColor: var(--fontColorWhite);
+  --secondaryButtonTextHoverColor: var(--fontColorWhite);
+  --secondaryButtonTextActiveColor: var(--fontColorWhite);
+  --secondaryButtonTextVisitedColor: var(--fontColorWhite);
+  --secondaryButtonBorder: var(--secondaryButtonBorder);
+  --secondaryButtonBorderHover: var(--secondaryButtonBorderColorHover);
+  --secondaryButtonBorderRadius: var(--buttonRoundness);
+  --secondaryButtonIconFillColor: var(--white);
+  --table-hover-item: var(--list-item-light-hover);
+  --settingsTitleColor: var(--themeColorPrimary);
+}
+
+.th-ss {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorSpeechStream);
+  --themeColorSecondary: var(--secondaryColor);
+  --dashboardTopColor: var(--brandColorPink);
+  --dashboardTitleColor: var(--themeColorSpeechStream);
+  --iconFillColor: var(--th-slate-dark);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--themeColorSpeechStream);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorPinkHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorPinkActive);
+  --primaryButtonBorderActive: var(--buttonBorderPinkActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderPink);
+  --primaryButtonBorderHover: var(--buttonBorderPinkHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --secondaryButtonBackgroundColor: var(--secondaryColor);
+  --secondaryButtonBackgroundHoverColor: var(--secondaryColorHover);
+  --secondaryButtonBackgroundActiveColor: var(--secondaryColorActive);
+  --secondaryButtonTextColor: var(--fontColorWhite);
+  --secondaryButtonTextHoverColor: var(--fontColorWhite);
+  --secondaryButtonTextActiveColor: var(--fontColorWhite);
+  --secondaryButtonTextVisitedColor: var(--fontColorWhite);
+  --secondaryButtonBorder: var(--secondaryButtonBorder);
+  --secondaryButtonBorderHover: var(--secondaryButtonBorderColorHover);
+  --secondaryButtonBorderRadius: var(--buttonRoundness);
+  --secondaryButtonIconFillColor: var(--white);
+  --table-hover-item: var(--list-item-light-hover);
+  --settingsTitleColor: var(--themeColorPrimary);
+}
+
+.th-st {
+  --uniloginBackgroundColor: #F2F9FF;
+  --uniloginWindowBackgroundColor: #2A3953;
+}
+
+.th-sv,
+.th-ft {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorFluencyTutor);
+  --themeColorSecondary: var(--secondaryColor);
+  --dashboardTopColor: var(--brandColorGreen);
+  --dashboardTitleColor: var(--themeColorFluencyTutor);
+  --iconFillColor: var(--th-slate-dark);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--themeColorFluencyTutor);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorGreenHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorGreenActive);
+  --primaryButtonBorderActive: var(--buttonBorderGreenActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderGreen);
+  --primaryButtonBorderHover: var(--buttonBorderGreenHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --secondaryButtonBackgroundColor: var(--secondaryColor);
+  --secondaryButtonBackgroundHoverColor: var(--secondaryColorHover);
+  --secondaryButtonBackgroundActiveColor: var(--secondaryColorActive);
+  --secondaryButtonTextColor: var(--fontColorWhite);
+  --secondaryButtonTextHoverColor: var(--fontColorWhite);
+  --secondaryButtonTextActiveColor: var(--fontColorWhite);
+  --secondaryButtonTextVisitedColor: var(--fontColorWhite);
+  --secondaryButtonBorder: var(--secondaryButtonBorder);
+  --secondaryButtonBorderHover: var(--secondaryButtonBorderColorHover);
+  --secondaryButtonBorderRadius: var(--buttonRoundness);
+  --secondaryButtonIconFillColor: var(--white);
+  --table-hover-item: var(--list-item-light-hover);
+  --settingsTitleColor: var(--themeColorPrimary);
+}
+
+.th-cr {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--primaryColorClaroNavy);
+  --themeColorSecondary: var(--secondaryColor);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorClaroNavy);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorClaroNavyHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorClaroNavyActive);
+  --primaryButtonBorderActive: var(--buttonBorderClaroActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderClaro);
+  --primaryButtonBorderHover: var(--buttonBorderClaroHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --altButtonBackgroundColor: var(--altColor);
+  --altButtonBackgroundHoverColor: var(--altColorHover);
+  --altButtonBackgroundActiveColor: var(--altColorActive);
+  --altButtonTextColor: var(--fontColorWhite);
+  --altButtonTextHoverColor: var(--fontColorWhite);
+  --altButtonTextActiveColor: var(--fontColorWhite);
+  --altButtonTextVisitedColor: var(--fontColorWhite);
+  --altButtonBorder: var(--altButtonBorder);
+  --altButtonBorderHover: var(--altButtonBorderColorHover);
+  --altButtonBorderRadius: var(--buttonRoundness);
+  --altButtonIconFillColor: var(--white);
+  --uniloginBackgroundColor: #F2F9FF;
+  --uniloginWindowBackgroundColor: var(--themeColorPrimary);
+}
+
+.th-wh {
+  background: #F6F6F6;
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--primaryColorClaroNavy);
+  --themeColorSecondary: var(--secondaryColor);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorClaroBlue);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorClaroBlueHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorClaroBlueActive);
+  --primaryButtonBorderActive: var(--buttonBorderClaroActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--primaryColorClaroBlue);
+  --primaryButtonBorderHover: var(--primaryColorClaroBlueHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --altButtonBackgroundColor: var(--altColor);
+  --altButtonBackgroundHoverColor: var(--altColorHover);
+  --altButtonBackgroundActiveColor: var(--altColorActive);
+  --altButtonTextColor: var(--fontColorWhite);
+  --altButtonTextHoverColor: var(--fontColorWhite);
+  --altButtonTextActiveColor: var(--fontColorWhite);
+  --altButtonTextVisitedColor: var(--fontColorWhite);
+  --altButtonBorder: var(--altButtonBorder);
+  --altButtonBorderHover: var(--altButtonBorderColorHover);
+  --altButtonBorderRadius: var(--buttonRoundness);
+  --altButtonIconFillColor: var(--white);
+  --uniloginBackgroundColor: #F2F9FF;
+  --uniloginWindowBackgroundColor: var(--primaryColorClaroNavy);
+}
+
+.th-lds {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--primaryColorLingdys);
+  --themeColorSecondary: var(--secondaryColor);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorLingdys);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorLingdysHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorLingdysActive);
+  --primaryButtonBorderActive: var(--buttonBorderLingdysActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderLingdys);
+  --primaryButtonBorderHover: var(--buttonBorderLingdysHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --altButtonBackgroundColor: var(--altColor);
+  --altButtonBackgroundHoverColor: var(--altColorHover);
+  --altButtonBackgroundActiveColor: var(--altColorActive);
+  --altButtonTextColor: var(--fontColorWhite);
+  --altButtonTextHoverColor: var(--fontColorWhite);
+  --altButtonTextActiveColor: var(--fontColorWhite);
+  --altButtonTextVisitedColor: var(--fontColorWhite);
+  --altButtonBorder: var(--altButtonBorder);
+  --altButtonBorderHover: var(--altButtonBorderColorHover);
+  --altButtonBorderRadius: var(--buttonRoundness);
+  --altButtonIconFillColor: var(--white);
+  --uniloginBackgroundColor: #F2F9FF;
+  --uniloginWindowBackgroundColor: var(--themeColorPrimary);
+}
+
+.th-aw {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--primaryColorClaroNavy);
+  --themeColorSecondary: var(--secondaryColor);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorAppWriter);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorAppWriterHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorAppWriterActive);
+  --primaryButtonBorderActive: var(--buttonBorderAppWriterActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderAppWriter);
+  --primaryButtonBorderHover: var(--buttonBorderAppWriterHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --altButtonBackgroundColor: var(--altColor);
+  --altButtonBackgroundHoverColor: var(--altColorHover);
+  --altButtonBackgroundActiveColor: var(--altColorActive);
+  --altButtonTextColor: var(--fontColorWhite);
+  --altButtonTextHoverColor: var(--fontColorWhite);
+  --altButtonTextActiveColor: var(--fontColorWhite);
+  --altButtonTextVisitedColor: var(--fontColorWhite);
+  --altButtonBorder: var(--altButtonBorder);
+  --altButtonBorderHover: var(--altButtonBorderColorHover);
+  --altButtonBorderRadius: var(--buttonRoundness);
+  --altButtonIconFillColor: var(--white);
+  --uniloginBackgroundColor: #F7F7F7;
+  --uniloginWindowBackgroundColor: var(--primaryColorAppWriter);
+}
+
+.dark-mode {
+  --toolbarBackgroundColor: var(--th-slate-dark);
+  --toolbarButtonBackgroundColor: var(--th-slate-dark);
+  --toolbarButtonBackgroundHoverColor: var(--icon-button-background-hover-color-dark);
+  --toolbarButtonBackgroundActiveColor: var(--icon-button-background-active-color-dark);
+  --toolbarButtonBorderActive: var(--buttonBorderPink);
+  --toolbarIconFill: var(--white);
+  --toolbarIconHoverFill: var(--white);
+  --toolbarIconActiveFill: var(--white);
+  --dashboardHeaderBackgroundColor: var(--th-slate-dark);
+  --dashboardSidebarBorderTopColor: var(--th-slate);
+  --dashboardSidebarBackgroundColor: var(--th-slate-dark);
+  --dashboardContentBackgroundColor: var(--th-slate);
+  --dashboardCardBackgroundColor: var(--th-slate-dark);
+  --dashboardCardBackgroundHoverColor: var(--th-slate-dark-hover600);
+  --dashboardCardBackgroundActiveColor: var(--th-slate-dark-active600);
+  --dashboardCardHighlightColor: var(--brandColorBlue);
+  --dashboardTextColor: var(--th-white);
+  --dashboardTitleTextColor: var(--th-white);
+  --dashboardSubTitleTextColor: var(--th-white);
+  --menuIconFillColor: var(--white);
+  --iconButtonBackgroundDefaultColor: var(--icon-button-background-default-color-dark);
+  --iconButtonBackgroundHoverColor: var(--icon-button-background-hover-color-dark);
+  --iconButtonBackgroundActiveColor: var(--icon-button-background-active-color-dark);
+  --iconButtonBorderColor: 2px solid transparent;
+  --iconFillColor: var(--white);
+  --buttonLinkTextColor: var(--white);
+  --buttonLinkIconColor: var(--white);
+  --buttonNoBackgroundTextColor: var(--white);
+  --buttonNoBackgroundIconColor: var(--white);
+  --buttonNoBackgroundColor: transparent;
+  --buttonNoBackgroundColorHover: var(--icon-button-background-hover-color-dark);
+  --buttonNoBackgroundColorActive: var(--icon-button-background-active-color-dark);
+  --buttonNoBackgroundBorder: 2px solid transparent;
+  --buttonNoBackgroundBorderHover: 2px solid transparent;
+  --buttonNoBackgroundBorderActive: 2px solid transparent;
+  --panelBackgroundColor: var(--th-slate);
+  --panelBackgroundColorLight: var(--th-slate-light);
+  --panelBackgroundColorDark: var(--th-slate-dark);
+  --fontColor: var(--textColorLight);
+  --borderColor: 1px solid var(--th-slate-light);
+  --infoBackgroundColor: var(--notificationDarkModeBackground);
+  --successBackgroundColor: var(--notificationDarkModeBackground);
+  --errorBackgroundColor: var(--notificationDarkModeBackground);
+  --warningBackgroundColor: var(--notificationDarkModeBackground);
+  --infoBorderColor: var(--notificationDarkModeBorder);
+  --successBorderColor: var(--notificationDarkModeBorder);
+  --errorBorderColor: var(--notificationDarkModeBorder);
+  --warningBorderColor: var(--notificationDarkModeBorder);
+  --infoWarningColor: #fff;
+  --successWarningColor: #fff;
+  --errorWarningColor: #fff;
+  --warningWarningColor: #fff;
+  --infoTitleColor: #fff;
+  --successTitleColor: #fff;
+  --errorTitleColor: #fff;
+  --warningTitleColor: #fff;
+  --accordionBackgroundColor: var(--th-slate-dark);
+  --accordionTextColor: #fff;
+  --accordionTextBottomColor: #f5f5f5;
+  --accordionIconColor: var(--toolbarWhite);
+  --accordionBackgroundColorHover: var(--th-slate-dark-hover600);
+  --tableBackgroundColor: var(--th-slate);
+  --tableBackgroundHeaderColor: var(--th-slate-alt);
+  --tableBackgroundAltColor: var(--th-slate-alt);
+  --tableBackgroundHoverColor: var(--th-slate-hover);
+  --tableBorderColor: var(--th-slate-dark);
+  --tableTextColor: #fff;
+  --ListGroupSearchItemColor: var(--th-slate-dark);
+  --ListGroupSearchItemColorHover: var(--th-slate-dark-hover800);
+  --ListGroupSearchItemTextColor: var(--th-white);
+  --ListGroupSearchItemBorderColor:rgba(0, 0, 0, 0.225);
+  --ListGroupSearchItemAsideColor: var(--th-slate-dark);
+  --ListGroupSearchItemAsideTextColor: #fff;
+}
+.dark-mode.th-rw {
+  --toolbarIconActiveFill: var(--white);
+  --toolbarIconToggledHoverFill: var(--brandColorPurple);
+  --toolbarIconToggleFill: var(--brandColorPurple);
+  --toolbarIconToggleHoverFill: var(--brandColorPurple);
+}
+.dark-mode.th-pr {
+  --toolbarButtonBackgroundHoverColor: var(--primaryColorBlue);
+  --toolbarButtonBackgroundActiveColor: var(--primaryColorBlueHover);
+  --toolbarButtonBorderActive: var(--buttonBorderBlueActive);
+  --toolbarIconToggleFill: var(--iconToggleFillOrbitNote);
+  --textColor: var(--textColorLight);
+  --cardIconFillColor: var(--brandColorBlue);
+  --primaryButtonBackgroundColor: var(--primaryColor);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorActive);
+  --primaryButtonBorderActive: var(--primaryButtonBorderActive);
+  --primaryButtonBorder: var(--primaryButtonBorder);
+  --primaryButtonBorderHover: var(--primaryButtonBorderHover);
+  --dashboardTopColor: var(--primaryColorBlue);
+  --dashboardTitleColor: var(--themeColorEquatio);
+  --dashboardPaneBackgroundColor: var(--th-slate-dark);
+  --dashboardPaneBorderColor: var(--th-slate-dark);
+  --dashboardPaneDashedBorderColor: var(--dashboardDashedBorderDark);
+  --listGroupItemBackgroundColor: var(--th-slate-dark);
+  --listGroupItemBackgroundColorHover: var(--th-slate-dark-hover800);
+  --listGroupItemBackgroundColorActive: var(--th-slate-dark-active800);
+  --listGroupTileBackgroundColorActive: var(--th-slate-dark-active800);
+  --list-item-hover: var(--listGroupItemBackgroundColorHover);
+}
+.dark-mode.th-rd {
+  --toolbarIconToggledHoverFill: var(--brandColorBlue);
+  --toolbarIconToggleFill: var(--brandColorBlue);
+  --toolbarIconToggleHoverFill: var(--brandColorBlue);
+  --dashboardTopColor: var(--th-slate);
+  --dashboardCardAuditorColor: var(--primaryColorBlue);
+  --dashboardCardAuditorLabelColor: var(--th-grey);
+  --dashboardCardEditorColor: var(--reachDeckEditorColor);
+  --dashboardCardEditorLabelColor: var(--th-grey);
+  --dashboardCardToolbarColor: var(--primaryColorOrange);
+  --dashboardCardToolbarLabelColor: var(--th-grey);
+  --dashboardCardBorderColor: var(--th-slate-light);
+  --dashboardCardFooterLinkColor: hsl(197, 100%, 50%);
+  --icon-opacity: .9;
+  --cardIconFillColor: var(--th-white);
+  --listGroupItemBackgroundColor: var(--th-slate-dark);
+  --listGroupItemBackgroundColorHover: var(--th-slate-dark-hover800);
+  --listGroupItemBackgroundColorActive: var(--th-slate-dark-active800);
+  --listGroupTileBackgroundColorActive: var(--th-slate-dark-active800);
+  --list-item-hover: var(--listGroupItemBackgroundColorHover);
+}
+.dark-mode {
+  --inputBorder: 1px solid var(--th-slate);
+  --inputTextColor: var( --th-white);
+  --inputBackgroundColor: var(--th-cool-grey-800);
+  --modalHeaderBackgroundColor: var(--th-cool-grey-800);
+  --modalContentBackgroundColor: var(--th-cool-grey-700);
+  --modalContentBorderColorHeader: var(--th-cool-grey-700);
+  --modalContentBorderColorFooter: var(--th-cool-grey-700);
+  --modalTextColor: var(--th-white);
+  --settingsDialogBackgroundColor: var(--th-cool-grey-700);
+  --settingsDialogMenuBackgroundColor: var(--th-cool-grey-800);
+  --settingsDialogItemSelectedBackgroundColor: var(--th-slate-dark);
+  --settingsDialogItemBackgroundColorHover: var(--th-cool-grey-700);
+  --settingsDialogItemBackgroundColorActive: var(--th-cool-grey-600);
+  --settingsTitleColor: #fff;
+  --selectBorder: 1px solid var( --slate-light);
+  --selectBackgroundColor: var( --th-slate);
+  --selectBackgroundColorHover: rgba(255, 255, 255, 0.146);
+  --selectBackgroundColorActive: rgba(255, 255, 255, 0.221);
+}
+.dark-mode .gw-select {
+  background: transparent url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='22px' width='22px' viewBox='0 0 18 18'>%3Cpath d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z' fill='%23fff'/%3E%3Cpath d='M0-.75h24v24H0z' fill='none'/%3E</svg>") no-repeat;
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.9em top 40%, 0 0;
+  background-color: #434e65 transparent;
+  border: 1px solid #fff;
+  background-size: 1.3em auto, 100%;
+  color: #fff;
+}
+.dark-mode .gw-select > option {
+  background: #434e65;
+}
+.dark-mode {
+  --listGroupBackgroundColor: transparent;
+  --listGroupItemTextColor: var(--th-white);
+  --listGroupItemBackgroundColor: var(--th-cool-grey-800);
+  --listGroupItemActionsBackgroundColor: var(--th-cool-grey-850);
+  --listGroupItemBackgroundColorHover: var(--th-cool-grey-700);
+  --listGroupItemBackgroundColorActive: var(--th-cool-grey-600);
+  --listGroupItemIconColor: var(--th-white);
+  --listGroupItemArrowColor: var(--th-cool-grey-800);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root .day.dark-scheme {
+    background: #333;
+    color: white;
+  }
+  :root .night.dark-scheme {
+    background: black;
+    color: #ddd;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root .day.light-scheme {
+    background: white;
+    color: #555;
+  }
+  :root .night.light-scheme {
+    background: #eee;
+    color: black;
+  }
+}.th-rw {
+  --listGroupItemBackgroundColorActive: white;
+  --squareButtonBackgroundHover: #f5f5f5;
+  --squareButtonIconFillColor: rgb(36, 42, 56);
+  --squareButtonActiveBackGroundColor: #EFEFEF;
+  --squareButtonIconTickColor: #506C7E ;
+}
+
+.dark-mode {
+  --listGroupItemBackgroundColorFocus: rgb(63, 79, 90);
+  --modalTextColorFocus: white;
+  --listGroupItemBackgroundColorActive: rgb(36, 45, 51);
+  --modalTextColorActive: white;
+  --squareButtonBackgroundHover: rgb(56, 71, 81);
+  --squareButtonIconFillColor: white;
+  --squareButtonActiveBackGroundColor: #24323E;
+  --squareButtonIconTickColor: #FFF ;
+}
+
+.dark-mode.th-rw {
+  --toolbarIconButtonFillColor: var(--white);
+}
+
+.gw-toolbar--s1 {
+  --fontSize: 5px;
+}
+
+.gw-toolbar--s2 {
+  --fontSize: 10px;
+}
+
+.gw-toolbar--s3 {
+  --fontSize: 15px;
+}
+
+.gw-toolbar--s4 {
+  --fontSize: 20px;
+}
+
+.gw-listitem-fontsize-s10 {
+  --gw-listitem-fontsize: 10px !important;
+}
+
+.gw-listitem-fontsize-s11 {
+  --gw-listitem-fontsize: 11px !important;
+}
+
+.gw-listitem-fontsize-s12 {
+  --gw-listitem-fontsize: 12px !important;
+}
+
+.gw-listitem-fontsize-s13 {
+  --gw-listitem-fontsize: 13px !important;
+}
+
+.gw-listitem-fontsize-s14 {
+  --gw-listitem-fontsize: 14px !important;
+}
+
+.gw-listitem-fontsize-s15 {
+  --gw-listitem-fontsize: 15px !important;
+}
+
+.gw-listitem-fontsize-s16 {
+  --gw-listitem-fontsize: 16px !important;
+}
+
+.gw-listitem-fontsize-s17 {
+  --gw-listitem-fontsize: 17px !important;
+}
+
+.gw-listitem-fontsize-s18 {
+  --gw-listitem-fontsize: 18px !important;
+}
+
+.gw-listitem-fontsize-s19 {
+  --gw-listitem-fontsize: 19px !important;
+}
+
+.gw-listitem-fontsize-s20 {
+  --gw-listitem-fontsize: 20px !important;
+}
+
+.gw-listitem-fontsize-s21 {
+  --gw-listitem-fontsize: 21px !important;
+}
+
+.gw-listitem-fontsize-s22 {
+  --gw-listitem-fontsize: 22px !important;
+}
+
+.gw-listitem-fontsize-s23 {
+  --gw-listitem-fontsize: 23px !important;
+}
+
+.gw-listitem-fontsize-s24 {
+  --gw-listitem-fontsize: 24px !important;
+}
+
+:root {
+  --fontSize: 10px;
+}
+
+.gw-info {
+  --notification-bg-color: var(--infoBackgroundColor);
+  --notification-border-color: var(--infoBorderColor);
+  --notification-color: var(--infoTitleColor);
+}
+
+.gw-success {
+  --notification-bg-color: var(--successBackgroundColor);
+  --notification-border-color: var(--successBorderColor);
+  --notification-color: var(--successTitleColor);
+}
+
+.gw-error {
+  --notification-bg-color: var(--errorBackgroundColor);
+  --notification-border-color: var(--errorBorderColor);
+  --notification-color: var(--errorTitleColor);
+}
+
+.gw-warning {
+  --notification-bg-color: var(--warningBackgroundColor);
+  --notification-border-color: var(--warningBorderColor);
+  --notification-color: var(--warningTitleColor);
+}
+
+.th-rw {
+  --toolbarIconToggleFill: var(--primaryColorPurple);
+  --toolbarIconToggleHoverFill: var(--primaryColorPurple);
+}
+
+.gw-toolbar--undocked {
+  --toolbarWidth: fit-content;
+  --toolbarDisplay: block;
+  --toolbarPosition: fixed;
+}
+
+.gw-ul--small {
+  --liWidth: 150px;
+}
+
+.gw-ul--medium {
+  --liWidth: 300px;
+}
+
+.gw-ul--large {
+  --liWidth: 450px;
+}
+
+gw-radio label.gw-radio__input-label b {
+  font-weight: var(--label-bold-font-weight, bold);
+  font-size: var(--label-bold-font-size, 1.4em);
+  font-family: var(--label-bold-font-family, "Open Sans", sans-serif);
+  color: var(--label-bold-color, inherit);
+}
+
+gw-radio label.gw-radio__input-label u {
+  text-decoration: underline;
+  font-size: 1em; /* Inherit from parent label (1.2em) */
+  font-weight: normal;
+}</style><style></style><script id="ethicaladsjs" type="text/javascript" async="true" src="./Electronics and Motion Components - Game Manual 0_files/ethicalads.min.js"></script><style>@layer defaults{:root{--ea-container-md: 720px;--ea-container-lg: 960px;--ea-container-xl: 1040px;--ea-image-width: 120px;--ea-image-width-xs: 44px;--ea-image-placement-width: 180px;--ea-image-placement-width-horizontal: 320px;--ea-image-logo-width: 80px;--ea-fixedheader-height: 50px;--ea-font-size: 14px;--ea-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;--ea-bgcolor: rgba(0, 0, 0, 0.03);--ea-bgcolor-dark: rgba(255, 255, 255, 0.05);--ea-font-size-text-only-header: 18px;--ea-stylefixed-bgcolor: rgb(220, 220, 220);--ea-stylefixed-bgcolor-dark: rgb(80, 80, 80);--ea-color-link: rgb(80, 80, 80);--ea-color-link-dark: rgb(220, 220, 220);--ea-color-link-active: rgb(54.5, 54.5, 54.5);--ea-color-link-dark-active: rgb(245.5, 245.5, 245.5);--ea-color-link-callout: rgb(105.5, 105.5, 105.5);--ea-color-link-callout-dark: rgb(194.5, 194.5, 194.5);--ea-color-link-callout-active: #505050;--ea-color-link-callout-dark-active: gainsboro;--ea-color-link-bold: #088cdb;--ea-color-link-bold-dark: rgb(80.3788546256, 185.6299559471, 248.6211453744);--ea-color-domain: rgb(156.5, 156.5, 156.5);--ea-color-domain-dark: rgb(143.5, 143.5, 143.5);--ea-image-logo-filter: grayscale(1);--ea-image-logo-filter-dark: grayscale(1) invert(1)}}[data-ea-publisher].loaded{font-size:var(--ea-font-size);font-family:var(--ea-font-family);font-weight:normal;font-style:normal;letter-spacing:0px;vertical-align:baseline;line-height:1.3em}[data-ea-publisher].loaded a{text-decoration:none}[data-ea-publisher].loaded .ea-pixel{display:none}[data-ea-publisher].loaded .ea-content{margin:1em 1em .5em 1em;padding:1em;background:var(--ea-bgcolor);color:var(--ea-color-link);color:var(--ea-color-link)}[data-ea-publisher].loaded .ea-content a:link{color:var(--ea-color-link)}[data-ea-publisher].loaded .ea-content a:visited{color:var(--ea-color-link)}[data-ea-publisher].loaded .ea-content a:hover{color:var(--ea-color-link-active)}[data-ea-publisher].loaded .ea-content a:active{color:var(--ea-color-link-active)}[data-ea-publisher].loaded .ea-content a strong,[data-ea-publisher].loaded .ea-content a b{color:var(--ea-color-link-bold)}[data-ea-publisher].loaded .ea-callout{color:var(--ea-color-link-callout)}[data-ea-publisher].loaded .ea-callout a{font-size:.8em}[data-ea-publisher].loaded .ea-callout a:link{color:var(--ea-color-link-callout)}[data-ea-publisher].loaded .ea-callout a:visited{color:var(--ea-color-link-callout)}[data-ea-publisher].loaded .ea-callout a:hover{color:var(--ea-color-link-callout-active)}[data-ea-publisher].loaded .ea-callout a:active{color:var(--ea-color-link-callout-active)}[data-ea-publisher].loaded .ea-callout a strong,[data-ea-publisher].loaded .ea-callout a b{color:var(--ea-color-link-callout)}[data-ea-publisher].loaded .ea-domain{margin-top:.75em;font-size:.8em;text-align:center;color:var(--ea-color-domain)}[data-ea-publisher].loaded.dark{--ea-bgcolor: var(--ea-bgcolor-dark);--ea-stylefixed-bgcolor: var(--ea-stylefixed-bgcolor-dark);--ea-color-link: var(--ea-color-link-dark);--ea-color-link-active: var(--ea-color-link-dark-active);--ea-color-link-callout: var(--ea-color-link-callout-dark);--ea-color-link-callout-active: var(--ea-color-link-callout-dark-active);--ea-color-link-bold: var(--ea-color-link-bold-dark);--ea-color-domain: var(--ea-color-domain-dark);--ea-image-logo-filter: var(--ea-image-logo-filter-dark)}@media(prefers-color-scheme: dark){[data-ea-publisher].loaded.adaptive{--ea-bgcolor: var(--ea-bgcolor-dark);--ea-stylefixed-bgcolor: var(--ea-stylefixed-bgcolor-dark);--ea-color-link: var(--ea-color-link-dark);--ea-color-link-active: var(--ea-color-link-dark-active);--ea-color-link-callout: var(--ea-color-link-callout-dark);--ea-color-link-callout-active: var(--ea-color-link-callout-dark-active);--ea-color-link-bold: var(--ea-color-link-bold-dark);--ea-color-domain: var(--ea-color-domain-dark);--ea-image-logo-filter: var(--ea-image-logo-filter-dark)}}html.dark [data-ea-publisher].loaded.adaptive-css,body.dark [data-ea-publisher].loaded.adaptive-css,html[data-theme=dark] [data-ea-publisher].loaded.adaptive-css,body[data-theme=dark] [data-ea-publisher].loaded.adaptive-css,html[data-bs-theme=dark] [data-ea-publisher].loaded.adaptive-css,body[data-bs-theme=dark] [data-ea-publisher].loaded.adaptive-css{--ea-bgcolor: var(--ea-bgcolor-dark);--ea-stylefixed-bgcolor: var(--ea-stylefixed-bgcolor-dark);--ea-color-link: var(--ea-color-link-dark);--ea-color-link-active: var(--ea-color-link-dark-active);--ea-color-link-callout: var(--ea-color-link-callout-dark);--ea-color-link-callout-active: var(--ea-color-link-callout-dark-active);--ea-color-link-bold: var(--ea-color-link-bold-dark);--ea-color-domain: var(--ea-color-domain-dark);--ea-image-logo-filter: var(--ea-image-logo-filter-dark)}@media(prefers-color-scheme: dark){html.auto [data-ea-publisher].loaded.adaptive-css,body.auto [data-ea-publisher].loaded.adaptive-css,html.system [data-ea-publisher].loaded.adaptive-css,body.system [data-ea-publisher].loaded.adaptive-css,html[data-theme=auto] [data-ea-publisher].loaded.adaptive-css,body[data-theme=auto] [data-ea-publisher].loaded.adaptive-css,html[data-bs-theme=auto] [data-ea-publisher].loaded.adaptive-css,body[data-bs-theme=auto] [data-ea-publisher].loaded.adaptive-css{--ea-bgcolor: var(--ea-bgcolor-dark);--ea-stylefixed-bgcolor: var(--ea-stylefixed-bgcolor-dark);--ea-color-link: var(--ea-color-link-dark);--ea-color-link-active: var(--ea-color-link-dark-active);--ea-color-link-callout: var(--ea-color-link-callout-dark);--ea-color-link-callout-active: var(--ea-color-link-callout-dark-active);--ea-color-link-bold: var(--ea-color-link-bold-dark);--ea-color-domain: var(--ea-color-domain-dark);--ea-image-logo-filter: var(--ea-image-logo-filter-dark)}}[data-ea-publisher].loaded .ea-content{border:0px;border-radius:3px;box-shadow:0px 2px 3px rgba(0,0,0,.15)}[data-ea-publisher].loaded.raised .ea-content{border:0px;border-radius:3px;box-shadow:0px 2px 3px rgba(0,0,0,.15)}[data-ea-publisher].loaded.bordered .ea-content{border:1px solid rgba(0,0,0,.04);border-radius:3px;box-shadow:none}[data-ea-publisher].loaded.bordered.dark .ea-content{border:1px solid hsla(0,0%,100%,.07)}@media(prefers-color-scheme: dark){[data-ea-publisher].loaded.bordered.adaptive .ea-content{border:1px solid hsla(0,0%,100%,.07)}}[data-ea-publisher].loaded.flat .ea-content{border:0px;border-radius:3px;box-shadow:none}[data-ea-type=image].loaded,[data-ea-publisher]:not([data-ea-type]).loaded,.ea-type-image{display:inline-block}[data-ea-type=image].loaded .ea-content,[data-ea-publisher]:not([data-ea-type]).loaded .ea-content,.ea-type-image .ea-content{max-width:var(--ea-image-placement-width);overflow:auto;text-align:center}[data-ea-type=image].loaded .ea-content>a>img,[data-ea-publisher]:not([data-ea-type]).loaded .ea-content>a>img,.ea-type-image .ea-content>a>img{width:var(--ea-image-width);height:auto;display:inline-block}[data-ea-type=image].loaded .ea-content>.ea-text,[data-ea-publisher]:not([data-ea-type]).loaded .ea-content>.ea-text,.ea-type-image .ea-content>.ea-text{margin-top:1em;font-size:1em;text-align:center}[data-ea-type=image].loaded .ea-callout,[data-ea-publisher]:not([data-ea-type]).loaded .ea-callout,.ea-type-image .ea-callout{max-width:var(--ea-image-placement-width);margin:0em 1em 1em 1em;padding-left:1em;padding-right:1em;font-style:italic;text-align:right}[data-ea-type=image].loaded.horizontal .ea-content,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-content,.ea-type-image.horizontal .ea-content{max-width:var(--ea-image-placement-width-horizontal)}[data-ea-type=image].loaded.horizontal .ea-content>a>img,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-content>a>img,.ea-type-image.horizontal .ea-content>a>img{float:left;margin-right:1em}[data-ea-type=image].loaded.horizontal .ea-content .ea-text,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-content .ea-text,.ea-type-image.horizontal .ea-content .ea-text{margin-top:0em;text-align:left;overflow:auto}[data-ea-type=image].loaded.horizontal .ea-callout,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-callout,.ea-type-image.horizontal .ea-callout{max-width:var(--ea-image-placement-width-horizontal);text-align:right}[data-ea-type=text].loaded,.ea-type-text{font-size:var(--ea-font-size)}[data-ea-type=text].loaded .ea-content,.ea-type-text .ea-content{text-align:left}[data-ea-type=text].loaded .ea-callout,.ea-type-text .ea-callout{margin:.5em 1em 1em 1em;padding-left:1em;padding-right:1em;text-align:right;font-style:italic}[data-ea-type=text-only-large-v1].loaded,.ea-type-text-large{font-size:var(--ea-font-size);margin:1em 0}[data-ea-type=text-only-large-v1].loaded .ea-logo,.ea-type-text-large .ea-logo{float:right;margin-left:1em;margin-bottom:1em}[data-ea-type=text-only-large-v1].loaded img,.ea-type-text-large img{width:var(--ea-image-logo-width);height:auto;filter:var(--ea-image-logo-filter)}[data-ea-type=text-only-large-v1].loaded .ea-headline,.ea-type-text-large .ea-headline{font-size:var(--ea-font-size-text-only-header);font-weight:bold;margin-bottom:.5em;text-align:left}[data-ea-type=text-only-large-v1].loaded .ea-body,.ea-type-text-large .ea-body{margin-bottom:.5em;text-align:left}[data-ea-type=text-only-large-v1].loaded .ea-cta,.ea-type-text-large .ea-cta{border-radius:.5em;border:1px solid var(--ea-color-link);color:var(--ea-color-link);display:inline-block;font-weight:bold;padding:.25em .5em}[data-ea-type=text-only-large-v1].loaded .ea-cta::after,.ea-type-text-large .ea-cta::after{content:" ↗"}[data-ea-type=text-only-large-v1].loaded .ea-callout,.ea-type-text-large .ea-callout{margin:.5em 1em 1em 1em;padding-left:1em;padding-right:1em;text-align:right;font-style:italic}[data-ea-style=stickybox].loaded{position:fixed;bottom:20px;right:20px;z-index:100}[data-ea-style=stickybox].loaded .ea-type-image .ea-stickybox-hide{cursor:pointer;position:absolute;top:.75em;right:.75em;background-color:#fefefe;border:1px solid #088cdb;border-radius:50%;color:#088cdb;font-size:1em;text-align:center;height:1.5em;width:1.5em;line-height:1.4}[data-ea-style=stickybox].loaded .ea-type-text{display:none !important}@media(max-width: 1300px){[data-ea-style=stickybox].loaded{position:static;bottom:0;right:0;margin:auto;text-align:center}[data-ea-style=stickybox].loaded .ea-stickybox-hide{display:none}}@media(min-width: 1301px){[data-ea-style=stickybox].loaded .ea-type-image .ea-content{background:var(--ea-stylefixed-bgcolor)}}[data-ea-style=fixedfooter].loaded{position:fixed;bottom:0;left:0;z-index:200;width:100%;max-width:100%}[data-ea-style=fixedfooter].loaded .ea-type-text{width:100%;max-width:100%;display:flex;z-index:200;background:var(--ea-stylefixed-bgcolor)}[data-ea-style=fixedfooter].loaded .ea-type-text .ea-content{border:0px;border-radius:3px;box-shadow:none}[data-ea-style=fixedfooter].loaded .ea-type-text .ea-content{background-color:inherit;max-width:100%;margin:0;padding:1em;flex:auto}[data-ea-style=fixedfooter].loaded .ea-type-text .ea-callout{max-width:100%;margin:0;padding:1em;flex:initial}@media(max-width: 576px){[data-ea-style=fixedfooter].loaded .ea-type-text .ea-callout{display:none}}[data-ea-style=fixedfooter].loaded .ea-type-text .ea-fixedfooter-hide{cursor:pointer;color:var(--ea-color-link);padding:1em;flex:initial;margin:auto 0}[data-ea-style=fixedfooter].loaded .ea-type-text .ea-fixedfooter-hide span{padding:.25em;font-size:.8em;font-weight:bold;border:.15em solid var(--ea-color-link);border-radius:.5em;white-space:nowrap}[data-ea-style=fixedfooter].loaded .ea-type-image{display:none !important}[data-ea-style=fixedheader]{height:var(--ea-fixedheader-height);width:100%;max-width:100%;background:var(--ea-stylefixed-bgcolor);border-bottom:1px solid var(--ea-background-color)}@media(max-width: 768px){[data-ea-style=fixedheader]{display:none !important}}[data-ea-style=fixedheader].loaded .ea-type-image,[data-ea-style=fixedheader].loaded .ea-type-text{width:var(--ea-container-xl);margin:0 auto;display:flex}@media(max-width: 992px){[data-ea-style=fixedheader].loaded .ea-type-image,[data-ea-style=fixedheader].loaded .ea-type-text{width:var(--ea-container-md)}}@media(max-width: 1200px){[data-ea-style=fixedheader].loaded .ea-type-image,[data-ea-style=fixedheader].loaded .ea-type-text{width:var(--ea-container-lg)}}[data-ea-style=fixedheader].loaded .ea-type-image .ea-content,[data-ea-style=fixedheader].loaded .ea-type-text .ea-content{border:0px;border-radius:3px;box-shadow:none}[data-ea-style=fixedheader].loaded .ea-type-image .ea-content,[data-ea-style=fixedheader].loaded .ea-type-text .ea-content{background-color:inherit;max-width:100%;margin:0;padding:0;flex:auto;display:flex}[data-ea-style=fixedheader].loaded .ea-type-image .ea-content .ea-text,[data-ea-style=fixedheader].loaded .ea-type-text .ea-content .ea-text{margin-top:0;padding:1em;flex:auto;text-align:left}[data-ea-style=fixedheader].loaded .ea-type-image .ea-callout,[data-ea-style=fixedheader].loaded .ea-type-text .ea-callout{max-width:100%;margin:0;padding:1em;flex:initial}@media(max-width: 576px){[data-ea-style=fixedheader].loaded .ea-type-image .ea-callout,[data-ea-style=fixedheader].loaded .ea-type-text .ea-callout{display:none}}[data-ea-style=fixedheader].loaded .ea-type-image img{width:var(--ea-image-width-xs) !important;margin:.6em}[data-ea-style=fixedheader].loaded .ea-type-image .ea-domain{display:none}</style><script src="./Electronics and Motion Components - Game Manual 0_files/saved_resource" type="text/javascript" async=""></script></head>
+  <body data-theme="auto" data-new-gr-c-s-check-loaded="14.1275.0" data-gr-ext-installed="">
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"></path>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"></path>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"></line>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"></line>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"></line>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"></line>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"></line>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"></line>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"></line>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"></line>
+      <circle cx="14.5" cy="9.55" r="3.6"></circle>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"></path>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"></line>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"></line>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"></line>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"></line>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"></line>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"></line>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"></line>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"></line>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"></circle>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
+      <path d="M13.5 6.5l4 4"></path>
+      <path d="M20 21l2 -2l-2 -2"></path>
+      <path d="M17 17l-2 2l2 2"></path>
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+      <path d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008"></path>
+      <path d="M20 21l2 -2l-2 -2"></path>
+      <path d="M17 17l-2 2l2 2"></path>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="https://gm0.org/en/latest/docs/power-and-electronics/index.html#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header scrolled">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="https://gm0.org/en/latest/index.html"><div class="brand">Game Manual 0</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer" style="padding-bottom: 47.2031px;">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="https://gm0.org/en/latest/index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="./Electronics and Motion Components - Game Manual 0_files/gm0-logo.svg" alt="Light Logo">
+    <img class="sidebar-logo only-dark" src="./Electronics and Motion Components - Game Manual 0_files/gm0-logo_white.svg" alt="Dark Logo">
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="https://gm0.org/en/latest/search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Game Manual 0 Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="https://gm0.org/en/latest/docs/mission-statement.html">Mission Statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://gm0.org/en/latest/docs/start-here.html">Start Here</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://gm0.org/en/latest/docs/know-your-lingo.html">Know Your Lingo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/being-a-team/index.html">Being a Team</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Being a Team</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/being-a-team/starting-a-team.html">Starting a Team</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/being-a-team/team-organization.html">Team Organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/being-a-team/collaboration-and-efficiency.html">Collaboration and Efficiency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/being-a-team/outreach-basics.html">Outreach Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/being-a-team/pitching-your-team.html">Pitching Your Team</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/being-a-team/how-to-ask-effective-questions.html">How to Ask Effective Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/design-skills/index.html">Design Skills</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Design Skills</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/design-skills/engineering-design-process.html">Engineering Design Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/design-skills/design-strategy.html">Design Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/design-skills/cad.html">Computer-aided design (CAD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/design-skills/cad-tutorials.html">CAD Tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/design-skills/design-glossary.html">Design Glossary</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/hardware-components/index.html">Hardware Components</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Hardware Components</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/hardware-components/kit-and-hardware-guide/index.html">Kit and Hardware Guide</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Kit and Hardware Guide</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/hardware-components/kit-and-hardware-guide/gobilda.html">goBILDA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/hardware-components/kit-and-hardware-guide/rev-robotics.html">REV Robotics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/hardware-components/kit-and-hardware-guide/tetrix.html">TETRIX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/hardware-components/kit-and-hardware-guide/actobotics.html">Actobotics (Discontinued)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/hardware-components/kit-and-hardware-guide/custom.html">Custom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/hardware-components/kit-and-hardware-guide/kit-glossary.html">Kit Glossary</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/hardware-components/fastener-guide.html">Fastener Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/hardware-components/tools-list.html">Tools List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/hardware-components/tips-and-tricks.html">Tips and Tricks</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/custom-manufacturing/index.html">Custom Manufacturing</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Custom Manufacturing</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/custom-manufacturing/materials-guide.html">Materials Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/custom-manufacturing/3d-printing.html">3D Printing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/custom-manufacturing/machining.html">Machining</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/custom-manufacturing/laser-cutting.html">Laser Cutting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/custom-manufacturing/manufacturing-glossary.html">Manufacturing Glossary</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/index.html">Common Mechanisms</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Common Mechanisms</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/design-tradeoffs.html">Design Tradeoffs</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/drivetrains/index.html">Drivetrains</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Drivetrains</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/drivetrains/tank.html">Tank (Skid-Steer) Drivetrains</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/drivetrains/holonomic.html">Holonomic Drivetrains</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/drivetrains/drivetrain-gallery.html">Sample Drivetrains</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/power-transmission/index.html">Power Transmission</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Power Transmission</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/power-transmission/motion-mounting.html">Motion Mounting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/power-transmission/shaft-retention.html">Shaft Retention</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/power-transmission/direct-drive.html">Direct Drive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/power-transmission/gears.html">Gears</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/power-transmission/chain.html">Roller Chain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/power-transmission/belt.html">Timing Belt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/power-transmission/power-transmission-glossary.html">Power Transmission Glossary</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/linear-motion-guide/index.html">Linear Motion Guide</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of Linear Motion Guide</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/linear-motion-guide/drawer-slides.html">Drawer Slides</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/linear-motion-guide/extrusion-slides.html">Extrusion Slides</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/linear-motion-guide/linear-bearing-slides.html">Linear Bearing Slides</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/linear-motion-guide/custom.html">Custom Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/linear-motion-guide/lead-screws.html">Lead Screws</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/linear-motion-guide/rack-and-pinion.html">Rack and Pinion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/linear-motion-guide/rigging.html">Rigging</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/arms.html">Arms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/linkages.html">Linkages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/passive-intake-claw.html">Passive Intake/Claw</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/active-intake/index.html">Active Intake</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of Active Intake</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/active-intake/principles-of-an-intake.html">Principles of an Intake</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/active-intake/types-of-intakes.html">Types of Intake</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/transfers/index.html">Transfers</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of Transfers</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/transfers/transfer-design.html">Transfer Design Fundamentals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/transfers/transfer-types.html">Types of Transfers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/dead-wheels.html">Dead Wheels</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/turrets/index.html">Turrets</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of Turrets</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/turrets/full-turret.html">Full Turrets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/common-mechanisms/turrets/mini-turret.html">Mini Turrets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/index.html#">Electronics and Motion Components</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle navigation of Electronics and Motion Components</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/wiring.html">Wiring Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/connectors-and-wires.html">Connectors and Wires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/control-system.html">Control Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/driver-station-guide.html">Driver Station Guide</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/motor-guide/index.html">Motor Guide</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle navigation of Motor Guide</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/motor-guide/choosing-motor.html">Choosing a Motor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/motor-guide/gearbox-anatomy.html">Gearbox Internals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/motor-guide/wiring-mounting-motors.html">Motor Wiring And Mounting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/motor-guide/motor-power.html">Motor Power</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/motor-guide/motor-glossary.html">Motor Glossary</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/servo-guide/index.html">Servo Guide</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle navigation of Servo Guide</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/servo-guide/choosing-servo.html">Choosing a Servo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/servo-guide/usage-tips.html">Servo Usage Tips</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/sensor-glossary.html">Sensor Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/tips-and-tricks.html">Tips and Tricks</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/index.html">Software</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle navigation of Software</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/getting-started/index.html">Getting Started</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" role="switch" type="checkbox"><label for="toctree-checkbox-17"><div class="visually-hidden">Toggle navigation of Getting Started</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/getting-started/fundamental-concepts.html">Fundamental Concepts of Programming</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/getting-started/options-for-programming.html">Options for Programming</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/getting-started/linear-opmode-vs-opmode.html">LinearOpMode vs OpMode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/getting-started/common-hardware-components.html">Reading and Writing to Hardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/getting-started/using-android-studio.html">Using Android Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/getting-started/common-issues.html">Common Issues</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/tutorials/index.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle navigation of Tutorials</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/tutorials/mecanum-drive.html">Mecanum TeleOp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/tutorials/gamepad.html">Gamepad Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/tutorials/using-telemetry.html">Using Telemetry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/tutorials/encoders.html">Encoders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/tutorials/bulk-reads.html">Bulk Reads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/tutorials/vision.html">Computer Vision</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/concepts/index.html">Programming Concepts</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle navigation of Programming Concepts</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/concepts/control-loops.html">Control Loops</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/concepts/finite-state-machines.html">Finite State Machines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/concepts/kinematics.html">Kinematics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/concepts/odometry.html">Odometry</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/adv-control-system/index.html">Advanced Control System</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" role="switch" type="checkbox"><label for="toctree-checkbox-20"><div class="visually-hidden">Toggle navigation of Advanced Control System</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/adv-control-system/control-system-internals.html">Control System Electronics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/adv-control-system/sdk-communication.html">SDK Communication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/adv-control-system/sdk-motors.html">SDK Motors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/adv-control-system/sdk-servos.html">SDK Servos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/adv-control-system/sdk-sensors.html">SDK Sensors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/adv-control-system/lynx-module.html">Lynx Module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/software/software-glossary.html">Software Glossary</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/awards/index.html">Awards</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" role="switch" type="checkbox"><label for="toctree-checkbox-21"><div class="visually-hidden">Toggle navigation of Awards</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/awards/award-types.html">Types of Awards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/awards/portfolio.html">Engineering Portfolio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/awards/judging-presentation.html">The Judging Process and Presentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/awards/notebook.html">Notebook Designs and Decisions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://gm0.org/en/latest/docs/useful-resources.html">Useful Resources</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/appendix/index.html">Appendix</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" role="switch" type="checkbox"><label for="toctree-checkbox-22"><div class="visually-hidden">Toggle navigation of Appendix</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/appendix/gallery.html">Gallery Of Robot Designs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/appendix/vendor-list.html">Vendor List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/appendix/vendor-guide.html">Vendor Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/appendix/license.html">License</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://gm0.org/en/latest/docs/contributing/index.html">Contributor’s Guide</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" role="switch" type="checkbox"><label for="toctree-checkbox-23"><div class="visually-hidden">Toggle navigation of Contributor’s Guide</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/contributing/style-guide.html">Style Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/contributing/methods-of-contributing.html">Methods of Contributing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://gm0.org/en/latest/docs/contributing/contributors.html">Contributors</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main" style="padding-bottom: 47.2031px;">
+    <div class="content">
+      <div class="article-container">
+        <a href="https://gm0.org/en/latest/docs/power-and-electronics/index.html#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="https://gm0.org/en/latest/_sources/docs/power-and-electronics/index.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="electronics-and-motion-components">
+<h1>Electronics and Motion Components<a class="headerlink" href="https://gm0.org/en/latest/docs/power-and-electronics/index.html#electronics-and-motion-components" title="Link to this heading">¶</a></h1>
+<p>This chapter contains information on electric power and electronics of the robot, including information on wiring, batteries, motors, and control system.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/wiring.html">Wiring Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/connectors-and-wires.html">Connectors and Wires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/control-system.html">Control Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/driver-station-guide.html">Driver Station Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/motor-guide/index.html">Motor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/servo-guide/index.html">Servo Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/sensor-glossary.html">Sensor Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/tips-and-tricks.html">Tips and Tricks</a></li>
+</ul>
+</div>
+<section id="glossary">
+<h2>Glossary<a class="headerlink" href="https://gm0.org/en/latest/docs/power-and-electronics/index.html#glossary" title="Link to this heading">¶</a></h2>
+<dl class="glossary">
+<dt id="term-Gauge">Gauge<a class="headerlink" href="https://gm0.org/en/latest/docs/power-and-electronics/index.html#term-Gauge" title="Link to this term">¶</a></dt><dd><p>Wire gauge refers to the diameter of wire. AWG stands for American Wire Gauge, the general system used in the US. The larger the gauge number, the smaller the wire diameter. Generally, <a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/servo-guide/index.html#term-Servo"><span class="xref std std-term">servo</span></a> wires are 22 AWG and motor wires are 18 AWG.</p>
+</dd>
+<dt id="term-Grounding-Strap">Grounding Strap<a class="headerlink" href="https://gm0.org/en/latest/docs/power-and-electronics/index.html#term-Grounding-Strap" title="Link to this term">¶</a></dt><dd><p>The REV Grounding Strap is used to ground the metal frame of the robot to the <a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/connectors-and-wires.html#term-XT30"><span class="xref std std-term">XT30</span></a> port of the Expansion Hub. It is currently the only legal way to ground your robot.</p>
+<a class="reference internal image-reference" href="./Electronics and Motion Components - Game Manual 0_files/grounding-strap.png"><img alt="A REV Robotics grounding strap" class="align-center" src="./Electronics and Motion Components - Game Manual 0_files/grounding-strap.png" style="width: 200px;"></a>
+</dd>
+<dt id="term-USB-Retention-Mount">USB Retention Mount<a class="headerlink" href="https://gm0.org/en/latest/docs/power-and-electronics/index.html#term-USB-Retention-Mount" title="Link to this term">¶</a></dt><dd><p>The USB Retention Mount, sold by REV, is a plastic part affixed to the Expansion Hub that relieves stress on the USB Mini port. This is especially important because if the USB cable is loose or disconnected, the robot phone cannot communicate with the Expansion Hub, causing a disconnect.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For teams using an expansion hub, it is highly recommended for teams to purchase the USB retention mount.</p>
+</div>
+<a class="reference internal image-reference" href="./Electronics and Motion Components - Game Manual 0_files/usb-retention-mount.png"><img alt="A USB retention mount attached to a REV Expansion Hub" class="align-center" src="./Electronics and Motion Components - Game Manual 0_files/usb-retention-mount.png" style="width: 200px;"></a>
+</dd>
+</dl>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="https://gm0.org/en/latest/docs/power-and-electronics/wiring.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Wiring Guide</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="https://gm0.org/en/latest/docs/common-mechanisms/turrets/mini-turret.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Mini Turrets</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright © Game Manual 0 Contributors |  Hosting Graciously Provided By //Copperforge
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me/">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/index.html#">Electronics and Motion Components</a><ul>
+<li><a class="reference internal" href="https://gm0.org/en/latest/docs/power-and-electronics/index.html#glossary">Glossary</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="./Electronics and Motion Components - Game Manual 0_files/documentation_options.js"></script>
+    <script src="./Electronics and Motion Components - Game Manual 0_files/doctools.js"></script>
+    <script src="./Electronics and Motion Components - Game Manual 0_files/sphinx_highlight.js"></script>
+    <script src="./Electronics and Motion Components - Game Manual 0_files/furo.js"></script>
+    <script src="./Electronics and Motion Components - Game Manual 0_files/design-tabs.js"></script>
+    
+<readthedocs-flyout><template shadowrootmode="open"><!---->
+      <div class=" floating container bottom-right ">
+        <!--?lit$141501518$-->
+      <header>
+        <img class="logo" alt="Read the Docs" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmc6c3ZnCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZyIKICAgeD0iMHB4IgogICB5PSIwcHgiCiAgIHZpZXdCb3g9IjY5NCAxOTcgMzQ2LjY5ODU1IDM5OS45ODQ3NyIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibG9nby1saWdodC5zdmciCiAgIHdpZHRoPSIzNDYuNjk4NTUiCiAgIGhlaWdodD0iMzk5Ljk4NDc3IgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjMuMiAoMDkxZTIwZWYwZiwgMjAyMy0xMS0yNSwgY3VzdG9tKSIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHN2ZzpkZWZzCiAgICAgaWQ9ImRlZnMxMiIgLz4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9Im5hbWVkdmlldzEyIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgaW5rc2NhcGU6em9vbT0iMS4yNTIiCiAgICAgaW5rc2NhcGU6Y3g9Ijk5OC40MDI1NiIKICAgICBpbmtzY2FwZTpjeT0iMTk5LjY4MDUxIgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMzQ0MCIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxMzg5IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZyIgLz4KICA8c3ZnOmcKICAgICBpZD0ibG9nbyIKICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLjU1NzUzNjQ0LDAsMCwwLjU1NzUzNjQ0LDY2LjUzMTgxMiwxMDUwLjEyNjIpIj4KICAgIDxzdmc6cGF0aAogICAgICAgc3R5bGU9ImZpbGw6I2ZjZmNmYyIKICAgICAgIGQ9Im0gMTQwOC4xLC0xMTgxLjcgYyAtNy41LDEgLTEyLjcsNy44IC0xMS43LDE1LjMgMC43LDUuNCA0LjYsOS45IDkuOSwxMS4zIDAsMCAzMy4yLDExIDg5LjcsMTUuNiA0NS40LDMuNyA5Ni45LC0zLjIgOTYuOSwtMy4yIDcuNSwtMC4yIDEzLjUsLTYuNSAxMy4yLC0xNCAtMC4zLC03LjUgLTYuNSwtMTMuNSAtMTQsLTEzLjIgLTAuOSwwIC0xLjgsMC4xIC0yLjYsMC4zIDAsMCAtNTAuNCw2LjIgLTkxLjMsMi45IC01NCwtNC40IC04My40LC0xNC4zIC04My40LC0xNC4zIC0yLjIsLTAuNyAtNC41LC0xIC02LjcsLTAuNyB6IG0gMCwtNjcuNiBjIC03LjUsMSAtMTIuNyw3LjggLTExLjcsMTUuMyAwLjcsNS40IDQuNiw5LjkgOS45LDExLjMgMCwwIDMzLjIsMTEgODkuNywxNS42IDQ1LjQsMy43IDk2LjksLTMuMiA5Ni45LC0zLjIgNy41LC0wLjIgMTMuNSwtNi41IDEzLjIsLTE0IC0wLjMsLTcuNSAtNi41LC0xMy41IC0xNCwtMTMuMiAtMC45LDAgLTEuOCwwLjEgLTIuNiwwLjMgMCwwIC01MC40LDYuMiAtOTEuMywyLjkgLTU0LC00LjQgLTgzLjQsLTE0LjMgLTgzLjQsLTE0LjMgLTIuMiwtMC43IC00LjUsLTEgLTYuNywtMC43IHogbSAwLC02Ny42IGMgLTcuNSwxIC0xMi43LDcuOCAtMTEuNywxNS4zIDAuNyw1LjQgNC42LDkuOSA5LjksMTEuMyAwLDAgMzMuMiwxMSA4OS43LDE1LjYgNDUuNCwzLjcgOTYuOSwtMy4yIDk2LjksLTMuMiA3LjUsLTAuMiAxMy41LC02LjUgMTMuMiwtMTQgLTAuMywtNy41IC02LjUsLTEzLjUgLTE0LC0xMy4yIC0wLjksMCAtMS44LDAuMSAtMi42LDAuMyAwLDAgLTUwLjQsNi4yIC05MS4zLDIuOSAtNTQsLTQuNCAtODMuNCwtMTQuMyAtODMuNCwtMTQuMyAtMi4yLC0wLjcgLTQuNSwtMSAtNi43LC0wLjcgeiBtIDAsLTY3LjUgYyAtNy41LDEgLTEyLjcsNy44IC0xMS43LDE1LjMgMC43LDUuNCA0LjYsOS45IDkuOSwxMS4zIDAsMCAzMy4yLDExIDg5LjcsMTUuNiA0NS40LDMuNyA5Ni45LC0zLjIgOTYuOSwtMy4yIDcuNSwtMC4yIDEzLjUsLTYuNSAxMy4yLC0xNCAtMC4zLC03LjUgLTYuNSwtMTMuNSAtMTQsLTEzLjIgLTAuOSwwIC0xLjgsMC4xIC0yLjYsMC4zIDAsMCAtNTAuNCw2LjIgLTkxLjMsMi45IC01NCwtNC40IC04My40LC0xNC4zIC04My40LC0xNC4zIC0yLjIsLTAuOCAtNC41LC0xIC02LjcsLTAuNyB6IG0gLTk0LjcsLTcxLjMgYyAtNzEsMC41IC05Ny41LDIyLjMgLTk3LjUsMjIuMyB2IDUzMC4zIGMgMCwwIDI1LjgsLTIyLjMgMTA5LC0xOC45IDgzLjIsMy40IDEwMC4zLDMyLjYgMjAyLjUsMzQuNiAxMDIuMiwyLjEgMTI3LjksLTE1LjcgMTI3LjksLTE1LjcgbCAxLjUsLTU0MC42IGMgMCwwIC00NiwxMyAtMTM1LjUsMTMuNyAtODkuNSwwLjcgLTExMSwtMjIuOCAtMTkzLjIsLTI1LjUgLTUuMSwtMC4xIC0xMCwtMC4yIC0xNC43LC0wLjIgeiBtIDU5LjQsMzQuNiBjIDAsMCA0MywxNC4yIDEyMi41LDE4LjIgNjcuMiwzLjMgMTM0LjUsLTYuNiAxMzQuNSwtNi42IFYgLTkyOSBjIDAsMCAtMzQuMSwxNy45IC0xMTkuMywxMS44IC02NiwtNC43IC0xMzguNywtMjkuNyAtMTM4LjcsLTI5LjcgeiBtIC00MS41LDEyLjUgYyA3LjYsMCAxMy43LDYuMiAxMy43LDEzLjcgMCw3LjUgLTYuMiwxMy43IC0xMy43LDEzLjcgMCwwIC0yMi4zLDAuMSAtMzUuOCwxLjUgLTIyLjgsMi4zIC0zOC4zLDEwLjYgLTM4LjMsMTAuNiAtNi43LDMuNSAtMTUsMSAtMTguNSwtNS43IC0zLjUsLTYuNyAtMSwtMTUgNS43LC0xOC41IDAsMCAwLDAgMCwwIDAsMCAyMC4yLC0xMC43IDQ4LjQsLTEzLjUgMTYuMywtMS43IDM4LjUsLTEuOCAzOC41LC0xLjggeiBtIC0xMy4yLDY3LjggYyA3LjYsLTAuMiAxMy4zLDAgMTMuMywwIDcuNSwwLjkgMTIuOSw3LjggMTIsMTUuMyAtMC44LDYuMyAtNS43LDExLjIgLTEyLDEyIDAsMCAtMjIuMywwLjEgLTM1LjgsMS41IC0yMi44LDIuMyAtMzguMywxMC42IC0zOC4zLDEwLjYgLTYuNywzLjUgLTE1LDAuOSAtMTguNSwtNS44IC0zLjUsLTYuNyAtMC45LC0xNSA1LjgsLTE4LjUgMCwwIDIwLjIsLTEwLjcgNDguNCwtMTMuNSA3LjksLTAuOSAxNy41LC0xLjQgMjUuMSwtMS42IHogbSAxMy4yLDY3LjUgYyA3LjYsMCAxMy43LDYuMiAxMy43LDEzLjcgMCw3LjYgLTYuMiwxMy43IC0xMy43LDEzLjcgMCwwIC0yMi4zLC0wLjEgLTM1LjgsMS4yIC0yMi44LDIuMyAtMzguMywxMC42IC0zOC4zLDEwLjYgLTYuNywzLjUgLTE1LDAuOSAtMTguNSwtNS44IC0zLjUsLTYuNyAtMC45LC0xNSA1LjgsLTE4LjUgMCwwIDIwLjIsLTEwLjcgNDguNCwtMTMuNSAxNi4yLC0xLjUgMzguNCwtMS40IDM4LjQsLTEuNCB6IgogICAgICAgaWQ9InBhdGgxIiAvPgogIDwvc3ZnOmc+CiAgPGRpdgogICAgIGlkPSJzYWthLWd1aS1yb290Ij4KICAgIDxkaXY+CiAgICAgIDxkaXY+CiAgICAgICAgPHN0eWxlIC8+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgPC9kaXY+Cjwvc3ZnOnN2Zz4K">
+        <!--?lit$141501518$--><span class="language">
+        <!--?lit$141501518$--><svg data-prefix="fas" data-icon="language" class="svg-inline--fa fa-language icon" role="img" viewBox="0 0 576 512" aria-hidden="true"><path fill="currentColor" d="M160 0c17.7 0 32 14.3 32 32l0 32 128 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-9.6 0-8.4 23.1c-16.4 45.2-41.1 86.5-72.2 122 14.2 8.8 29 16.6 44.4 23.5l50.4 22.4 62.2-140c5.1-11.6 16.6-19 29.2-19s24.1 7.4 29.2 19l128 288c7.2 16.2-.1 35.1-16.2 42.2s-35.1-.1-42.2-16.2l-20-45-157.5 0-20 45c-7.2 16.2-26.1 23.4-42.2 16.2s-23.4-26.1-16.2-42.2l39.8-89.5-50.4-22.4c-23-10.2-45-22.4-65.8-36.4-21.3 17.2-44.6 32.2-69.5 44.7L78.3 380.6c-15.8 7.9-35 1.5-42.9-14.3s-1.5-35 14.3-42.9l34.5-17.3c16.3-8.2 31.8-17.7 46.4-28.3-13.8-12.7-26.8-26.4-38.9-40.9L81.6 224.7c-11.3-13.6-9.5-33.8 4.1-45.1s33.8-9.5 45.1 4.1l10.2 12.2c11.5 13.9 24.1 26.8 37.4 38.7 27.5-30.4 49.2-66.1 63.5-105.4l.5-1.2-210.3 0C14.3 128 0 113.7 0 96S14.3 64 32 64l96 0 0-32c0-17.7 14.3-32 32-32zM416 270.8L365.7 384 466.3 384 416 270.8z"></path></svg>
+        <!--?lit$141501518$-->en</span>  <!--?lit$141501518$--><span class="version">
+        <!--?lit$141501518$--><svg data-prefix="fas" data-icon="code-branch" class="svg-inline--fa fa-code-branch icon" role="img" viewBox="0 0 448 512" aria-hidden="true"><path fill="currentColor" d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3l0 70.7 176 0c26.5 0 48-21.5 48-48l0-22.7c-28.3-12.3-48-40.5-48-73.3 0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 22.7c0 61.9-50.1 112-112 112l-176 0 0 70.7c28.3 12.3 48 40.5 48 73.3 0 44.2-35.8 80-80 80S0 476.2 0 432c0-32.8 19.7-61 48-73.3l0-205.3C19.7 141 0 112.8 0 80 0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"></path></svg> <!--?lit$141501518$-->latest
+      </span> 
+        <span class="caret"><!--?lit$141501518$--><svg data-prefix="fas" data-icon="caret-down" class="svg-inline--fa fa-caret-down icon" role="img" viewBox="0 0 320 512" aria-hidden="true"><path fill="currentColor" d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z"></path></svg></span>
+      </header>
+    
+        <main class=" closed ">
+          <!--?lit$141501518$-->
+      <dl class="languages">
+        <dt>Languages</dt>
+        <!--?lit$141501518$--><!----><dd><!--?lit$141501518$--><strong><!--?lit$141501518$--><a href="https://gm0.org/en/latest/docs/power-and-electronics/"><!--?lit$141501518$-->en</a></strong></dd><!----><!----><dd><!--?lit$141501518$--><a href="https://gm0.org/es/latest/docs/power-and-electronics/"><!--?lit$141501518$-->es</a></dd><!----><!----><dd><!--?lit$141501518$--><a href="https://gm0.org/fr/latest/docs/power-and-electronics/"><!--?lit$141501518$-->fr</a></dd><!----><!----><dd><!--?lit$141501518$--><a href="https://gm0.org/ro/latest/docs/power-and-electronics/"><!--?lit$141501518$-->ro</a></dd><!----><!----><dd><!--?lit$141501518$--><a href="https://gm0.org/zh-cn/latest/docs/power-and-electronics/"><!--?lit$141501518$-->zh-cn</a></dd><!---->
+      </dl>
+     <!--?lit$141501518$-->
+      <dl class="versions">
+        <dt>Versions</dt>
+        <!--?lit$141501518$--><!----><dd><!--?lit$141501518$--><strong><!--?lit$141501518$--><a href="https://gm0.org/en/latest/docs/power-and-electronics/"><!--?lit$141501518$-->latest</a></strong></dd><!---->
+      </dl>
+    
+          <!--?lit$141501518$-->
+      <dl class="downloads">
+        <dt>Downloads</dt>
+        <!--?lit$141501518$--><!----><dd>
+              <a href="https://gm0.org/_/downloads/en/latest/pdf/"><!--?lit$141501518$-->PDF</a>
+            </dd><!---->
+      </dl>
+     <!--?lit$141501518$-->
+      <dl>
+        <dt>On Read the Docs</dt>
+        <dd>
+          <a href="https://app.readthedocs.org/projects/game-manual-zero/?utm_source=game-manual-zero&amp;utm_content=flyout">Project Home</a>
+        </dd>
+        <dd>
+          <a href="https://app.readthedocs.org/projects/game-manual-zero/builds/?utm_source=game-manual-zero&amp;utm_content=flyout">Builds</a>
+        </dd>
+      </dl>
+    
+          <!--?lit$141501518$--> <!--?lit$141501518$-->
+        <dl>
+          <dt>Search</dt>
+          <dd>
+            <form id="flyout-search-form">
+              <input type="text" name="q" aria-label="Search docs" placeholder="Search docs">
+            </form>
+          </dd>
+        </dl>
+      
+          <hr>
+          <!--?lit$141501518$-->
+      <small>
+        <span>
+          <a href="https://docs.readthedocs.io/page/addons.html?utm_source=game-manual-zero&amp;utm_content=flyout">Addons documentation</a></span>
+        <span> ― </span>
+        <span>Hosted by
+          <a href="https://about.readthedocs.com/?utm_source=game-manual-zero&amp;utm_content=flyout">Read the Docs</a></span>
+      </small>
+    
+        </main>
+      </div>
+    </template></readthedocs-flyout><readthedocs-notification class="raised toast"><template shadowrootmode="open"><!----></template></readthedocs-notification><div class="raised adaptive-css loaded" data-ea-type="text" data-ea-style="fixedfooter" data-ea-manual="true" data-ea-publisher="readthedocs" data-ea-keywords="java|readthedocs-project-512819|readthedocs-project-game-manual-zero" data-ea-campaign-types="community|house" id="readthedocs-ea-text-fixedfooter-sphinx"><div class="ea-placement ea-type-text"><div class="ea-content"><div class="ea-text"><a href="https://server.ethicalads.io/proxy/click/8171/019c9d76-f058-7881-bf5a-d88168353ff1/" rel="nofollow noopener sponsored" target="_blank"><strong class="ea-headline">Reach the right audience </strong><span class="ea-body">on a privacy-first ad network only for software devs:</span><strong class="ea-cta"> EthicalAds</strong></a></div></div><div class="ea-callout"><a rel="nofollow noopener" target="_blank" href="https://www.ethicalads.io/advertisers/topics/backend-web/?ref=ea-text">Ads by EthicalAds</a></div><div class="ea-fixedfooter-hide"><span>Close Ad</span></div></div><img src="./Electronics and Motion Components - Game Manual 0_files/saved_resource(1)" class="ea-pixel"></div><readthedocs-search class="raised floating"><template shadowrootmode="open"><!---->
+      <div role="search" hidden="">
+        <div class="background"></div>
+        <div class="content">
+          <form class="  ">
+            <label><!--?lit$141501518$--><svg data-prefix="fas" data-icon="magnifying-glass" class="svg-inline--fa fa-magnifying-glass" role="img" viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg></label>
+            <input placeholder="Search docs" type="search" autocomplete="off">
+          </form>
+          <!--?lit$141501518$-->
+          <div class="results">
+            <!--?lit$141501518$--><p>No recent searches</p>
+          </div>
+          <div class="footer">
+            <ul class="help">
+              <li><code>Enter</code> to select</li>
+              <li><code>Up</code>/<code>Down</code> to navigate</li>
+              <li><code>Esc</code> to close</li>
+            </ul>
+            <div class="credits">
+              Search powered by
+              <a href="https://about.readthedocs.com/?utm_source=game-manual-zero&amp;utm_content=search">
+                <img alt="Read the Docs" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJzdmciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSI2OTQgMTk3IDIwMDAgNDAwIj4KPGcgaWQ9ImxvZ28iIHRyYW5zZm9ybT0ibWF0cml4KDAuNTU3NTM2NDQsMCwwLDAuNTU3NTM2NDQsNjguMzA4MTM1LDEwNTAuMTI2MikiPgoJPHBhdGggc3R5bGU9ImZpbGw6IzMyMzIyQSIgZD0iTTE0MDguMS0xMTgxLjdjLTcuNSwxLTEyLjcsNy44LTExLjcsMTUuMyAgIGMwLjcsNS40LDQuNiw5LjksOS45LDExLjNjMCwwLDMzLjIsMTEsODkuNywxNS42YzQ1LjQsMy43LDk2LjktMy4yLDk2LjktMy4yYzcuNS0wLjIsMTMuNS02LjUsMTMuMi0xNHMtNi41LTEzLjUtMTQtMTMuMiAgIGMtMC45LDAtMS44LDAuMS0yLjYsMC4zYzAsMC01MC40LDYuMi05MS4zLDIuOWMtNTQtNC40LTgzLjQtMTQuMy04My40LTE0LjNDMTQxMi42LTExODEuNywxNDEwLjMtMTE4MiwxNDA4LjEtMTE4MS43eiAgICBNMTQwOC4xLTEyNDkuM2MtNy41LDEtMTIuNyw3LjgtMTEuNywxNS4zYzAuNyw1LjQsNC42LDkuOSw5LjksMTEuM2MwLDAsMzMuMiwxMSw4OS43LDE1LjZjNDUuNCwzLjcsOTYuOS0zLjIsOTYuOS0zLjIgICBjNy41LTAuMiwxMy41LTYuNSwxMy4yLTE0cy02LjUtMTMuNS0xNC0xMy4yYy0wLjksMC0xLjgsMC4xLTIuNiwwLjNjMCwwLTUwLjQsNi4yLTkxLjMsMi45Yy01NC00LjQtODMuNC0xNC4zLTgzLjQtMTQuMyAgIEMxNDEyLjYtMTI0OS4zLDE0MTAuMy0xMjQ5LjYsMTQwOC4xLTEyNDkuM3ogTTE0MDguMS0xMzE2LjljLTcuNSwxLTEyLjcsNy44LTExLjcsMTUuM2MwLjcsNS40LDQuNiw5LjksOS45LDExLjMgICBjMCwwLDMzLjIsMTEsODkuNywxNS42YzQ1LjQsMy43LDk2LjktMy4yLDk2LjktMy4yYzcuNS0wLjIsMTMuNS02LjUsMTMuMi0xNHMtNi41LTEzLjUtMTQtMTMuMmMtMC45LDAtMS44LDAuMS0yLjYsMC4zICAgYzAsMC01MC40LDYuMi05MS4zLDIuOWMtNTQtNC40LTgzLjQtMTQuMy04My40LTE0LjNDMTQxMi42LTEzMTYuOSwxNDEwLjMtMTMxNy4yLDE0MDguMS0xMzE2Ljl6IE0xNDA4LjEtMTM4NC40ICAgYy03LjUsMS0xMi43LDcuOC0xMS43LDE1LjNjMC43LDUuNCw0LjYsOS45LDkuOSwxMS4zYzAsMCwzMy4yLDExLDg5LjcsMTUuNmM0NS40LDMuNyw5Ni45LTMuMiw5Ni45LTMuMmM3LjUtMC4yLDEzLjUtNi41LDEzLjItMTQgICBzLTYuNS0xMy41LTE0LTEzLjJjLTAuOSwwLTEuOCwwLjEtMi42LDAuM2MwLDAtNTAuNCw2LjItOTEuMywyLjljLTU0LTQuNC04My40LTE0LjMtODMuNC0xNC4zICAgQzE0MTIuNi0xMzg0LjUsMTQxMC4zLTEzODQuNywxNDA4LjEtMTM4NC40eiBNMTMxMy40LTE0NTUuN2MtNzEsMC41LTk3LjUsMjIuMy05Ny41LDIyLjN2NTMwLjNjMCwwLDI1LjgtMjIuMywxMDktMTguOSAgIGM4My4yLDMuNCwxMDAuMywzMi42LDIwMi41LDM0LjZjMTAyLjIsMi4xLDEyNy45LTE1LjcsMTI3LjktMTUuN2wxLjUtNTQwLjZjMCwwLTQ2LDEzLTEzNS41LDEzLjdzLTExMS0yMi44LTE5My4yLTI1LjUgICBDMTMyMy0xNDU1LjYsMTMxOC4xLTE0NTUuNywxMzEzLjQtMTQ1NS43eiBNMTM3Mi44LTE0MjEuMWMwLDAsNDMsMTQuMiwxMjIuNSwxOC4yYzY3LjIsMy4zLDEzNC41LTYuNiwxMzQuNS02LjZ2NDgwLjUgICBjMCwwLTM0LjEsMTcuOS0xMTkuMywxMS44Yy02Ni00LjctMTM4LjctMjkuNy0xMzguNy0yOS43TDEzNzIuOC0xNDIxLjF6IE0xMzMxLjMtMTQwOC42YzcuNiwwLDEzLjcsNi4yLDEzLjcsMTMuNyAgIHMtNi4yLDEzLjctMTMuNywxMy43YzAsMC0yMi4zLDAuMS0zNS44LDEuNWMtMjIuOCwyLjMtMzguMywxMC42LTM4LjMsMTAuNmMtNi43LDMuNS0xNSwxLTE4LjUtNS43cy0xLTE1LDUuNy0xOC41YzAsMCwwLDAsMCwwICAgYzAsMCwyMC4yLTEwLjcsNDguNC0xMy41QzEzMDkuMS0xNDA4LjUsMTMzMS4zLTE0MDguNiwxMzMxLjMtMTQwOC42eiBNMTMxOC4xLTEzNDAuOGM3LjYtMC4yLDEzLjMsMCwxMy4zLDAgICBjNy41LDAuOSwxMi45LDcuOCwxMiwxNS4zYy0wLjgsNi4zLTUuNywxMS4yLTEyLDEyYzAsMC0yMi4zLDAuMS0zNS44LDEuNWMtMjIuOCwyLjMtMzguMywxMC42LTM4LjMsMTAuNmMtNi43LDMuNS0xNSwwLjktMTguNS01LjggICBjLTMuNS02LjctMC45LTE1LDUuOC0xOC41YzAsMCwyMC4yLTEwLjcsNDguNC0xMy41QzEzMDAuOS0xMzQwLjEsMTMxMC41LTEzNDAuNiwxMzE4LjEtMTM0MC44eiBNMTMzMS4zLTEyNzMuMyAgIGM3LjYsMCwxMy43LDYuMiwxMy43LDEzLjdjMCw3LjYtNi4yLDEzLjctMTMuNywxMy43YzAsMC0yMi4zLTAuMS0zNS44LDEuMmMtMjIuOCwyLjMtMzguMywxMC42LTM4LjMsMTAuNiAgIGMtNi43LDMuNS0xNSwwLjktMTguNS01LjhjLTMuNS02LjctMC45LTE1LDUuOC0xOC41YzAsMCwyMC4yLTEwLjcsNDguNC0xMy41QzEzMDkuMS0xMjczLjQsMTMzMS4zLTEyNzMuMywxMzMxLjMtMTI3My4zeiIvPgo8L2c+CjxnIGlkPSJ0ZXh0Ij4KCTxwYXRoIHN0eWxlPSJmaWxsOiMzMjMyMkEiIGQ9Ik0xMTI4LjYsNDkxLjlWNDcwbDguOS0wLjhjNS4yLTAuNSw3LjgtMy4xLDcuOC03LjZWMzM2bC0xNS40LTAuOHYtMjNoNzMuOCAgIGMyMC45LDAsMzYuOSwzLjksNDguMSwxMS42YzExLjIsNy43LDE2LjgsMjAuNSwxNi44LDM4LjFjMCwxMi4zLTMuMiwyMi4zLTkuNywzMC4zYy02LjMsNy45LTEzLjksMTMuNy0yMi43LDE3LjMgICBjNi41LDIuMywxMS42LDcuOCwxNS40LDE2LjVsMTkuNSw0Mi40bDE1LjQsMC41djIzaC02Ni44VjQ3MGw3LjgtMC44YzQuMS0wLjUsNi4yLTIuMiw2LjItNC45YzAtMS4xLTAuNC0yLjMtMS4xLTMuOGwtMTIuNy0yNyAgIGMtMi00LjUtNC4yLTcuNy02LjgtOS41Yy0yLjMtMi01LjgtMy0xMC4zLTNoLTI0LjZ2NDdsMTcuNiwwLjh2MjNMMTEyOC42LDQ5MS45IE0xMTc4LjMsMzk1LjRoMjMuNWMyMi4yLDAsMzMuMi05LjksMzMuMi0yOS43ICAgYzAtMTEuNC0zLTE4LjctOC45LTIyLjJjLTUuOC0zLjQtMTUuMS01LjEtMjguMS01LjFoLTE5LjdWMzk1LjQiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiMzMjMyMkEiIGQ9Ik0xMzU2LDM1MS45YzEzLjUsMCwyNC4yLDMuMywzMi4yLDEwYzcuOSw2LjUsMTEuOSwxNS43LDExLjksMjcuNmMwLDcuOS0xLjcsMTUtNS4xLDIxLjEgICBjLTMuNCw1LjktNy43LDEwLjYtMTIuNywxNC4xYy01LDMuNC0xMS4yLDYuMi0xOC40LDguNGMtMTIuMSwzLjYtMjUuNyw1LjQtNDAuOCw1LjRjMC41LDkuNSwzLjUsMTcuMyw4LjksMjMuMiAgIGM1LjQsNS44LDEzLjcsOC42LDI0LjksOC42YzExLjIsMCwyMi4zLTQsMzMuNS0xMS45bDEwLjMsMjEuOWMtMy42LDMuMi05LjcsNi42LTE4LjQsMTBjLTguNSwzLjQtMTguMiw1LjEtMjkuMiw1LjEgICBjLTIyLDAtMzguMS02LTQ4LjQtMTguMWMtMTAuMy0xMi4zLTE1LjQtMjktMTUuNC01MC4zYzAtMjEuMyw1LjktMzkuMSwxNy42LTUzLjVDMTMxOC41LDM1OS4xLDEzMzQuOSwzNTEuOSwxMzU2LDM1MS45ICAgIE0xMzQzLjYsNDEzLjhjNi43LTEuMywxMi44LTMuOSwxOC40LTcuOGM1LjYtNC4xLDguNC05LDguNC0xNC42YzAtMTEtNS40LTE2LjUtMTYuMi0xNi41Yy0xMC4xLDAtMTcuOCw0LjEtMjMuMiwxMi4yICAgYy01LjQsNy45LTguNCwxNy41LTguOSwyOC42QzEzMjkuOSw0MTUuNSwxMzM3LjEsNDE0LjksMTM0My42LDQxMy44Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojMzIzMjJBIiBkPSJNMTUyOS42LDM2MS40djEwMC41YzAsMi45LDAuNSw0LjksMS40LDUuOWMxLjEsMS4xLDIuOSwxLjcsNS40LDEuOWw4LjYsMC41djIxLjZoLTQzdi0xNS43ICAgbC0wLjgtMC4zYy05LDEzLTIxLjQsMTkuNS0zNywxOS41Yy0xOC40LDAtMzItNS45LTQwLjgtMTcuNmMtOC44LTExLjctMTMuMi0yNy43LTEzLjItNDguMWMwLTI0LjUsNS45LTQzLjYsMTcuOC01Ny4zICAgYzExLjktMTMuNywyOS43LTIwLjUsNTMuNS0yMC41QzE0OTYuOCwzNTEuOSwxNTEyLjksMzU1LjEsMTUyOS42LDM2MS40IE0xNDk4LjMsNDQ4Ljl2LTcwYy01LTIuMy0xMi0zLjUtMjAuOC0zLjUgICBjLTEyLjEsMC0yMC44LDQuOS0yNi4yLDE0LjZjLTUuNCw5LjctOC4xLDIyLjYtOC4xLDM4LjdjMCwyOS4yLDkuNCw0My44LDI4LjEsNDMuOGM3LjksMCwxNC40LTIuMywxOS41LTcgICBDMTQ5NS43LDQ2MC42LDE0OTguMyw0NTUuMSwxNDk4LjMsNDQ4LjkiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiMzMjMyMkEiIGQ9Ik0xNjE2LjMsMzUxLjljNy43LDAsMTUuMSwxLjEsMjIuMiwzLjJ2LTI3LjNjMC00LTIuMy02LjEtNy02LjVsLTExLjYtMC44di0yMS40aDUwLjN2MTY0LjMgICBjMC4yLDQuMSwyLjQsNi4yLDYuOCw2LjJsOS41LDAuNXYyMS42aC00My44VjQ3NmwtMC44LTAuM2MtOC4xLDEzLjItMjAuNCwxOS43LTM2LjgsMTkuN2MtMjAuNSwwLTM1LTYuOC00My4yLTIwLjUgICBjLTcuNi0xMi40LTExLjQtMjcuNy0xMS40LTQ1LjdjMC0yMy40LDUuOC00Mi4yLDE3LjMtNTYuMkMxNTc5LjMsMzU4LjksMTU5NS41LDM1MS45LDE2MTYuMywzNTEuOSBNMTYzOC40LDQ0OS44di03MCAgIGMtNi41LTIuOS0xMy4zLTQuMy0yMC41LTQuM2MtMTEuOSwwLTIwLjYsNC44LTI2LjIsMTQuM2MtNS40LDkuNi04LjEsMjEuNy04LjEsMzYuNWMwLDMwLjMsOS43LDQ1LjQsMjkuMiw0NS40ICAgYzcuNCwwLDEzLjUtMi4xLDE4LjQtNi4yQzE2MzYsNDYxLjEsMTYzOC40LDQ1NS45LDE2MzguNCw0NDkuOCIvPgoJPHBhdGggc3R5bGU9ImZpbGw6IzMyMzIyQSIgZD0iTTE3OTEuNyw0NzAuNmMwLDAtMTIuNSw0LjctMTkuMiw0LjdzLTkuMi0zLjMtOS4yLTExLjhjMC0zLjgsMC41LTguOCwxLjQtMTQuOWwxMC4yLTYzLjFoMzIuNiAgIGwyLjgtMTcuN2gtMzIuNmw1LjctMzQuNUwxNzYwLDMzOGwtNC43LDI5LjhsLTIzLjYsMi40bC0yLjYsMTUuNGgyMy40TDE3NDIsNDUxYy0wLjksNS40LTEuNCwxMC42LTEuNCwxNS4xICAgYzAsMTguNyw3LjgsMjguMSwyMy45LDI4LjFjMTMuMiwwLDMxLTEwLjksMzEtMTAuOUwxNzkxLjcsNDcwLjYiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiMzMjMyMkEiIGQ9Ik0xODY1LDMwOS44bC00My4zLDEuMmwtMi4xLDEzbDE5LjksNC43bC0yNiwxNjMuMmgyMi41bDcuOC00Mi42YzAsMCwxOC43LTY1LDQ5LjQtNjUgICBjOS41LDAsMTIuMyw2LjksMTIuMywxNS42YzAsMy4zLTAuNSw2LjktMC45LDEwLjRsLTEzLjUsODEuNmw0My4zLTIuNGwyLjEtMTNsLTE5LjktMy41bDEwLjYtNjYuMmMwLjctNSwxLjItOS43LDEuMi0xNCAgIGMwLTE3LTYuOS0yOC42LTI1LjgtMjguNmMtMzUuOSwwLTU0LjksNDUuNi01NS44LDQ4LjJMMTg2NSwzMDkuOCIvPgoJPHBhdGggc3R5bGU9ImZpbGw6IzMyMzIyQSIgZD0iTTIwMzUsNDY0LjdjMCwwLTIxLjUsMTAuNi0zOC44LDEwLjZjLTE3LjcsMC0yNi03LjgtMjYtMjQuNmMwLTMuMSwwLjItNi42LDAuNy0xMC4yICAgYzQ5LDAsODMtMTguNCw4My00NS42YzAtMTguNy0xNS4xLTMwLjctMzktMzAuN2MtMzcuNiwwLTY4LjMsMzguNS02OC4zLDg3LjVjMCwyNiwxNi42LDQyLjYsNDIuNiw0Mi42YzI3LjksMCw1My0xNy41LDUzLTE3LjUgICBMMjAzNSw0NjQuNyBNMTk3Myw0MjRjNi4xLTI0LjgsMjMuNC00Mi4xLDQwLjctNDIuMWMxMi4xLDAsMTcuNyw1LDE3LjcsMTUuNEMyMDMxLjUsNDEyLjksMjAwNi42LDQyNCwxOTczLDQyNCIvPgoJPHBhdGggc3R5bGU9ImZpbGw6IzMyMzIyQSIgZD0iTTIwOTMuNyw0OTEuOVY0NzBsOC45LTAuOGM1LjItMC41LDcuOC0zLjEsNy44LTcuNlYzMzZsLTE1LjQtMC44di0yM2g3NC4xICAgYzI2LjUsMCw0Ny4xLDcsNjEuOSwyMS4xYzE1LDE0LjEsMjIuNCwzNC45LDIyLjQsNjIuNGMwLDE3LjEtMi4zLDMyLjEtNi44LDQ0LjljLTQuNSwxMi42LTEwLjYsMjIuNS0xOC40LDI5LjcgICBjLTE1LjUsMTQuNC0zNC44LDIxLjYtNTcuOCwyMS42TDIwOTMuNyw0OTEuOSBNMjE0My40LDMzOC40VjQ2NmgyNy42YzE1LjUsMCwyNy42LTUuNiwzNi4yLTE2LjhjOC42LTExLjIsMTMtMjcuNCwxMy00OC43ICAgYzAtNDEuNC0xNy42LTYyLjItNTIuNy02Mi4ySDIxNDMuNCIvPgoJPHBhdGggc3R5bGU9ImZpbGw6IzMyMzIyQSIgZD0iTTIzMzAsNDcyLjJjMTkuNiwwLDI5LjUtMTUuOSwyOS41LTQ3LjZjMC0xNi0yLjMtMjguMi02LjgtMzYuNWMtNC4zLTguMy0xMS43LTEyLjQtMjIuMi0xMi40ICAgYy0xMC4zLDAtMTcuOCw0LTIyLjcsMTEuOWMtNC45LDcuOS03LjMsMTguNy03LjMsMzIuNGMwLDI1LjQsNC43LDQxLjQsMTQuMSw0Ny44QzIzMTguOCw0NzAuNywyMzIzLjksNDcyLjIsMjMzMCw0NzIuMiAgICBNMjI2Ny45LDQyMy44YzAtMTMuMywyLTI0LjksNS45LTM0LjZjNC05LjksOS4zLTE3LjUsMTUuOS0yMi43YzEyLjgtOS43LDI2LjktMTQuNiw0Mi40LTE0LjZjMTAuOCwwLDE5LjksMS44LDI3LjMsNS40ICAgYzcuNiwzLjQsMTMuNCw3LjUsMTcuNiwxMi4yYzQuMyw0LjUsNy45LDExLjIsMTAuOCwyMGMzLjEsOC42LDQuNiwxOC45LDQuNiwzMC44YzAsMjQuOS02LDQzLjctMTguMSw1Ni41ICAgYy0xMi4xLDEyLjgtMjcuNiwxOS4yLTQ2LjUsMTkuMmMtMTguNywwLTMzLjQtNi00NC4xLTE4LjFDMjI3My4yLDQ2NS42LDIyNjcuOSw0NDcuNiwyMjY3LjksNDIzLjgiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiMzMjMyMkEiIGQ9Ik0yNDM4LjIsNDIyLjVjMCwxNS4zLDIuOSwyNy4yLDguNiwzNS43YzUuOCw4LjUsMTQuMSwxMi43LDI0LjksMTIuN2MxMSwwLDIxLjgtMy45LDMyLjQtMTEuNiAgIGwxMS42LDIwLjhjLTEyLjgsMTAuNS0yOC44LDE1LjctNDguMSwxNS43Yy0xOS4zLDAtMzQuNS02LTQ1LjctMTguMWMtMTEtMTIuMy0xNi41LTMwLjMtMTYuNS01NC4xczYuMy00MS42LDE4LjktNTMuNSAgIGMxMi44LTEyLjEsMjcuMS0xOC4xLDQzLTE4LjFjMTYsMCwzMC45LDMuNyw0NC42LDExLjF2MzUuMWwtMjQuOSwxLjl2LTEzYzAtNC45LTEuOC03LjgtNS40LTguOWMtMy40LTEuMy03LTEuOS0xMC44LTEuOSAgIEMyNDQ5LjEsMzc2LjIsMjQzOC4yLDM5MS42LDI0MzguMiw0MjIuNSIvPgoJPHBhdGggc3R5bGU9ImZpbGw6IzMyMzIyQSIgZD0iTTI1OTIuOSwzNzYuNWMtNC4zLTEuNi05LjYtMi40LTE1LjctMi40Yy02LjEsMC0xMS4xLDEuNC0xNC45LDQuM2MtMy42LDIuNy01LjQsNi4xLTUuNCwxMC4zICAgYzAsNCwwLjYsNy4xLDEuOSw5LjVjMS40LDIuMiwzLjYsNC4xLDYuNSw1LjdjNC41LDIuMyw5LjksNC40LDE2LjIsNi4yYzYuMywxLjYsMTEsMywxNC4xLDQuMWMzLjEsMC45LDYuOCwyLjUsMTEuNCw0LjkgICBjNC43LDIuMyw4LjIsNC45LDEwLjUsNy42YzYuMyw2LjcsOS41LDE1LjIsOS41LDI1LjdjMCwxMy41LTUsMjQuMS0xNC45LDMxLjljLTkuNyw3LjYtMjIuMiwxMS40LTM3LjMsMTEuNCAgIGMtMjIsMC0zOC42LTIuOC00OS43LTguNHYtMzcuNmwyNC4zLTEuOXYxM2MwLDcuOSw3LjYsMTEuOSwyMi43LDExLjlzMjIuNy01LjUsMjIuNy0xNi41YzAtNC0xLjQtNy4yLTQuMS05LjcgICBjLTIuNS0yLjUtNS00LjItNy42LTUuMWMtMi41LTAuOS01LjYtMS44LTkuMi0yLjdjLTMuNC0wLjktNi44LTEuOC0xMC4zLTIuN2MtMy4yLTAuOS02LjgtMi4xLTEwLjgtMy41Yy0zLjgtMS42LTgtMy45LTEyLjctNi44ICAgYy05LjItNS45LTEzLjgtMTUuOS0xMy44LTI5LjdjMC0xNC4xLDUtMjQuOSwxNC45LTMyLjRjOS45LTcuNiwyMi4zLTExLjQsMzcuMy0xMS40YzE1LjEsMCwzMC4xLDMuNiw0NC45LDEwLjh2MzIuNGwtMjQuMywxLjkgICB2LTExLjRDMjU5OS4xLDM4MS4yLDI1OTcsMzc4LjEsMjU5Mi45LDM3Ni41Ii8+CjwvZz4KPGRpdiB4bWxucz0iIiBpZD0ic2FrYS1ndWktcm9vdCI+PGRpdj48ZGl2PjxzdHlsZS8+PC9kaXY+PC9kaXY+PC9kaXY+PC9zdmc+">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template></readthedocs-search><readthedocs-hotkeys><template shadowrootmode="open"><!----></template></readthedocs-hotkeys></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
