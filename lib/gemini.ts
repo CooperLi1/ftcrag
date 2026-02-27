@@ -10,6 +10,11 @@ type GeminiRequest = {
   responseMimeType?: string;
 };
 
+type GeminiTextResult = {
+  text: string;
+  finishReason: string | null;
+};
+
 type GeminiResponse = {
   candidates?: Array<{
     content?: {
@@ -117,14 +122,14 @@ async function getGeminiConfig(model: string): Promise<GeminiModeConfig> {
   };
 }
 
-export async function generateGeminiText({
+export async function generateGeminiTextWithMeta({
   model,
   systemInstruction,
   userPrompt,
   temperature = 0.2,
   maxOutputTokens = 2048,
   responseMimeType,
-}: GeminiRequest): Promise<string> {
+}: GeminiRequest): Promise<GeminiTextResult> {
   const config = await getGeminiConfig(model);
 
   const response = await fetch(config.endpoint, {
@@ -165,12 +170,21 @@ export async function generateGeminiText({
     throw new Error(`Gemini blocked prompt: ${data.promptFeedback.blockReason}`);
   }
 
-  const text = data.candidates?.[0]?.content?.parts?.map((p) => p.text ?? "").join("").trim() ?? "";
+  const candidate = data.candidates?.[0];
+  const text = candidate?.content?.parts?.map((p) => p.text ?? "").join("").trim() ?? "";
   if (!text) {
     throw new Error("Gemini returned empty text.");
   }
 
-  return text;
+  return {
+    text,
+    finishReason: candidate?.finishReason ?? null,
+  };
+}
+
+export async function generateGeminiText(request: GeminiRequest): Promise<string> {
+  const result = await generateGeminiTextWithMeta(request);
+  return result.text;
 }
 
 export function extractJsonObject(text: string): string | null {

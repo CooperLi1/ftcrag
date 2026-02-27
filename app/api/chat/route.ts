@@ -1,5 +1,5 @@
 import { buildRagSystemPrompt, searchRelevantChunks } from "@/lib/rag";
-import { extractJsonObject, generateGeminiText } from "@/lib/gemini";
+import { extractJsonObject, generateGeminiText, generateGeminiTextWithMeta } from "@/lib/gemini";
 
 export const runtime = "nodejs";
 
@@ -213,6 +213,18 @@ function extractAnswerFallbackText(raw: string): string {
   return stripped;
 }
 
+function normalizeAssistantMarkdown(text: string): string {
+  const normalized = text.replace(/\r\n/g, "\n");
+  const escapedNewlineCount = (normalized.match(/\\n/g) ?? []).length;
+  const realNewlineCount = (normalized.match(/\n/g) ?? []).length;
+
+  if (escapedNewlineCount > 0 && (realNewlineCount === 0 || escapedNewlineCount >= realNewlineCount * 2)) {
+    return normalized.replace(/\\n/g, "\n").replace(/\\t/g, "\t");
+  }
+
+  return normalized;
+}
+
 export async function POST(req: Request) {
   const { messages } = (await req.json()) as {
     messages: Array<{ role: "system" | "user" | "assistant"; content: string }>;
@@ -291,32 +303,50 @@ export async function POST(req: Request) {
   const contextualBlock = plan.needsConversationContext
     ? `Conversation context:\n${conversationTranscript}\n\n`
     : "";
-  const finalAnswer = await generateGeminiText({
+  const finalModelMaxOutputTokens = Number(process.env.FINAL_MODEL_MAX_OUTPUT_TOKENS ?? "3072");
+  const finalModelSystemInstruction = [
+    "You are FTC Assistant.",
+    "Default season assumption: if the user does not specify a season/year, assume they mean the current FTC season, DECODE.",
+    "If user/context clearly indicates another season, use that instead.",
+    "Read all reference notes closely before answering.",
+    "Reason from the provided evidence first; do not rely on preconceived assumptions or prior bias.",
+    "If notes conflict, resolve explicitly and prefer the most direct rule text.",
+    "Act as a single direct assistant. Do not mention internal pipeline steps, retrieval, provided context, or that you were given documents.",
+    "Never say phrases like 'based on the provided information' or 'according to the retrieved context'.",
+    "Never refer to excerpts, context blocks, source fragments, retrieved notes, or documents in your visible answer.",
+    "Return ONLY JSON with this exact schema:",
+    '{ "answer": string, "usedSourceNumbers": number[] }',
+    "usedSourceNumbers must contain only the numeric context labels you actually relied on (e.g., [1], [3]).",
+    "If no context was used, return an empty array.",
+    "Do not include citations, source labels, or a Sources section inside the answer field.",
+    "Include concise, actionable answers and answer in a smooth, natural tone.",
+    "If unsure, state uncertainty directly without mentioning hidden context/retrieval.",
+    ragPrompt,
+  ].join("\n\n");
+  const finalModelUserPrompt = `${contextualBlock}User question:\n${question}`;
+
+  let finalAnswerResult = await generateGeminiTextWithMeta({
     model: finalModel,
-    systemInstruction: [
-      "You are FTC Assistant.",
-      "Default season assumption: if the user does not specify a season/year, assume they mean the current FTC season, DECODE.",
-      "If user/context clearly indicates another season, use that instead.",
-      "Read all reference notes closely before answering.",
-      "Reason from the provided evidence first; do not rely on preconceived assumptions or prior bias.",
-      "If notes conflict, resolve explicitly and prefer the most direct rule text.",
-      "Act as a single direct assistant. Do not mention internal pipeline steps, retrieval, provided context, or that you were given documents.",
-      "Never say phrases like 'based on the provided information' or 'according to the retrieved context'.",
-      "Never refer to excerpts, context blocks, source fragments, retrieved notes, or documents in your visible answer.",
-      "Return ONLY JSON with this exact schema:",
-      '{ "answer": string, "usedSourceNumbers": number[] }',
-      "usedSourceNumbers must contain only the numeric context labels you actually relied on (e.g., [1], [3]).",
-      "If no context was used, return an empty array.",
-      "Do not include citations, source labels, or a Sources section inside the answer field.",
-      "Include concise, actionable answers and answer in a smooth, natural tone.",
-      "If unsure, state uncertainty directly without mentioning hidden context/retrieval.",
-      ragPrompt,
-    ].join("\n\n"),
-    userPrompt: `${contextualBlock}User question:\n${question}`,
+    systemInstruction: finalModelSystemInstruction,
+    userPrompt: finalModelUserPrompt,
     temperature: 0.2,
-    maxOutputTokens: 2048,
+    maxOutputTokens: finalModelMaxOutputTokens,
     responseMimeType: "application/json",
   });
+
+  if (finalAnswerResult.finishReason === "MAX_TOKENS") {
+    console.warn("Final answer hit MAX_TOKENS; retrying with a larger output budget.");
+    finalAnswerResult = await generateGeminiTextWithMeta({
+      model: finalModel,
+      systemInstruction: `${finalModelSystemInstruction}\n\nYour previous attempt was cut off. Return a complete JSON object in one response.`,
+      userPrompt: finalModelUserPrompt,
+      temperature: 0.2,
+      maxOutputTokens: Math.max(finalModelMaxOutputTokens, 4096),
+      responseMimeType: "application/json",
+    });
+  }
+
+  const finalAnswer = finalAnswerResult.text;
   let parsedFinal = parseFinalModelOutput(finalAnswer);
   if (!parsedFinal.ok) {
     try {
@@ -341,6 +371,7 @@ export async function POST(req: Request) {
 
   const visibleAnswer =
     parsedFinal.answer || extractAnswerFallbackText(finalAnswer) || "I’m sorry, I couldn’t generate a complete answer.";
+  const normalizedVisibleAnswer = normalizeAssistantMarkdown(visibleAnswer);
   const sourceFragments = getSourceFragmentsByNumber(
     contextChunks,
     parsedFinal.ok ? parsedFinal.usedSourceNumbers : []
@@ -351,7 +382,7 @@ export async function POST(req: Request) {
   const stream = new ReadableStream({
     async start(controller) {
       const encoder = new TextEncoder();
-      for (const chunk of splitForStream(visibleAnswer)) {
+      for (const chunk of splitForStream(normalizedVisibleAnswer)) {
         controller.enqueue(encoder.encode(chunk));
         await new Promise((resolve) => setTimeout(resolve, 8));
       }
