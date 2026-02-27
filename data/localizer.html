@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://pedropathing.com/docs/pathing/custom/localizer -->
+<html lang="en" class="__className_f367f3 dark" style="color-scheme: dark;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="preload" href="https://pedropathing.com/_next/static/media/e4af272ccee01ff0-s.p.woff2" as="font" crossorigin="" type="font/woff2"><link rel="preload" as="image" href="./localizer_files/logo-light.png"><link rel="preload" as="image" href="./localizer_files/logo.png"><link rel="stylesheet" href="./localizer_files/34934cd07a7ca2e9.css" data-precedence="next"><link rel="stylesheet" href="./localizer_files/ca6322e13baa44e6.css" data-precedence="next"><link rel="preload" as="script" fetchpriority="low" href="./localizer_files/webpack-9552580105607d32.js"><script src="./localizer_files/4bd1b696-b682f26aa28a31e6.js" async=""></script><script src="./localizer_files/1684-fb53e0638e6b9ff4.js" async=""></script><script src="./localizer_files/main-app-679971404584f67c.js" async=""></script><script src="./localizer_files/4885-535af7fa620d1e5f.js" async=""></script><script src="./localizer_files/5994-904b0d0b9b048345.js" async=""></script><script src="./localizer_files/9400-765ae1c74c9a3c05.js" async=""></script><script src="./localizer_files/637-a9b18b0a61271902.js" async=""></script><script src="./localizer_files/layout-9d90217d4a01816d.js" async=""></script><script src="./localizer_files/2302-188fbaa684bf65d5.js" async=""></script><script src="./localizer_files/244-050a9e4b133ba263.js" async=""></script><script src="./localizer_files/layout-ee65fadeadad1a99.js" async=""></script><script src="./localizer_files/4703-21dddb092b284e1b.js" async=""></script><script src="./localizer_files/page-0ffe5c7f4a1beab5.js" async=""></script><script>document.querySelectorAll('body link[rel="icon"], body link[rel="apple-touch-icon"]').forEach(el => document.head.appendChild(el))</script><script src="./localizer_files/polyfills-42372ed130431b0a.js" nomodule=""></script><style>/* stylelint-disable */
+/* stylelint-enable */
+/** Buttons
+---------------------------------------------------------*/
+:root {
+  --transparent: rgba(255, 255, 255, 0);
+  --white: hsl(0, 0%, 100%);
+  --th-white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --th-black: hsl(0, 0%, 0%);
+  --lightGrey: hsl(0, 0%, 94%);
+  --th-grey-white: hsl(210, 10%, 97%);
+  --th-grey-light: hsl(210, 10%, 94.8%);
+  --th-grey-medium: hsl(212, 10%, 94%);
+  --th-grey: hsl(216, 22%, 91%);
+  --th-grey-dark: hsl(221, 20%, 78%);
+  --th-slate: hsl(221, 20%, 33%);
+  --th-slate-light: hsl(222, 20%, 45%);
+  --th-slate-dark: hsl(222, 22%, 18%);
+  --th-slate-alt: #333F57;
+  --th-slate-hover:#3E4A62;
+  --th-slate-dark-hover800:hsl(220, 22%, 24%);
+  --th-slate-dark-active800:hsl(219, 24%, 26%);
+  --th-slate-dark-hover600:hsl(222, 22%, 21%);
+  --th-slate-dark-active600:hsl(221, 24%, 23%);
+  --th-cool-grey-600: hsl(203, 16%, 44%);
+  --th-cool-grey-700: hsl(204, 18%, 30%);
+  --th-cool-grey-750: hsl(203, 18%, 32%);
+  --th-cool-grey-800: hsl(209, 20%, 25%);
+  --th-cool-grey-850: hsl(209, 20%, 21%);
+  --th-cool-grey-900: hsl(210, 24%, 16%);
+  --fontColorDark: var( --th-slate-dark);
+  --fontColorWhite: hsl(0, 0%, 100%);
+  --list-item-hover:hsl(225, 20%, 96%);
+  --list-item-light-hover: hsl(210, 20%, 98%);
+  --list-item-hover-dark:hsla(222, 22%, 18%, 0.50);
+  --list-item-light-hover-dark: hsla(222, 20%, 33%, 0.50);
+  --greyTransparent: hsla(222, 22%, 18%, 0.12);
+  --whiteTransparent: hsla(0, 0%, 100%, 0.12);
+  --defaultColor: hsl(220, 20%, 91%);
+  --defaultColorHover: hsl(220, 19%, 78%);
+  --defaultColorActive: hsl(220, 19%, 68%);
+  --defaultColorSelected: hsl(221, 20%, 75%);
+  --buttonBorderColor: 2px solid hsl(220, 20%, 91%);
+  --buttonBorderColorHover: 2px solid hsl(220, 19%, 78%);
+  --buttonBorderColorActive: 2px solid hsl(220, 19%, 68%);
+  --buttonBorderColorSelected: 2px solid hsl(221, 20%, 75%);
+  --iconFillColor: var( --th-slate-dark );
+  --primaryColor: hsl(211, 100%, 45%);
+  --primaryColorHover: hsl(211, 100%, 35%);
+  --primaryColorActive: hsl(211, 100%, 25%);
+  --primaryButtonBorder: 2px solid hsl(211, 100%, 45%);
+  --primaryButtonBorderHover: 2px solid hsl(211, 100%, 35%);
+  --primaryButtonBorderActive: 2px solid hsl(211, 100%, 25%);
+  --secondaryColor: var(--th-slate);
+  --secondaryColorHover: hsl(221, 20%, 23%);
+  --secondaryColorActive: hsl(221, 20%, 13%);
+  --secondaryButtonBorderColor: 2px solid var(--th-slate);
+  --secondaryButtonBorderColorHover: 2px solid hsl(221, 20%, 23%);
+  --secondaryButtonBorderColorActive: 2px solid hsl(221, 20%, 13%);
+  --disabledColor: hsl(0, 0%, 50%);
+  --disabledBackgroundColor: hsl(0, 0%, 95%);
+  --brandColorGreen: hsl(76, 60%, 52%);
+  --brandColorGreenActive: hsl(76, 62%, 40%);
+  --primaryColorGreen: hsl(79, 100%, 24%);
+  --primaryColorGreenHover: hsl(79, 100%, 14%);
+  --primaryColorGreenActive: hsl(79, 100%, 4%);
+  --buttonBorderGreen: 2px solid hsl(79, 100%, 24%);
+  --buttonBorderGreenHover: 2px solid hsl(79, 100%, 14%);
+  --buttonBorderGreenActive: 2px solid hsl(79, 100%, 4%);
+  --brandColorPink: hsl(344, 98%, 59%);
+  --primaryColorPink: #e12362;
+  --primaryColorPinkHover: hsl(340, 76%, 41%);
+  --primaryColorPinkActive: hsl(340, 76%, 31%);
+  --buttonBorderPink: 2px solid hsl(340, 76%, 51%);
+  --buttonBorderPinkHover: 2px solid hsl(340, 76%, 41%);
+  --buttonBorderPinkActive: 2px solid hsl(340, 76%, 31%);
+  --brandColorTeal: hsl(180, 85%, 34%);
+  --primaryColorTeal: hsl(184, 50%, 35%);
+  --primaryColorTealHover: hsl(184, 50%, 25%);
+  --primaryColorTealActive: hsl(184, 50%, 15%);
+  --buttonBorderTeal: 2px solid hsl(184, 50%, 35%);
+  --buttonBorderTealHover: 2px solid hsl(184, 50%, 25%);
+  --buttonBorderTealActive: 2px solid hsl(184, 50%, 15%);
+  --brandColorPurple: hsl(264, 100%, 68%);
+  --primaryColorPurple: hsl(264, 83%, 62%);
+  --primaryColorPurpleHover: hsl(264, 83%, 52%);
+  --primaryColorPurpleActive: hsl(264, 83%, 42%);
+  --buttonBorderPurple: 2px solid hsl(264, 83%, 62%);
+  --buttonBorderPurpleHover: 2px solid hsl(264, 83%, 52%);
+  --buttonBorderPurpleActive: 2px solid hsl(264, 83%, 42%);
+  --brandColorOrange: hsl(33, 94%, 48%);
+  --primaryColorOrange: hsl(15, 79%, 45%);
+  --primaryColorOrangeHover: hsl(15, 80%, 35%);
+  --primaryColorOrangeActive: hsl(15, 80%, 25%);
+  --buttonBorderOrange: 2px solid hsl(15, 79%, 45%);
+  --buttonBorderOrangeHover: 2px solid hsl(15, 80%, 35%);
+  --buttonBorderOrangeActive: 2px solid hsl(15, 80%, 25%);
+  --brandColorBlue: hsl(197, 100%, 50%);
+  --brandColorBlueActive: hsl(197, 100%, 39%);
+  --brandColorBlueWCAG: hsl(197, 100%, 42%);
+  --primaryColorBlue: hsl(201, 100%, 37%);
+  --primaryColorBlueHover: hsl(201, 100%, 27%);
+  --primaryColorBlueActive: hsl(201, 100%, 17%);
+  --buttonBorderBlue: 2px solid hsl(201, 100%, 37%);
+  --buttonBorderBlueHover: 2px solid hsl(201, 100%, 27%);
+  --buttonBorderBlueActive: 2px solid hsl(201, 100%, 17%);
+  --BrandcolorYellow: hsl(41, 90%, 61%);
+  --primaryColorReachDeck: hsl(209, 100%, 39%);
+  --primaryColorReachDeckHover: hsl(209, 100%, 29%);
+  --primaryColorReachDeckActive: hsl(209, 100%, 19%);
+  --buttonBorderReachDeck: 2px solid hsl(209, 100%, 39%);
+  --buttonBorderReachDeckHover: 2px solid hsl(209, 100%, 29%);
+  --buttonBorderReachDeckActive: 2px solid hsl(209, 100%, 19%);
+  --reachDeckEditorColor: hsl(112, 100%, 26%);
+  --launchpadButtonLight: hsl(210, 10%, 96%);
+  --launchpadButtonLightHover: hsl(220, 8%, 92%);
+  --launchpadButtonLightActive:hsl(0, 0%, 90%);
+  --ContrastPinkOrbitNoteHover: hsl(343, 81%, 48%);
+  --ContrastPinkOrbitNoteActive: hsl(345, 96%, 42%);
+  --ContrastButtonBorderPink: hsl(345, 96%, 42%);
+  --primaryColorClaroNavy: hsl(207, 74%, 27%);
+  --primaryColorClaroNavyHover: hsl(206, 83%, 21%);
+  --primaryColorClaroNavyActive: hsl(206, 89%, 17%);
+  --buttonBorderClaro: 2px solid hsl(207, 74%, 27%);
+  --buttonBorderClaroHover: 2px solid hsl(206, 83%, 21%);
+  --buttonBorderClaroActive: 2px solid hsl(206, 89%, 17%);
+  --primaryColorClaroBlue: hsl(201, 100%, 37%);
+  --primaryColorClaroBlueHover: hsl(201, 100%, 31%);
+  --primaryColorClaroBlueActive: hsl(201, 100%, 27%);
+  --claroDark: hsl(218, 54%, 20%);
+  --claroGrey: hsl(217, 31%, 68%);
+  --claroBlue: hsl(191, 88%, 40%);
+  --claroBlueAlt: hsl(188, 78%, 50%);
+  --claroGreen: hsl(75, 63%, 51%);
+  --altColor: var(--claroGreen);
+  --altColorHover: hsl(75, 70%, 40%);
+  --altColorActive: hsl(75, 77%, 33%);
+  --altButtonBorderColor: 2px solid var(--claroGreen);
+  --altButtonBorderColorHover: 2px solid hsl(75, 70%, 40%);
+  --altButtonBorderColorActive: 2px solid hsl(75, 77%, 33%);
+  --brandColorLingdys: hsl(0, 82%, 49%);
+  --primaryColorLingdys: hsl(217, 34%, 38%);
+  --primaryColorLingdysHover: hsl(217, 37%, 24%);
+  --primaryColorLingdysActive: hsl(217, 39%, 18%);
+  --buttonBorderLingdys: 2px solid hsl(217, 34%, 38%);
+  --buttonBorderLingdysHover: 2px solid hsl(217, 37%, 24%);
+  --buttonBorderLingdysActive: 2px solid hsl(217, 39%, 18%);
+  --brandColorAppWriter: #F70790;
+  --primaryColorAppWriter: #D8087F;
+  --primaryColorAppWriterHover:#B40669;
+  --primaryColorAppWriterActive: #9F055C;
+  --buttonBorderAppwriter: 2px solid #D8087F;
+  --buttonBorderAppwriterHover: 2px solid #B40669;
+  --buttonBorderAppWriterActive: 2px solid #9F055C;
+  --iconToggleFillOrbitNote: hsl(196, 99%, 50%);
+  --textColor: var( --th-slate-dark );
+  --textColorLight: var( --th-white );
+  --border: 1px solid var( --th-grey );
+  --borderDark: 1px solid var( --th-grey-dark );
+  --infoColor: hsl(194, 77%, 24%);
+  --successColor: hsla(134, 71%, 43%, 0.584);
+  --errorColor: hsl(0, 71%, 51%);
+  --warningColor: hsl(45, 97%, 51%);
+  --infoBackgroundColor: hsl(180, 100%, 99%);
+  --successBackgroundColor: hsl(78, 100%, 98%);
+  --errorBackgroundColor: hsl(0, 100%, 98%);
+  --warningBackgroundColor: hsl(35, 100%, 98%);
+  --notificationDarkModeBackground: hsl(218, 22%, 37%);
+  --infoBorderColor: hsl(191, 44%, 82%);
+  --successBorderColor: hsl(100, 28%, 69%);
+  --errorBorderColor: hsl(0, 37%, 73%);
+  --warningBorderColor: hsl(41, 30%, 71%);
+  --notificationDarkModeBorder: hsl(217, 19%, 41%);
+  --infoTitleColor: hsl(194, 77%, 24%);
+  --successTitleColor: hsl(121, 48%, 23%);
+  --errorTitleColor: hsl(1, 47%, 40%);
+  --warningTitleColor: hsl(37, 92%, 25%);
+  --infoWarningColor: hsl(194, 77%, 24%);
+  --successWarningColor: hsla(121, 48%, 23%, 0.8);
+  --errorWarningColor: hsla(1, 47%, 40%, 0.8);
+  --warningWarningColor: hsla(37, 92%, 25%, 0.8);
+  --line-height-base: 1.5;
+  --zindex-modal: 1050;
+  --modal-dialog-margin: 2rem;
+  --modal-content-border-radius: 1px;
+  --buttonBorderRadius: 30px;
+  --buttonRoundness: 30px;
+  --buttonLinkTextColor: var( --primaryColor)!important;
+  --buttonLinkIconColor: var( --primaryColor)!important;
+  --buttonNoBackgroundTextColor: var( --th-slate-dark);
+  --buttonNoBackgroundIconColor: var( --th-slate-dark);
+  --buttonNoBackgroundColor: transparent;
+  --buttonNoBackgroundColorHover: var(--icon-button-background-hover-color);
+  --buttonNoBackgroundColorActive: var(--icon-button-background-active-color);
+  --buttonNoBackgroundBorder: 2px solid transparent;
+  --buttonNoBackgroundBorderHover: 2px solid transparent;
+  --buttonNoBackgroundBorderActive: 2px solid transparent;
+  --activeDotColor: inherit;
+  --themeColorDefault: var(--defaultColor);
+  --themeColorGroundworks: var(--primaryColor);
+  --themeColorReadWrite: var(--primaryColorPurple);
+  --themeColorEquatio: var(--primaryColorBlue);
+  --themeColorBrowsealoud: var(--primaryColorOrange);
+  --themeColorWriq: var(--primaryColorTeal);
+  --themeColorFluencyTutor: var(--primaryColorGreen);
+  --themeColorSnapVerter: var(--primaryColorGreen);
+  --themeColorSpeechStream: var(--primaryColorPink);
+  --themeColorTexthelp: var(--primaryColorTeal);
+  --themeColorReachDeck: var(--primaryColorReachDeck);
+  --themeColorPdfReader: var(--primaryColorBlue);
+  --uniloginBackgroundColor: #F7F7F7;
+  --uniloginWindowBackgroundColor: var(--primaryColorBlue);
+  --line-height-base: 1.5;
+  --zindex-modal: 1050;
+  --modal-dialog-margin: 2em;
+  --modal-content-border-radius: 1px;
+  --modal-inner-padding: 1.5em;
+  --modal-title-padding: 1.5em;
+  --modal-title-line-height: var(--line-height-base);
+  --modal-content-bg: #fff;
+  --modal-content-border-color: rgba(0, 0, 0, .2);
+  --modal-content-fallback-border-color: #999;
+  --modal-backdrop-bg: #000;
+  --modal-backdrop-opacity: .5;
+  --modal-header-border-color: #e5e5e5;
+  --modal-footer-border-color: var(--modal-header-border-color);
+  --modal-header-background-color: #f5f5f5;
+  --select-border: 1px solid #DADADA;
+  --select-background: hsl(0, 0%, 100%);
+  --select-background-color: #efefef;
+  --select-background-color-hover: hsl(0, 0%, 97%);
+  --input-border: 1px solid #DADADA;
+  --input-background-color: #ffffff;
+  --settings-title-color: var(--primaryColor);
+  --settings-item-background-color: var(--th-white);
+  --settings-item-background-hover-color: var(--th-grey-medium);
+  --settings-item-background-active-color: var(--th-grey);
+  --list-group-background-color: transparent;
+  --list-group-item-background-color: var(--th-white);
+  --list-group-item-background-hover-color: var(--th-grey-light);
+  --list-group-item-background-active-color: var(--th-grey);
+  --list-group-item-icon-color: var(--th-slate-dark);
+  --ListGroupSearchItemColor: var(--th-white);
+  --ListGroupSearchItemColorHover: #f9fafb;
+  --ListGroupSearchItemTextColor: var(--th-slate);
+  --ListGroupSearchItemBorderColor: hsla(0, 0%, 0%, 0.15);
+  --ListGroupSearchItemAsideColor: hsl(0, 0%, 95%);
+  --ListGroupSearchItemAsideTextColor: #000;
+  --toolbar-button-disabled: hsl(0, 0%, 96.1%);
+  --toolbar-button-background: hsl(0, 0%, 96.1%);
+  --toolbar-button-hover-background: hsl(0, 0%, 80%);
+  --toolbar-button-color: hsl(0, 0%, 0%);
+  --toolbar-button-hover-active-background: hsl(0, 0%, 70.2%);
+  --toolbar-button-default-size: 43px;
+  --toolbar-button-focus-color: hsl(213, 71.3%, 60.4%);
+  --toolbar-button-svg-color: hsl(0, 0%, 29%);
+  --toolbar-button-toggle-color: hsl(264, 100%, 68%);
+  --panel-inner-padding: .7em;
+  --icon-button-background-default-color: hsla(0, 0%, 0%, 0.077);
+  --icon-button-background-hover-color: hsla(0, 0%, 0%, 0.125);
+  --icon-button-background-active-color: hsla(0, 0%, 0%, 0.187);
+  --icon-button-background-default-color-dark: rgba(255, 255, 255, 0.077);
+  --icon-button-background-hover-color-dark: rgba(255, 255, 255, 0.146);
+  --icon-button-background-active-color-dark: rgba(255, 255, 255, 0.221);
+  --icon-button-border-color: solid 2px transparent;
+  --menuIconFillColor: var(--th-slate);
+  --cardIconFillColor: var(--th-slate);
+  --default-menu-notify-background-colour: hsl(264, 100%, 68%);
+  --toolbarButtonBackgroundColor: var( --defaultColor);
+  --toolbarButtonBackgroundHoverColor: var( --icon-button-background-hover-color);
+  --toolbarButtonBackgroundActiveColor: var( --icon-button-background-active-color);
+  --toolbarIconHoverFill: var( --th-slate);
+  --toolbarIconToggleFill: var( --primaryColor);
+  --dashboardContentBackgroundColor: #fff;
+  --dashboardHeaderBackgroundColor: #fff;
+  --dashboardSidebarBorderTopColor: var( --lightGrey);
+  --dashboardTextColor: var(--th-slate);
+  --dashboardTitleTextColor: var(--fontColorDark);
+  --dashboardSubTitleTextColor: var(--th-slate-light);
+  --dashboardCardBackgroundColor: var(--white);
+  --dashboardCardBackgroundHoverColor: var(--th-grey-light);
+  --dashboardCardBackgroundActiveColor: var(--lightGrey);
+  --dashboardCardHighlightColor: var(--primaryColor);
+  --dashboardCardBorderColor: var(--lightGrey);
+  --dashboardCardFooterLinkColor: var(--primaryColor);
+  --dashboardCardAuditorColor: hsl(208, 100%, 43%);
+  --dashboardCardAuditorLabelColor: hsl(208, 100%, 43%);
+  --dashboardCardEditorLabelColor: var(--reachDeckEditorColor);
+  --dashboardCardToolbarColor: var(--primaryColorOrange);
+  --dashboardCardToolbarLabelColor: var(--primaryColorOrange);
+  --dashboardPaneBackgroundColor: #fcfcfc;
+  --dashboardPaneBorderColor: rgba(92, 106, 138, 0.4);
+  --dashboardPaneDashedBorderColor: var(--dashboardDashedBorderLight);
+  --dashboardDashedBorderLight: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%235C6A8ACC' stroke-width='2' stroke-dasharray='4%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  --dashboardDashedBorderDark: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23323E52FF' stroke-width='2' stroke-dasharray='4%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  --icon-opacity: 1;
+  --accordionBackgroundColor: #fff;
+  --accordionTextColor: #484848;
+  --accordionTextBottomColor: #484848;
+  --accordionIconColor: var(--toolbarWhite);
+  --accordionBackgroundColorHover: #f9fafb;
+  --tableBackgroundColor: none;
+  --tableBackgroundHeaderColor: #F9FAFB;
+  --tableBackgroundAltColor: #f7f7f7;
+  --tableBackgroundHoverColor: hsl(210, 20%, 98%);
+  --tableBorderColor: #E2E2E3;
+  --tableTextColor: #484848;
+}
+
+/* stylelint-disable */
+/* stylelint-enable */
+.th-wq,
+.th-th {
+  --toolbarBackgroundColor: var(--defaultColor);
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorWriq);
+  --themeColorSecondary: var(--secondaryColor);
+  --dashboardTopColor: var(--brandColorTeal);
+  --dashboardTitleColor: var(--themeColorWriq);
+  --iconFillColor: var(--white);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorTeal);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorTealHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorTealActive);
+  --primaryButtonBorderActive: var(--buttonBorderTealActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderTeal);
+  --primaryButtonBorderHover: var(--buttonBorderTealHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --secondaryButtonBackgroundColor: var(--secondaryColor);
+  --secondaryButtonBackgroundHoverColor: var(--secondaryColorHover);
+  --secondaryButtonBackgroundActiveColor: var(--secondaryColorActive);
+  --secondaryButtonTextColor: var(--fontColorWhite);
+  --secondaryButtonTextHoverColor: var(--fontColorWhite);
+  --secondaryButtonTextActiveColor: var(--fontColorWhite);
+  --secondaryButtonTextVisitedColor: var(--fontColorWhite);
+  --secondaryButtonBorder: var(--secondaryButtonBorder);
+  --secondaryButtonBorderHover: var(--secondaryButtonBorderColorHover);
+  --secondaryButtonBorderRadius: var(--buttonRoundness);
+  --secondaryButtonIconFillColor: var(--white);
+  --table-hover-item: var(--list-item-light-hover);
+  --settingsTitleColor: var(--themeColorPrimary);
+}
+
+.th-rw,
+.th-wa {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorReadWrite);
+  --themeColorSecondary: var(--secondaryColor);
+  --toolbarBackgroundColor: var(--defaultColor);
+  --toolbarIconFill: var(--th-slate);
+  --toolbarIconHoverFill: var(--th-slate);
+  --toolbarIconActiveFill: var(--th-slate);
+  --toolbarIconToggledHoverFill: var(--primaryColorPurple);
+  --toolbarIconToggleFill: var(--primaryColorPurple);
+  --toolbarIconToggleHoverFill: var(--primaryColorPurple);
+  --dashboardTopColor: var(--brandColorPurple);
+  --dashboardTitleColor: var(--themeColorReadWrite);
+  --iconFillColor: var(--th-slate-dark);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderActive: var(--buttonBorderColorActive);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorPurple);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorPurpleHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorPurpleActive);
+  --primaryButtonBorderActive: var(--buttonBorderPurpleActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderPurple);
+  --primaryButtonBorderHover: var(--buttonBorderPurpleHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --secondaryButtonBackgroundColor: var(--secondaryColor);
+  --secondaryButtonBackgroundHoverColor: var(--secondaryColorHover);
+  --secondaryButtonBackgroundActiveColor: var(--secondaryColorActive);
+  --secondaryButtonTextColor: var(--fontColorWhite);
+  --secondaryButtonTextHoverColor: var(--fontColorWhite);
+  --secondaryButtonTextActiveColor: var(--fontColorWhite);
+  --secondaryButtonTextVisitedColor: var(--fontColorWhite);
+  --secondaryButtonBorder: var(--secondaryButtonBorder);
+  --secondaryButtonBorderHover: var(--secondaryButtonBorderColorHover);
+  --secondaryButtonBorderRadius: var(--buttonRoundness);
+  --secondaryButtonIconFillColor: var(--white);
+  --table-hover-item: var(--list-item-light-hover);
+  --settingsTitleColor: var(--themeColorPrimary);
+  --menuNotifyBackgroundColour: var(--brandColorPurple);
+  --uniloginBackgroundColor: #FAF7FF;
+  --uniloginWindowBackgroundColor: var(--primaryColorPurple);
+}
+
+.th-pr {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorPdfReader);
+  --themeColorSecondary: var(--secondaryColor);
+  --primaryButtonBackgroundColor: var(--primaryColorBlue);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorBlueHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorBlueActive);
+  --primaryButtonBorderActive: var(--buttonBorderBlueActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderBlue);
+  --primaryButtonBorderHover: var(--buttonBorderBlueHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --toolbarBackgroundColor: var(--th-grey);
+  --toolbarButtonBackgroundColor: var(--th-grey);
+  --toolbarButtonBackgroundHoverColor: var(--ContrastPinkOrbitNoteHover);
+  --toolbarButtonBackgroundActiveColor: var(--ContrastPinkOrbitNoteActive);
+  --toolbarButtonBorderActive: var(--ContrastButtonBorderPink);
+  --toolbarIconFill: var(--th-slate);
+  --toolbarIconHoverFill: var(--white);
+  --toolbarIconActiveFill: var(--white);
+  --toolbarIconToggleFill: var(--ContrastPinkOrbitNoteActive);
+  --toolbarIconToggleHoverFill: var(--white);
+  --toolbarIconToggledHoverFill: var(--white);
+  --iconButtonBackgroundDefaultColor: var(--icon-button-background-default-color);
+  --iconButtonBackgroundHoverColor: var(--icon-button-background-hover-color);
+  --iconButtonBackgroundActiveColor: var(--icon-button-background-active-color);
+  --iconButtonBorderColor: 2px solid transparent;
+  --iconFillColor: var(--th-slate);
+  --panelBackgroundColor: var(--th-grey-light);
+  --panelBackgroundColorLight: var(--white);
+  --panelBackgroundColorDark: var(--th-grey);
+  --fontColor: var(--th-slate-dark);
+  --borderColor: 1px solid var(--th-grey-dark);
+  --settingsTitleColor: var(--themeColorPrimary);
+  --menuNotifyBackgroundColour: var(--brandColorPink);
+  --dashboardTopColor: var(--primaryColorBlue);
+  --dashboardTitleColor: var(--themeColorEquatio);
+  --cardIconFillColor: var(--primaryColorBlue);
+}
+
+.th-eq {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorEquatio);
+  --themeColorSecondary: var(--secondaryColor);
+  --dashboardTopColor: var(--brandColorBlue);
+  --dashboardTitleColor: var(--themeColorEquatio);
+  --iconFillColor: var(--th-slate-dark);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorBlue);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorBlueHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorBlueActive);
+  --primaryButtonBorderActive: var(--buttonBorderBlueActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderBlue);
+  --primaryButtonBorderHover: var(--buttonBorderBlueHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --secondaryButtonBackgroundColor: var(--secondaryColor);
+  --secondaryButtonBackgroundHoverColor: var(--secondaryColorHover);
+  --secondaryButtonBackgroundActiveColor: var(--secondaryColorActive);
+  --secondaryButtonTextColor: var(--fontColorWhite);
+  --secondaryButtonTextHoverColor: var(--fontColorWhite);
+  --secondaryButtonTextActiveColor: var(--fontColorWhite);
+  --secondaryButtonTextVisitedColor: var(--fontColorWhite);
+  --secondaryButtonBorder: var(--secondaryButtonBorder);
+  --secondaryButtonBorderHover: var(--secondaryButtonBorderColorHover);
+  --secondaryButtonBorderRadius: var(--buttonRoundness);
+  --secondaryButtonIconFillColor: var(--white);
+  --table-hover-item: var(--list-item-light-hover);
+  --settingsTitleColor: var(--themeColorPrimary);
+  --uniloginBackgroundColor: #F2F9FF;
+  --uniloginWindowBackgroundColor: var(--brandColorBlueWCAG);
+}
+
+.th-ba {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorBrowsealoud);
+  --themeColorSecondary: var(--secondaryColor);
+  --toolbarBackgroundColor: var(--th-grey);
+  --toolbarIconButtonFillColor: var(--th-slate);
+  --toolbarButtonBackgroundColor: var(--th-grey);
+  --toolbarButtonBackgroundHoverColor: var(--primaryColorOrangeHover);
+  --toolbarButtonBackgroundActiveColor: var(--primaryColorOrangeActive);
+  --toolbarButtonBorderActive: var(--buttonBorderOrange);
+  --toolbarIconFill: var(--th-slate);
+  --toolbarIconHoverFill: var(--th-slate);
+  --toolbarIconActiveFill: var(--primaryColorBlue);
+  --toolbarIconToggleFill: var(--primaryColorBlue);
+  --toolbarIconToggleHoverFill: var(--white);
+  --dashboardTopColor: var(--brandColorOrange);
+  --dashboardTitleColor: var(--themeColorBrowsealoud);
+  --iconFillColor: var(--white);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorOrange);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorOrangeHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorOrangeActive);
+  --primaryButtonBorderActive: var(--buttonBorderOrangeActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderOrange);
+  --primaryButtonBorderHover: var(--buttonBorderOrangeHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --secondaryButtonBackgroundColor: var(--secondaryColor);
+  --secondaryButtonBackgroundHoverColor: var(--secondaryColorHover);
+  --secondaryButtonBackgroundActiveColor: var(--secondaryColorActive);
+  --secondaryButtonTextColor: var(--fontColorWhite);
+  --secondaryButtonTextHoverColor: var(--fontColorWhite);
+  --secondaryButtonTextActiveColor: var(--fontColorWhite);
+  --secondaryButtonTextVisitedColor: var(--fontColorWhite);
+  --secondaryButtonBorder: var(--secondaryButtonBorder);
+  --secondaryButtonBorderHover: var(--secondaryButtonBorderColorHover);
+  --secondaryButtonBorderRadius: var(--buttonRoundness);
+  --secondaryButtonIconFillColor: var(--white);
+  --table-hover-item: var(--list-item-light-hover);
+  --settingsTitleColor: var(--themeColorPrimary);
+  --menuNotifyBackgroundColour: var(--white);
+}
+.th-ba .gw-menu-notification--inline {
+  --menuNotifyBackgroundColour: var(--themeColorBrowsealoud);
+}
+
+.th-at {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorReachDeck);
+  --themeColorSecondary: var(--secondaryColor);
+  --toolbarBackgroundColor: var(--defaultColor);
+  --toolbarIconFill: var(--th-slate);
+  --toolbarIconHoverFill: var(--th-slate);
+  --toolbarIconActiveFill: var(--th-slate);
+  --toolbarIconToggledHoverFill: var(--primaryColorBlue);
+  --toolbarIconToggleFill: var(--primaryColorBlue);
+  --toolbarIconToggleHoverFill: var(--primaryColorBlue);
+  --dashboardTopColor: var(--th-grey);
+  --dashboardTitleColor: var(--th-slate-dark);
+  --iconFillColor: var(--th-slate-dark);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorReachDeck);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorReachDeckHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorReachDeckActive);
+  --primaryButtonBorderActive: var(--buttonBorderReachDeckActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderReachDeck);
+  --primaryButtonBorderHover: var(--buttonBorderReachDeckHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --secondaryButtonBackgroundColor: var(--secondaryColor);
+  --secondaryButtonBackgroundHoverColor: var(--secondaryColorHover);
+  --secondaryButtonBackgroundActiveColor: var(--secondaryColorActive);
+  --secondaryButtonTextColor: var(--fontColorWhite);
+  --secondaryButtonTextHoverColor: var(--fontColorWhite);
+  --secondaryButtonTextActiveColor: var(--fontColorWhite);
+  --secondaryButtonTextVisitedColor: var(--fontColorWhite);
+  --secondaryButtonBorder: var(--secondaryButtonBorder);
+  --secondaryButtonBorderHover: var(--secondaryButtonBorderColorHover);
+  --secondaryButtonBorderRadius: var(--buttonRoundness);
+  --secondaryButtonIconFillColor: var(--white);
+  --dashboardTopColor: #E12362;
+  --dashboardContentBackgroundColor: #F2F5F9;
+  --tableBackgroundHeaderColor: #DFE1E5;
+  --table-hover-item: var(--list-item-light-hover);
+  --settingsTitleColor: var(--themeColorPrimary);
+}
+
+.th-rd {
+  font-size: 10px;
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorReachDeck);
+  --themeColorSecondary: var(--secondaryColor);
+  --toolbarBackgroundColor: var(--defaultColor);
+  --toolbarIconFill: var(--th-slate);
+  --toolbarIconHoverFill: var(--th-slate);
+  --toolbarIconActiveFill: var(--th-slate);
+  --toolbarIconToggledHoverFill: var(--primaryColorBlue);
+  --toolbarIconToggleFill: var(--primaryColorBlue);
+  --toolbarIconToggleHoverFill: var(--primaryColorBlue);
+  --dashboardTopColor: var(--th-grey);
+  --dashboardTitleColor: var(--th-slate-dark);
+  --iconFillColor: var(--th-slate-dark);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorReachDeck);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorReachDeckHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorReachDeckActive);
+  --primaryButtonBorderActive: var(--buttonBorderReachDeckActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderReachDeck);
+  --primaryButtonBorderHover: var(--buttonBorderReachDeckHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --secondaryButtonBackgroundColor: var(--secondaryColor);
+  --secondaryButtonBackgroundHoverColor: var(--secondaryColorHover);
+  --secondaryButtonBackgroundActiveColor: var(--secondaryColorActive);
+  --secondaryButtonTextColor: var(--fontColorWhite);
+  --secondaryButtonTextHoverColor: var(--fontColorWhite);
+  --secondaryButtonTextActiveColor: var(--fontColorWhite);
+  --secondaryButtonTextVisitedColor: var(--fontColorWhite);
+  --secondaryButtonBorder: var(--secondaryButtonBorder);
+  --secondaryButtonBorderHover: var(--secondaryButtonBorderColorHover);
+  --secondaryButtonBorderRadius: var(--buttonRoundness);
+  --secondaryButtonIconFillColor: var(--white);
+  --table-hover-item: var(--list-item-light-hover);
+  --settingsTitleColor: var(--themeColorPrimary);
+}
+
+.th-ss {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorSpeechStream);
+  --themeColorSecondary: var(--secondaryColor);
+  --dashboardTopColor: var(--brandColorPink);
+  --dashboardTitleColor: var(--themeColorSpeechStream);
+  --iconFillColor: var(--th-slate-dark);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--themeColorSpeechStream);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorPinkHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorPinkActive);
+  --primaryButtonBorderActive: var(--buttonBorderPinkActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderPink);
+  --primaryButtonBorderHover: var(--buttonBorderPinkHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --secondaryButtonBackgroundColor: var(--secondaryColor);
+  --secondaryButtonBackgroundHoverColor: var(--secondaryColorHover);
+  --secondaryButtonBackgroundActiveColor: var(--secondaryColorActive);
+  --secondaryButtonTextColor: var(--fontColorWhite);
+  --secondaryButtonTextHoverColor: var(--fontColorWhite);
+  --secondaryButtonTextActiveColor: var(--fontColorWhite);
+  --secondaryButtonTextVisitedColor: var(--fontColorWhite);
+  --secondaryButtonBorder: var(--secondaryButtonBorder);
+  --secondaryButtonBorderHover: var(--secondaryButtonBorderColorHover);
+  --secondaryButtonBorderRadius: var(--buttonRoundness);
+  --secondaryButtonIconFillColor: var(--white);
+  --table-hover-item: var(--list-item-light-hover);
+  --settingsTitleColor: var(--themeColorPrimary);
+}
+
+.th-st {
+  --uniloginBackgroundColor: #F2F9FF;
+  --uniloginWindowBackgroundColor: #2A3953;
+}
+
+.th-sv,
+.th-ft {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--themeColorFluencyTutor);
+  --themeColorSecondary: var(--secondaryColor);
+  --dashboardTopColor: var(--brandColorGreen);
+  --dashboardTitleColor: var(--themeColorFluencyTutor);
+  --iconFillColor: var(--th-slate-dark);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--themeColorFluencyTutor);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorGreenHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorGreenActive);
+  --primaryButtonBorderActive: var(--buttonBorderGreenActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderGreen);
+  --primaryButtonBorderHover: var(--buttonBorderGreenHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --secondaryButtonBackgroundColor: var(--secondaryColor);
+  --secondaryButtonBackgroundHoverColor: var(--secondaryColorHover);
+  --secondaryButtonBackgroundActiveColor: var(--secondaryColorActive);
+  --secondaryButtonTextColor: var(--fontColorWhite);
+  --secondaryButtonTextHoverColor: var(--fontColorWhite);
+  --secondaryButtonTextActiveColor: var(--fontColorWhite);
+  --secondaryButtonTextVisitedColor: var(--fontColorWhite);
+  --secondaryButtonBorder: var(--secondaryButtonBorder);
+  --secondaryButtonBorderHover: var(--secondaryButtonBorderColorHover);
+  --secondaryButtonBorderRadius: var(--buttonRoundness);
+  --secondaryButtonIconFillColor: var(--white);
+  --table-hover-item: var(--list-item-light-hover);
+  --settingsTitleColor: var(--themeColorPrimary);
+}
+
+.th-cr {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--primaryColorClaroNavy);
+  --themeColorSecondary: var(--secondaryColor);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorClaroNavy);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorClaroNavyHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorClaroNavyActive);
+  --primaryButtonBorderActive: var(--buttonBorderClaroActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderClaro);
+  --primaryButtonBorderHover: var(--buttonBorderClaroHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --altButtonBackgroundColor: var(--altColor);
+  --altButtonBackgroundHoverColor: var(--altColorHover);
+  --altButtonBackgroundActiveColor: var(--altColorActive);
+  --altButtonTextColor: var(--fontColorWhite);
+  --altButtonTextHoverColor: var(--fontColorWhite);
+  --altButtonTextActiveColor: var(--fontColorWhite);
+  --altButtonTextVisitedColor: var(--fontColorWhite);
+  --altButtonBorder: var(--altButtonBorder);
+  --altButtonBorderHover: var(--altButtonBorderColorHover);
+  --altButtonBorderRadius: var(--buttonRoundness);
+  --altButtonIconFillColor: var(--white);
+  --uniloginBackgroundColor: #F2F9FF;
+  --uniloginWindowBackgroundColor: var(--themeColorPrimary);
+}
+
+.th-wh {
+  background: #F6F6F6;
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--primaryColorClaroNavy);
+  --themeColorSecondary: var(--secondaryColor);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorClaroBlue);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorClaroBlueHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorClaroBlueActive);
+  --primaryButtonBorderActive: var(--buttonBorderClaroActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--primaryColorClaroBlue);
+  --primaryButtonBorderHover: var(--primaryColorClaroBlueHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --altButtonBackgroundColor: var(--altColor);
+  --altButtonBackgroundHoverColor: var(--altColorHover);
+  --altButtonBackgroundActiveColor: var(--altColorActive);
+  --altButtonTextColor: var(--fontColorWhite);
+  --altButtonTextHoverColor: var(--fontColorWhite);
+  --altButtonTextActiveColor: var(--fontColorWhite);
+  --altButtonTextVisitedColor: var(--fontColorWhite);
+  --altButtonBorder: var(--altButtonBorder);
+  --altButtonBorderHover: var(--altButtonBorderColorHover);
+  --altButtonBorderRadius: var(--buttonRoundness);
+  --altButtonIconFillColor: var(--white);
+  --uniloginBackgroundColor: #F2F9FF;
+  --uniloginWindowBackgroundColor: var(--primaryColorClaroNavy);
+}
+
+.th-lds {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--primaryColorLingdys);
+  --themeColorSecondary: var(--secondaryColor);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorLingdys);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorLingdysHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorLingdysActive);
+  --primaryButtonBorderActive: var(--buttonBorderLingdysActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderLingdys);
+  --primaryButtonBorderHover: var(--buttonBorderLingdysHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --altButtonBackgroundColor: var(--altColor);
+  --altButtonBackgroundHoverColor: var(--altColorHover);
+  --altButtonBackgroundActiveColor: var(--altColorActive);
+  --altButtonTextColor: var(--fontColorWhite);
+  --altButtonTextHoverColor: var(--fontColorWhite);
+  --altButtonTextActiveColor: var(--fontColorWhite);
+  --altButtonTextVisitedColor: var(--fontColorWhite);
+  --altButtonBorder: var(--altButtonBorder);
+  --altButtonBorderHover: var(--altButtonBorderColorHover);
+  --altButtonBorderRadius: var(--buttonRoundness);
+  --altButtonIconFillColor: var(--white);
+  --uniloginBackgroundColor: #F2F9FF;
+  --uniloginWindowBackgroundColor: var(--themeColorPrimary);
+}
+
+.th-aw {
+  --themeColorDefault: var(--defaultColor);
+  --themeColorPrimary: var(--primaryColorClaroNavy);
+  --themeColorSecondary: var(--secondaryColor);
+  --buttonBackgroundColor: var(--defaultColor);
+  --buttonBackgroundHoverColor: var(--defaultColorHover);
+  --buttonBackgroundActiveColor: var(--defaultColorActive);
+  --buttonTextColor: var(--fontColorDark);
+  --buttonTextHoverColor: var(--fontColorDark);
+  --buttonTextActiveColor: var(--fontColorDark);
+  --buttonTextVisitedColor: var(--fontColorDark);
+  --buttonBorder: var(--buttonBorder);
+  --buttonBorderHover: var(--buttonBorderColorHover);
+  --buttonBorderRadius: var(--buttonRoundness);
+  --buttonBorderIconFillColor: var(--black);
+  --primaryButtonBackgroundColor: var(--primaryColorAppWriter);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorAppWriterHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorAppWriterActive);
+  --primaryButtonBorderActive: var(--buttonBorderAppWriterActive);
+  --primaryButtonTextColor: var(--fontColorWhite);
+  --primaryButtonTextHoverColor: var(--fontColorWhite);
+  --primaryButtonTextActiveColor: var(--fontColorWhite);
+  --primaryButtonTextVisitedColor: var(--fontColorWhite);
+  --primaryButtonBorder: var(--buttonBorderAppWriter);
+  --primaryButtonBorderHover: var(--buttonBorderAppWriterHover);
+  --primaryButtonBorderRadius: var(--buttonRoundness);
+  --primaryButtonIconFillColor: var(--white);
+  --altButtonBackgroundColor: var(--altColor);
+  --altButtonBackgroundHoverColor: var(--altColorHover);
+  --altButtonBackgroundActiveColor: var(--altColorActive);
+  --altButtonTextColor: var(--fontColorWhite);
+  --altButtonTextHoverColor: var(--fontColorWhite);
+  --altButtonTextActiveColor: var(--fontColorWhite);
+  --altButtonTextVisitedColor: var(--fontColorWhite);
+  --altButtonBorder: var(--altButtonBorder);
+  --altButtonBorderHover: var(--altButtonBorderColorHover);
+  --altButtonBorderRadius: var(--buttonRoundness);
+  --altButtonIconFillColor: var(--white);
+  --uniloginBackgroundColor: #F7F7F7;
+  --uniloginWindowBackgroundColor: var(--primaryColorAppWriter);
+}
+
+.dark-mode {
+  --toolbarBackgroundColor: var(--th-slate-dark);
+  --toolbarButtonBackgroundColor: var(--th-slate-dark);
+  --toolbarButtonBackgroundHoverColor: var(--icon-button-background-hover-color-dark);
+  --toolbarButtonBackgroundActiveColor: var(--icon-button-background-active-color-dark);
+  --toolbarButtonBorderActive: var(--buttonBorderPink);
+  --toolbarIconFill: var(--white);
+  --toolbarIconHoverFill: var(--white);
+  --toolbarIconActiveFill: var(--white);
+  --dashboardHeaderBackgroundColor: var(--th-slate-dark);
+  --dashboardSidebarBorderTopColor: var(--th-slate);
+  --dashboardSidebarBackgroundColor: var(--th-slate-dark);
+  --dashboardContentBackgroundColor: var(--th-slate);
+  --dashboardCardBackgroundColor: var(--th-slate-dark);
+  --dashboardCardBackgroundHoverColor: var(--th-slate-dark-hover600);
+  --dashboardCardBackgroundActiveColor: var(--th-slate-dark-active600);
+  --dashboardCardHighlightColor: var(--brandColorBlue);
+  --dashboardTextColor: var(--th-white);
+  --dashboardTitleTextColor: var(--th-white);
+  --dashboardSubTitleTextColor: var(--th-white);
+  --menuIconFillColor: var(--white);
+  --iconButtonBackgroundDefaultColor: var(--icon-button-background-default-color-dark);
+  --iconButtonBackgroundHoverColor: var(--icon-button-background-hover-color-dark);
+  --iconButtonBackgroundActiveColor: var(--icon-button-background-active-color-dark);
+  --iconButtonBorderColor: 2px solid transparent;
+  --iconFillColor: var(--white);
+  --buttonLinkTextColor: var(--white);
+  --buttonLinkIconColor: var(--white);
+  --buttonNoBackgroundTextColor: var(--white);
+  --buttonNoBackgroundIconColor: var(--white);
+  --buttonNoBackgroundColor: transparent;
+  --buttonNoBackgroundColorHover: var(--icon-button-background-hover-color-dark);
+  --buttonNoBackgroundColorActive: var(--icon-button-background-active-color-dark);
+  --buttonNoBackgroundBorder: 2px solid transparent;
+  --buttonNoBackgroundBorderHover: 2px solid transparent;
+  --buttonNoBackgroundBorderActive: 2px solid transparent;
+  --panelBackgroundColor: var(--th-slate);
+  --panelBackgroundColorLight: var(--th-slate-light);
+  --panelBackgroundColorDark: var(--th-slate-dark);
+  --fontColor: var(--textColorLight);
+  --borderColor: 1px solid var(--th-slate-light);
+  --infoBackgroundColor: var(--notificationDarkModeBackground);
+  --successBackgroundColor: var(--notificationDarkModeBackground);
+  --errorBackgroundColor: var(--notificationDarkModeBackground);
+  --warningBackgroundColor: var(--notificationDarkModeBackground);
+  --infoBorderColor: var(--notificationDarkModeBorder);
+  --successBorderColor: var(--notificationDarkModeBorder);
+  --errorBorderColor: var(--notificationDarkModeBorder);
+  --warningBorderColor: var(--notificationDarkModeBorder);
+  --infoWarningColor: #fff;
+  --successWarningColor: #fff;
+  --errorWarningColor: #fff;
+  --warningWarningColor: #fff;
+  --infoTitleColor: #fff;
+  --successTitleColor: #fff;
+  --errorTitleColor: #fff;
+  --warningTitleColor: #fff;
+  --accordionBackgroundColor: var(--th-slate-dark);
+  --accordionTextColor: #fff;
+  --accordionTextBottomColor: #f5f5f5;
+  --accordionIconColor: var(--toolbarWhite);
+  --accordionBackgroundColorHover: var(--th-slate-dark-hover600);
+  --tableBackgroundColor: var(--th-slate);
+  --tableBackgroundHeaderColor: var(--th-slate-alt);
+  --tableBackgroundAltColor: var(--th-slate-alt);
+  --tableBackgroundHoverColor: var(--th-slate-hover);
+  --tableBorderColor: var(--th-slate-dark);
+  --tableTextColor: #fff;
+  --ListGroupSearchItemColor: var(--th-slate-dark);
+  --ListGroupSearchItemColorHover: var(--th-slate-dark-hover800);
+  --ListGroupSearchItemTextColor: var(--th-white);
+  --ListGroupSearchItemBorderColor:rgba(0, 0, 0, 0.225);
+  --ListGroupSearchItemAsideColor: var(--th-slate-dark);
+  --ListGroupSearchItemAsideTextColor: #fff;
+}
+.dark-mode.th-rw {
+  --toolbarIconActiveFill: var(--white);
+  --toolbarIconToggledHoverFill: var(--brandColorPurple);
+  --toolbarIconToggleFill: var(--brandColorPurple);
+  --toolbarIconToggleHoverFill: var(--brandColorPurple);
+}
+.dark-mode.th-pr {
+  --toolbarButtonBackgroundHoverColor: var(--primaryColorBlue);
+  --toolbarButtonBackgroundActiveColor: var(--primaryColorBlueHover);
+  --toolbarButtonBorderActive: var(--buttonBorderBlueActive);
+  --toolbarIconToggleFill: var(--iconToggleFillOrbitNote);
+  --textColor: var(--textColorLight);
+  --cardIconFillColor: var(--brandColorBlue);
+  --primaryButtonBackgroundColor: var(--primaryColor);
+  --primaryButtonBackgroundHoverColor: var(--primaryColorHover);
+  --primaryButtonBackgroundActiveColor: var(--primaryColorActive);
+  --primaryButtonBorderActive: var(--primaryButtonBorderActive);
+  --primaryButtonBorder: var(--primaryButtonBorder);
+  --primaryButtonBorderHover: var(--primaryButtonBorderHover);
+  --dashboardTopColor: var(--primaryColorBlue);
+  --dashboardTitleColor: var(--themeColorEquatio);
+  --dashboardPaneBackgroundColor: var(--th-slate-dark);
+  --dashboardPaneBorderColor: var(--th-slate-dark);
+  --dashboardPaneDashedBorderColor: var(--dashboardDashedBorderDark);
+  --listGroupItemBackgroundColor: var(--th-slate-dark);
+  --listGroupItemBackgroundColorHover: var(--th-slate-dark-hover800);
+  --listGroupItemBackgroundColorActive: var(--th-slate-dark-active800);
+  --listGroupTileBackgroundColorActive: var(--th-slate-dark-active800);
+  --list-item-hover: var(--listGroupItemBackgroundColorHover);
+}
+.dark-mode.th-rd {
+  --toolbarIconToggledHoverFill: var(--brandColorBlue);
+  --toolbarIconToggleFill: var(--brandColorBlue);
+  --toolbarIconToggleHoverFill: var(--brandColorBlue);
+  --dashboardTopColor: var(--th-slate);
+  --dashboardCardAuditorColor: var(--primaryColorBlue);
+  --dashboardCardAuditorLabelColor: var(--th-grey);
+  --dashboardCardEditorColor: var(--reachDeckEditorColor);
+  --dashboardCardEditorLabelColor: var(--th-grey);
+  --dashboardCardToolbarColor: var(--primaryColorOrange);
+  --dashboardCardToolbarLabelColor: var(--th-grey);
+  --dashboardCardBorderColor: var(--th-slate-light);
+  --dashboardCardFooterLinkColor: hsl(197, 100%, 50%);
+  --icon-opacity: .9;
+  --cardIconFillColor: var(--th-white);
+  --listGroupItemBackgroundColor: var(--th-slate-dark);
+  --listGroupItemBackgroundColorHover: var(--th-slate-dark-hover800);
+  --listGroupItemBackgroundColorActive: var(--th-slate-dark-active800);
+  --listGroupTileBackgroundColorActive: var(--th-slate-dark-active800);
+  --list-item-hover: var(--listGroupItemBackgroundColorHover);
+}
+.dark-mode {
+  --inputBorder: 1px solid var(--th-slate);
+  --inputTextColor: var( --th-white);
+  --inputBackgroundColor: var(--th-cool-grey-800);
+  --modalHeaderBackgroundColor: var(--th-cool-grey-800);
+  --modalContentBackgroundColor: var(--th-cool-grey-700);
+  --modalContentBorderColorHeader: var(--th-cool-grey-700);
+  --modalContentBorderColorFooter: var(--th-cool-grey-700);
+  --modalTextColor: var(--th-white);
+  --settingsDialogBackgroundColor: var(--th-cool-grey-700);
+  --settingsDialogMenuBackgroundColor: var(--th-cool-grey-800);
+  --settingsDialogItemSelectedBackgroundColor: var(--th-slate-dark);
+  --settingsDialogItemBackgroundColorHover: var(--th-cool-grey-700);
+  --settingsDialogItemBackgroundColorActive: var(--th-cool-grey-600);
+  --settingsTitleColor: #fff;
+  --selectBorder: 1px solid var( --slate-light);
+  --selectBackgroundColor: var( --th-slate);
+  --selectBackgroundColorHover: rgba(255, 255, 255, 0.146);
+  --selectBackgroundColorActive: rgba(255, 255, 255, 0.221);
+}
+.dark-mode .gw-select {
+  background: transparent url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='22px' width='22px' viewBox='0 0 18 18'>%3Cpath d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z' fill='%23fff'/%3E%3Cpath d='M0-.75h24v24H0z' fill='none'/%3E</svg>") no-repeat;
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.9em top 40%, 0 0;
+  background-color: #434e65 transparent;
+  border: 1px solid #fff;
+  background-size: 1.3em auto, 100%;
+  color: #fff;
+}
+.dark-mode .gw-select > option {
+  background: #434e65;
+}
+.dark-mode {
+  --listGroupBackgroundColor: transparent;
+  --listGroupItemTextColor: var(--th-white);
+  --listGroupItemBackgroundColor: var(--th-cool-grey-800);
+  --listGroupItemActionsBackgroundColor: var(--th-cool-grey-850);
+  --listGroupItemBackgroundColorHover: var(--th-cool-grey-700);
+  --listGroupItemBackgroundColorActive: var(--th-cool-grey-600);
+  --listGroupItemIconColor: var(--th-white);
+  --listGroupItemArrowColor: var(--th-cool-grey-800);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root .day.dark-scheme {
+    background: #333;
+    color: white;
+  }
+  :root .night.dark-scheme {
+    background: black;
+    color: #ddd;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root .day.light-scheme {
+    background: white;
+    color: #555;
+  }
+  :root .night.light-scheme {
+    background: #eee;
+    color: black;
+  }
+}.th-rw {
+  --listGroupItemBackgroundColorActive: white;
+  --squareButtonBackgroundHover: #f5f5f5;
+  --squareButtonIconFillColor: rgb(36, 42, 56);
+  --squareButtonActiveBackGroundColor: #EFEFEF;
+  --squareButtonIconTickColor: #506C7E ;
+}
+
+.dark-mode {
+  --listGroupItemBackgroundColorFocus: rgb(63, 79, 90);
+  --modalTextColorFocus: white;
+  --listGroupItemBackgroundColorActive: rgb(36, 45, 51);
+  --modalTextColorActive: white;
+  --squareButtonBackgroundHover: rgb(56, 71, 81);
+  --squareButtonIconFillColor: white;
+  --squareButtonActiveBackGroundColor: #24323E;
+  --squareButtonIconTickColor: #FFF ;
+}
+
+.dark-mode.th-rw {
+  --toolbarIconButtonFillColor: var(--white);
+}
+
+.gw-toolbar--s1 {
+  --fontSize: 5px;
+}
+
+.gw-toolbar--s2 {
+  --fontSize: 10px;
+}
+
+.gw-toolbar--s3 {
+  --fontSize: 15px;
+}
+
+.gw-toolbar--s4 {
+  --fontSize: 20px;
+}
+
+.gw-listitem-fontsize-s10 {
+  --gw-listitem-fontsize: 10px !important;
+}
+
+.gw-listitem-fontsize-s11 {
+  --gw-listitem-fontsize: 11px !important;
+}
+
+.gw-listitem-fontsize-s12 {
+  --gw-listitem-fontsize: 12px !important;
+}
+
+.gw-listitem-fontsize-s13 {
+  --gw-listitem-fontsize: 13px !important;
+}
+
+.gw-listitem-fontsize-s14 {
+  --gw-listitem-fontsize: 14px !important;
+}
+
+.gw-listitem-fontsize-s15 {
+  --gw-listitem-fontsize: 15px !important;
+}
+
+.gw-listitem-fontsize-s16 {
+  --gw-listitem-fontsize: 16px !important;
+}
+
+.gw-listitem-fontsize-s17 {
+  --gw-listitem-fontsize: 17px !important;
+}
+
+.gw-listitem-fontsize-s18 {
+  --gw-listitem-fontsize: 18px !important;
+}
+
+.gw-listitem-fontsize-s19 {
+  --gw-listitem-fontsize: 19px !important;
+}
+
+.gw-listitem-fontsize-s20 {
+  --gw-listitem-fontsize: 20px !important;
+}
+
+.gw-listitem-fontsize-s21 {
+  --gw-listitem-fontsize: 21px !important;
+}
+
+.gw-listitem-fontsize-s22 {
+  --gw-listitem-fontsize: 22px !important;
+}
+
+.gw-listitem-fontsize-s23 {
+  --gw-listitem-fontsize: 23px !important;
+}
+
+.gw-listitem-fontsize-s24 {
+  --gw-listitem-fontsize: 24px !important;
+}
+
+:root {
+  --fontSize: 10px;
+}
+
+.gw-info {
+  --notification-bg-color: var(--infoBackgroundColor);
+  --notification-border-color: var(--infoBorderColor);
+  --notification-color: var(--infoTitleColor);
+}
+
+.gw-success {
+  --notification-bg-color: var(--successBackgroundColor);
+  --notification-border-color: var(--successBorderColor);
+  --notification-color: var(--successTitleColor);
+}
+
+.gw-error {
+  --notification-bg-color: var(--errorBackgroundColor);
+  --notification-border-color: var(--errorBorderColor);
+  --notification-color: var(--errorTitleColor);
+}
+
+.gw-warning {
+  --notification-bg-color: var(--warningBackgroundColor);
+  --notification-border-color: var(--warningBorderColor);
+  --notification-color: var(--warningTitleColor);
+}
+
+.th-rw {
+  --toolbarIconToggleFill: var(--primaryColorPurple);
+  --toolbarIconToggleHoverFill: var(--primaryColorPurple);
+}
+
+.gw-toolbar--undocked {
+  --toolbarWidth: fit-content;
+  --toolbarDisplay: block;
+  --toolbarPosition: fixed;
+}
+
+.gw-ul--small {
+  --liWidth: 150px;
+}
+
+.gw-ul--medium {
+  --liWidth: 300px;
+}
+
+.gw-ul--large {
+  --liWidth: 450px;
+}
+
+gw-radio label.gw-radio__input-label b {
+  font-weight: var(--label-bold-font-weight, bold);
+  font-size: var(--label-bold-font-size, 1.4em);
+  font-family: var(--label-bold-font-family, "Open Sans", sans-serif);
+  color: var(--label-bold-color, inherit);
+}
+
+gw-radio label.gw-radio__input-label u {
+  text-decoration: underline;
+  font-size: 1em; /* Inherit from parent label (1.2em) */
+  font-weight: normal;
+}</style><style></style><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="next-size-adjust" content=""><meta property="og:title" content="Pedro Pathing"><meta property="og:image" content="https://pedropathing.com/og/docs/pathing/custom/localizer/image.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Pedro Pathing"><meta name="twitter:image" content="https://pedropathing.com/og/docs/pathing/custom/localizer/image.png"><link rel="icon" href="https://pedropathing.com/favicon.ico"></head><body class="flex flex-col min-h-screen" data-new-gr-c-s-check-loaded="14.1275.0" data-gr-ext-installed=""><div id="migrate-to-pedro-2.0.0" class="sticky top-0 z-40 flex flex-row items-center justify-center px-4 text-center text-sm font-medium bg-fd-background" style="height:3rem"><style>:root:not(.nd-banner-migrate-to-pedro-2.0.0) { --fd-banner-height: 3rem; }</style><style>.nd-banner-migrate-to-pedro-2.0.0 #migrate-to-pedro-2.0.0 { display: none; }</style><script>if (localStorage.getItem('nd-banner-migrate-to-pedro-2.0.0') === 'true') document.documentElement.classList.add('nd-banner-migrate-to-pedro-2.0.0');</script><div class="absolute inset-0 z-[-1]" style="mask-image:linear-gradient(to bottom,white,transparent), radial-gradient(circle at top center, white, transparent);mask-composite:intersect;animation:fd-moving-banner 16s linear infinite;--start:rgba(0,87,255,0.5);--mid:rgba(255,0,166,0.77);--end:rgba(255,77,0,0.4);--via:rgba(164,255,68,0.4);animation-direction:reverse;background-image:repeating-linear-gradient(60deg, var(--end), var(--start) 2%, var(--start) 5%, transparent 8%, transparent 14%, var(--via) 18%, var(--via) 22%, var(--mid) 28%, var(--mid) 30%, var(--via) 34%, var(--via) 36%, transparent, var(--end) calc(50% - 12px));background-size:200% 100%;mix-blend-mode:difference"></div><div class="absolute inset-0 z-[-1]" style="mask-image:linear-gradient(to bottom,white,transparent), radial-gradient(circle at top center, white, transparent);mask-composite:intersect;animation:fd-moving-banner 20s linear infinite;--start:rgba(255,120,120,0.5);--mid:rgba(36,188,255,0.4);--end:rgba(64,0,255,0.51);--via:rgba(255,89,0,0.56);background-image:repeating-linear-gradient(45deg, var(--end), var(--start) 4%, var(--start) 8%, transparent 9%, transparent 14%, var(--mid) 16%, var(--mid) 20%, transparent, var(--via) 36%, var(--via) 40%, transparent 42%, var(--end) 46%, var(--end) calc(50% - 16.8px));background-size:200% 100%;mix-blend-mode:color-dodge"></div><style>@keyframes fd-moving-banner {
+            from { background-position: 0% 0;  }
+            to { background-position: 100% 0;  }
+         }</style>Pedro Pathing 2.0.0 has released! If you haven't already,&nbsp;<span class="prose"><a class="link prose" href="https://pedropathing.com/docs/pathing/migrating">migrate now</a></span>.<button type="button" aria-label="Close Banner" class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors duration-100 disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none hover:bg-fd-accent hover:text-fd-accent-foreground p-1.5 [&amp;_svg]:size-5 absolute end-2 top-1/2 -translate-y-1/2 text-fd-muted-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button></div><script>((e,t,r,n,o,a,i,s)=>{let l=document.documentElement,u=["light","dark"];function c(t){var r;(Array.isArray(e)?e:[e]).forEach(e=>{let r="class"===e,n=r&&a?o.map(e=>a[e]||e):o;r?(l.classList.remove(...n),l.classList.add(a&&a[t]?a[t]:t)):l.setAttribute(e,t)}),r=t,s&&u.includes(r)&&(l.style.colorScheme=r)}if(n)c(n);else try{let e=localStorage.getItem(t)||r,n=i&&"system"===e?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":e;c(n)}catch(e){}})("class","theme","system",null,["light","dark"],null,true,true)</script><script src="./localizer_files/webpack-9552580105607d32.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[61796,[\"4885\",\"static/chunks/4885-535af7fa620d1e5f.js\",\"5994\",\"static/chunks/5994-904b0d0b9b048345.js\",\"9400\",\"static/chunks/9400-765ae1c74c9a3c05.js\",\"637\",\"static/chunks/637-a9b18b0a61271902.js\",\"5567\",\"static/chunks/5567-810db1f9357acb60.js\",\"7177\",\"static/chunks/app/layout-9d90217d4a01816d.js\"],\"Provider\"]\n3:I[87555,[],\"\"]\n4:I[31295,[],\"\"]\n5:I[71339,[\"4885\",\"static/chunks/4885-535af7fa620d1e5f.js\",\"9400\",\"static/chunks/9400-765ae1c74c9a3c05.js\",\"2302\",\"static/chunks/2302-188fbaa684bf65d5.js\",\"637\",\"static/chunks/637-a9b18b0a61271902.js\",\"244\",\"static/chunks/244-050a9e4b133ba263.js\",\"4790\",\"static/chunks/app/(home)/layout-ee65fadeadad1a99.js\"],\"NavProvider\"]\n6:I[47110,[\"4885\",\"static/chunks/4885-535af7fa620d1e5f.js\",\"9400\",\"static/chunks/9400-765ae1c74c9a3c05.js\",\"2302\",\"static/chunks/2302-188fbaa684bf65d5.js\",\"637\",\"static/chunks/637-a9b18b0a61271902.js\",\"244\",\"static/chunks/244-050a9e4b133ba263.js\",\"4790\",\"static/chunks/app/(home)/layout-ee65fadeadad1a99.js\"],\"Navbar\"]\n7:I[32808,[\"4885\",\"static/chunks/4885-535af7fa620d1e5f.js\",\"9400\",\"static/chunks/9400-765ae1c74c9a3c05.js\",\"2302\",\"static/chunks/2302-188fbaa684bf65d5.js\",\"637\",\"static/chunks/637-a9b18b0a61271902.js\",\"244\",\"static/chunks/244-050a9e4b133ba263.js\",\"4790\",\"static/chunks/app/(home)/layout-ee65fadeadad1a99.js\"],\"default\"]\n8:I[55403,[\"4885\",\"static/chunks/4885-535af7fa620d1e5f.js\",\"9400\",\"static/chunks/9400-765ae1c74c9a3c05.js\",\"2302\",\"static/chunks/2302-188fbaa684bf65d5.js\",\"637\",\"static/chunks/637-a9b18b0a61271902.js\",\"244\",\"static/chunks/244-050a9e4b133ba263.js\",\"4790\",\"static/chunks/app/(home)/layout-ee65fadeadad1a99.js\"],\"SearchToggle\"]\n9:I[55403,[\"4885\",\"static/chunks/4885-535af7fa620d1e5f.js\",\"9400\",\"static/chunks/9400-765ae1c74c9a3c05.js\",\"2302\",\"static/chunks/2302-188fbaa684bf65d5.js\",\"637\",\"static/chunks/637-a9b18b0a61271902.js\",\"244\",\"static/chunks/244-050a9e4b133ba263.js\",\"4790\",\"static/chunks/app/(home)/layout-ee65fadeadad1a99.js\"],\"LargeSearchToggle\"]\na:I[11624,[\"4885\",\"static/chunks/4885-535af7fa620d1e5f.js\","])</script><script>self.__next_f.push([1,"\"9400\",\"static/chunks/9400-765ae1c74c9a3c05.js\",\"2302\",\"static/chunks/2302-188fbaa684bf65d5.js\",\"637\",\"static/chunks/637-a9b18b0a61271902.js\",\"244\",\"static/chunks/244-050a9e4b133ba263.js\",\"4790\",\"static/chunks/app/(home)/layout-ee65fadeadad1a99.js\"],\"ThemeToggle\"]\nb:I[47110,[\"4885\",\"static/chunks/4885-535af7fa620d1e5f.js\",\"9400\",\"static/chunks/9400-765ae1c74c9a3c05.js\",\"2302\",\"static/chunks/2302-188fbaa684bf65d5.js\",\"637\",\"static/chunks/637-a9b18b0a61271902.js\",\"244\",\"static/chunks/244-050a9e4b133ba263.js\",\"4790\",\"static/chunks/app/(home)/layout-ee65fadeadad1a99.js\"],\"NavbarLink\"]\nd:I[95619,[\"4885\",\"static/chunks/4885-535af7fa620d1e5f.js\",\"9400\",\"static/chunks/9400-765ae1c74c9a3c05.js\",\"2302\",\"static/chunks/2302-188fbaa684bf65d5.js\",\"637\",\"static/chunks/637-a9b18b0a61271902.js\",\"244\",\"static/chunks/244-050a9e4b133ba263.js\",\"4790\",\"static/chunks/app/(home)/layout-ee65fadeadad1a99.js\"],\"Menu\"]\ne:I[95619,[\"4885\",\"static/chunks/4885-535af7fa620d1e5f.js\",\"9400\",\"static/chunks/9400-765ae1c74c9a3c05.js\",\"2302\",\"static/chunks/2302-188fbaa684bf65d5.js\",\"637\",\"static/chunks/637-a9b18b0a61271902.js\",\"244\",\"static/chunks/244-050a9e4b133ba263.js\",\"4790\",\"static/chunks/app/(home)/layout-ee65fadeadad1a99.js\"],\"MenuTrigger\"]\nf:I[95619,[\"4885\",\"static/chunks/4885-535af7fa620d1e5f.js\",\"9400\",\"static/chunks/9400-765ae1c74c9a3c05.js\",\"2302\",\"static/chunks/2302-188fbaa684bf65d5.js\",\"637\",\"static/chunks/637-a9b18b0a61271902.js\",\"244\",\"static/chunks/244-050a9e4b133ba263.js\",\"4790\",\"static/chunks/app/(home)/layout-ee65fadeadad1a99.js\"],\"MenuContent\"]\n10:I[95619,[\"4885\",\"static/chunks/4885-535af7fa620d1e5f.js\",\"9400\",\"static/chunks/9400-765ae1c74c9a3c05.js\",\"2302\",\"static/chunks/2302-188fbaa684bf65d5.js\",\"637\",\"static/chunks/637-a9b18b0a61271902.js\",\"244\",\"static/chunks/244-050a9e4b133ba263.js\",\"4790\",\"static/chunks/app/(home)/layout-ee65fadeadad1a99.js\"],\"MenuLinkItem\"]\n11:I[34703,[\"4885\",\"static/chunks/4885-535af7fa620d1e5f.js\",\"5994\",\"static/chunks/5994-904b0d0b9b048345.js\",\"4703\",\"static/chunks/4703-21dddb092b284e1b.js\",\"7813\",\"stati"])</script><script>self.__next_f.push([1,"c/chunks/app/(home)/page-0ffe5c7f4a1beab5.js\"],\"DynamicCodeBlock\"]\n12:I[6874,[\"4885\",\"static/chunks/4885-535af7fa620d1e5f.js\",\"5994\",\"static/chunks/5994-904b0d0b9b048345.js\",\"4703\",\"static/chunks/4703-21dddb092b284e1b.js\",\"7813\",\"static/chunks/app/(home)/page-0ffe5c7f4a1beab5.js\"],\"\"]\n13:I[59665,[],\"MetadataBoundary\"]\n15:I[59665,[],\"OutletBoundary\"]\n18:I[74911,[],\"AsyncMetadataOutlet\"]\n1a:I[59665,[],\"ViewportBoundary\"]\n1c:I[26614,[],\"\"]\n:HL[\"/_next/static/media/e4af272ccee01ff0-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/css/34934cd07a7ca2e9.css\",\"style\"]\n:HL[\"/_next/static/css/ca6322e13baa44e6.css\",\"style\"]\nc:T4ef,M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"oW0qWJMEuQCXl4V3X8Ix9\",\"p\":\"\",\"c\":[\"\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"(home)\",{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/34934cd07a7ca2e9.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"link\",\"1\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/ca6322e13baa44e6.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"className\":\"__className_f367f3\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"className\":\"flex flex-col min-h-screen\",\"children\":[\"$\",\"$L2\",null,{\"children\":[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]}]}]]}],{\"children\":[\"(home)\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"transparentMode\":\"$undefined\",\"children\":[\"$\",\"main\",null,{\"id\":\"nd-home-layout\",\"children\":[[\"$\",\"$L6\",null,{\"children\":[[\"$\",\"$L7\",null,{\"href\":\"/\",\"className\":\"inline-flex items-center gap-2.5 font-semibold\",\"children\":[[\"$\",\"img\",null,{\"className\":\"size-10 dark:hidden\",\"src\":\"/logo-light.png\",\"alt\":\"Pedro Pathing Logo\"}],[\"$\",\"img\",null,{\"className\":\"size-10 hidden dark:inline\",\"src\":\"/logo.png\",\"alt\":\"Pedro Pathing Logo\"}],[\"$\",\"span\",null,{\"children\":\"Pedro Pathing\"}]]}],\"$undefined\",[\"$\",\"ul\",null,{\"className\":\"flex flex-row items-center gap-2 px-6 max-sm:hidden\",\"children\":[[\"$\",\"div\",\"0\",{\"className\":\"text-sm\",\"children\":[\"$\",\"a\",null,{\"className\":\"flex flex-row gap-1.5 p-2 rounded-lg font-light text-sm text-fd-foreground/80 transition-colors items-center hover:text-fd-accent-foreground hover:bg-fd-accent \",\"href\":\"https://visualizer.pedropathing.com/\",\"target\":\"_blank\",\"rel\":\"noopenner noreferrer\",\"children\":[\"Visualizer\",[\"$\",\"svg\",null,{\"xmlns\":\"http://www.w3.org/2000/svg\",\"fill\":\"none\",\"viewBox\":\"0 0 24 24\",\"strokeWidth\":2,\"stroke\":\"currentColor\",\"className\":\"size-3 \",\"children\":[\"$\",\"path\",null,{\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"d\":\"M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25\"}]}]]}]}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-row items-center justify-end gap-1.5 flex-1\",\"children\":[[[\"$\",\"$L8\",null,{\"className\":\"p-2 lg:hidden\",\"hideIfDisabled\":true}],[\"$\",\"$L9\",null,{\"className\":\"w-full rounded-full ps-2.5 max-w-[240px] max-lg:hidden\",\"hideIfDisabled\":true}]],[\"$\",\"$La\",null,{\"className\":\"max-lg:hidden\",\"mode\":\"$undefined\"}],null]}],[\"$\",\"ul\",null,{\"className\":\"flex flex-row items-center\",\"children\":[[[\"$\",\"$Lb\",\"0\",{\"className\":\"max-lg:hidden\",\"item\":{\"text\":\"Discord\",\"url\":\"https://discord.gg/2GfC4qBP5s\",\"icon\":[\"$\",\"svg\",null,{\"className\":\"size-6\",\"fill\":\"currentColor\",\"role\":\"img\",\"viewBox\":\"0 0 24 24\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"children\":[[\"$\",\"title\",null,{\"children\":\"Discord\"}],[\"$\",\"path\",null,{\"d\":\"$c\"}]]}],\"type\":\"icon\"},\"variant\":\"icon\",\"aria-label\":\"$undefined\",\"children\":\"$0:f:0:1:2:children:1:props:children:1:props:children:props:children:0:props:children:4:props:children:0:0:props:item:icon\"}],[\"$\",\"$Lb\",\"1\",{\"className\":\"max-lg:hidden\",\"item\":{\"type\":\"icon\",\"url\":\"https://github.com/Pedro-Pathing/Docs\",\"text\":\"Github\",\"label\":\"GitHub\",\"icon\":[\"$\",\"svg\",null,{\"role\":\"img\",\"viewBox\":\"0 0 24 24\",\"fill\":\"currentColor\",\"children\":[\"$\",\"path\",null,{\"d\":\"M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12\"}]}],\"external\":true},\"variant\":\"icon\",\"aria-label\":\"GitHub\",\"children\":\"$0:f:0:1:2:children:1:props:children:1:props:children:props:children:0:props:children:4:props:children:0:1:props:item:icon\"}]],[\"$\",\"$Ld\",null,{\"className\":\"lg:hidden\",\"children\":[[\"$\",\"$Le\",null,{\"aria-label\":\"Toggle Menu\",\"className\":\"inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors duration-100 disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none hover:bg-fd-accent hover:text-fd-accent-foreground p-1.5 [\u0026_svg]:size-5 group -me-1.5\",\"enableHover\":\"$undefined\",\"children\":[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide !size-5.5 transition-transform duration-300 group-data-[state=open]:rotate-180\",\"children\":[[[\"$\",\"path\",\"qrunsl\",{\"d\":\"m6 9 6 6 6-6\"}]],\"$undefined\"]}]}],[\"$\",\"$Lf\",null,{\"className\":\"sm:flex-row sm:items-center sm:justify-end\",\"children\":[[[\"$\",\"$L10\",\"0\",{\"item\":{\"type\":\"custom\",\"children\":\"$0:f:0:1:2:children:1:props:children:1:props:children:props:children:0:props:children:2:props:children:0:props:children\"},\"className\":\"sm:hidden\"}]],[\"$\",\"div\",null,{\"className\":\"-ms-1.5 flex flex-row items-center gap-1.5 max-sm:mt-2\",\"children\":[[[\"$\",\"$L10\",\"0\",{\"item\":\"$0:f:0:1:2:children:1:props:children:1:props:children:props:children:0:props:children:4:props:children:0:0:props:item\",\"className\":\"-me-1.5\"}],[\"$\",\"$L10\",\"1\",{\"item\":\"$0:f:0:1:2:children:1:props:children:1:props:children:props:children:0:props:children:4:props:children:0:1:props:item\",\"className\":\"-me-1.5\"}]],[\"$\",\"div\",null,{\"role\":\"separator\",\"className\":\"flex-1\"}],null,[\"$\",\"$La\",null,{\"mode\":\"$undefined\"}]]}]]}]]}]]}]]}],[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":\"$0:f:0:1:1:props:children:1:props:children:props:children:props:children:props:notFound:0:1:props:style\",\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":\"$0:f:0:1:1:props:children:1:props:children:props:children:props:children:props:notFound:0:1:props:children:props:children:1:props:style\",\"children\":404}],[\"$\",\"div\",null,{\"style\":\"$0:f:0:1:1:props:children:1:props:children:props:children:props:children:props:notFound:0:1:props:children:props:children:2:props:style\",\"children\":[\"$\",\"h2\",null,{\"style\":\"$0:f:0:1:1:props:children:1:props:children:props:children:props:children:props:notFound:0:1:props:children:props:children:2:props:children:props:style\",\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]],\"className\":\"flex flex-1 flex-col pt-14\"}]}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"main\",null,{\"className\":\"py-8 xl:pb-0 flex justify-center\",\"children\":[\"$\",\"div\",null,{\"className\":\"w-300 mx-5 xl:mx-0 max-w-300 flex flex-col items-center\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-4xl md:text-5xl font-bold mb-8 xl:mb-16\",\"children\":\"Pedro Pathing\"}],[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 lg:grid-cols-2 gap-8\",\"children\":[[\"$\",\"div\",null,{\"children\":[[\"$\",\"span\",null,{\"className\":\"text-lg\",\"children\":\"Autonomous pathing made easy...\"}],[\"$\",\"h2\",null,{\"className\":\"text-3xl mt-2 font-bold\",\"children\":\"A path follower designed to revolutionize autonomous pathing in robotics.\"}]]}],[\"$\",\"$L11\",null,{\"lang\":\"java\",\"code\":\"path = follower.pathBuilder()\\n    .addPath(new BezierLine(scorePose, pickup1Pose))\\n    .setLinearHeadingInterpolation(scorePose.getHeading(), pickup1Pose.getHeading())\\n    .addPath(new BezierLine(pickup1Pose, scorePose))\\n    .setLinearHeadingInterpolation(pickup1Pose.getHeading(), scorePose.getHeading())\\n    .build();\\n    \\nfollower.followPath(path);\"}]]}],[\"$\",\"div\",null,{\"className\":\"my-16\",\"children\":[[\"$\",\"p\",null,{\"className\":\"mb-4 max-w-[75ch] mx-auto text-lg\",\"children\":\"Unlike conventional pathing systems such as RoadRunner, Pedro Pathing leverages Bézier curve generation to produce smoother, faster, and more efficient trajectories.\"}],[\"$\",\"p\",null,{\"className\":\"max-w-[75ch] mx-auto text-lg\",\"children\":\"Its primary focus is on enhancing the adaptability of robots during autonomous operation by reacting dynamically to environmental changes, reducing error margins, and ensuring optimal path execution.\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col md:flex-row xl:gap-4\",\"children\":[[\"$\",\"$L12\",null,{\"href\":\"/docs/pathing\",\"className\":\"flex mt-5 xl:mt-10 mb-2 items-center justify-center text-lg font-medium ring-offset-fd-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fd-ring bg-gradient-to-b from-fd-primary-foreground to-fd-primary-foreground/60 text-fd-primary shadow-fd-background/20 hover:bg-fd-primary-foreground/90 border-fd-primary border hover:opacity-80 h-13 px-7 rounded-full\",\"children\":\"Get Started with Pedro Pathing\"}],[\"$\",\"a\",null,{\"href\":\"https://github.com/Pedro-Pathing/PedroPathing\",\"target\":\"_blank\",\"rel\":\"noreferrer\",\"className\":\"flex gap-2 mt-5 xl:mt-10 mb-2 items-center justify-center text-lg font-medium shadow-fd-background/20 h-13 px-7 rounded-full hover:bg-fd-card transition-colors duration-150\",\"children\":[[\"$\",\"svg\",null,{\"className\":\"size-6\",\"role\":\"img\",\"viewBox\":\"0 0 24 24\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"children\":[[\"$\",\"title\",null,{\"children\":\"GitHub\"}],[\"$\",\"path\",null,{\"fill\":\"currentColor\",\"d\":\"M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12\"}]]}],\"Star on GitHub\"]}]]}]]}]}],[\"$\",\"$L13\",null,{\"children\":\"$L14\"}],null,[\"$\",\"$L15\",null,{\"children\":[\"$L16\",\"$L17\",[\"$\",\"$L18\",null,{\"promise\":\"$@19\"}]]}]]}],{},null,false]},null,false]},null,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$1\",\"nvAjypvnfE8mA_vEoKKW8\",{\"children\":[[\"$\",\"$L1a\",null,{\"children\":\"$L1b\"}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}],null]}],false]],\"m\":\"$undefined\",\"G\":[\"$1c\",\"$undefined\"],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"1d:\"$Sreact.suspense\"\n1e:I[74911,[],\"AsyncMetadata\"]\n14:[\"$\",\"$1d\",null,{\"fallback\":null,\"children\":[\"$\",\"$L1e\",null,{\"promise\":\"$@1f\"}]}]\n"])</script><script>self.__next_f.push([1,"17:null\n"])</script><script>self.__next_f.push([1,"1b:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n16:null\n"])</script><script>self.__next_f.push([1,"1f:{\"metadata\":[[\"$\",\"meta\",\"0\",{\"property\":\"og:url\",\"content\":\"https://pedropathing.com\"}],[\"$\",\"meta\",\"1\",{\"property\":\"og:locale\",\"content\":\"en_US\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:image\",\"content\":\"https://pedropathing.com/banner.png\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:image:height\",\"content\":\"200\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"6\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:image\",\"content\":\"https://pedropathing.com/banner.png\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"9\",{\"name\":\"twitter:image:height\",\"content\":\"200\"}],[\"$\",\"link\",\"10\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\"}]],\"error\":null,\"digest\":\"$undefined\"}\n19:{\"metadata\":\"$1f:metadata\",\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script defer="" src="./localizer_files/v67327c56f0bb4ef8b305cae61679db8f1769101564043" integrity="sha512-rdcWY47ByXd76cbCFzznIcEaCN71jqkWBBqlwhF1SY7KubdLKZiEGeP7AyieKZlGP9hbY/MhGrwXzJC/HulNyg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;e7ee7227aaea4526aa8407fa791bac6f&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+<next-route-announcer style="position: absolute;"><template shadowrootmode="open"><div aria-live="assertive" id="__next-route-announcer__" role="alert" style="position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;">Custom Localizer</div></template></next-route-announcer><header id="nd-subnav" class="fixed top-(--fd-banner-height) inset-x-0 z-30 flex items-center px-4 border-b transition-colors backdrop-blur-sm bg-fd-background/80 h-14 md:hidden"><a class="inline-flex items-center gap-2.5 font-semibold" href="https://pedropathing.com/"><img class="size-10 dark:hidden" alt="Pedro Pathing Logo" src="./localizer_files/logo-light.png"><img class="size-10 hidden dark:inline" alt="Pedro Pathing Logo" src="./localizer_files/logo.png"><span>Pedro Pathing</span></a><div class="flex-1"></div><button type="button" class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors duration-100 disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none hover:bg-fd-accent hover:text-fd-accent-foreground [&amp;_svg]:size-4.5 p-2" data-search="" aria-label="Open Search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></button><button aria-label="Open Sidebar" class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors duration-100 disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none hover:bg-fd-accent hover:text-fd-accent-foreground [&amp;_svg]:size-4.5 p-2 -me-1.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M9 3v18"></path></svg></button></header><main id="nd-docs-layout" class="flex flex-1 flex-col transition-[margin] md:[--fd-sidebar-width:268px] lg:[--fd-sidebar-width:286px] xl:[--fd-toc-width:286px] [--fd-nav-height:56px] md:[--fd-nav-height:0px]" style="margin-inline-start: var(--fd-sidebar-width);"><aside id="nd-sidebar" data-collapsed="false" class="fixed start-0 flex flex-col items-end top-(--fd-sidebar-top) bottom-(--fd-sidebar-margin) z-20 bg-fd-card text-sm border-e max-md:hidden *:w-(--fd-sidebar-width)" style="transition: top 250ms, opacity 250ms, translate 250ms, width 250ms; --fd-sidebar-offset: calc(100% - 16px); --fd-sidebar-margin: 0px; width: calc(var(--fd-sidebar-width) + var(--fd-layout-offset)); --fd-sidebar-top: calc(var(--fd-banner-height) + var(--fd-nav-height) + var(--fd-sidebar-margin));"><div data-fdid="«r0»" class="flex flex-col gap-3 p-4 pb-2" data-empty="false"><div class="flex max-md:hidden"><a class="inline-flex text-[15px] items-center gap-2.5 font-medium" href="https://pedropathing.com/"><img class="size-10 dark:hidden" alt="Pedro Pathing Logo" src="./localizer_files/logo-light.png"><img class="size-10 hidden dark:inline" alt="Pedro Pathing Logo" src="./localizer_files/logo.png"><span>Pedro Pathing</span></a><button type="button" aria-label="Collapse Sidebar" data-collapsed="false" class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors duration-100 disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none hover:bg-fd-accent hover:text-fd-accent-foreground p-1.5 [&amp;_svg]:size-4.5 ms-auto mb-auto text-fd-muted-foreground max-md:hidden"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M9 3v18"></path></svg></button></div><button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-«r1»" data-state="closed" class="flex items-center gap-2 rounded-lg pe-2 hover:text-fd-accent-foreground"><div class="flex-1 text-start"><p class="text-[15px] font-medium md:text-sm">Pathing</p><p class="text-sm text-fd-muted-foreground md:text-xs">Learn to Path</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide size-4 text-fd-muted-foreground"><path d="m7 15 5 5 5-5"></path><path d="m7 9 5-5 5 5"></path></svg></button><button type="button" data-search-full="" class="inline-flex items-center gap-2 rounded-lg border bg-fd-secondary/50 p-1.5 ps-2 text-sm text-fd-muted-foreground transition-colors hover:bg-fd-accent hover:text-fd-accent-foreground max-md:hidden"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide size-4"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>Search<div class="ms-auto inline-flex gap-0.5"><kbd class="rounded-md border bg-fd-background px-1.5">⌘</kbd><kbd class="rounded-md border bg-fd-background px-1.5">K</kbd></div></button></div><div dir="ltr" class="overflow-hidden h-full" style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;"><style>[data-radix-scroll-area-viewport]{scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scrolling:touch;}[data-radix-scroll-area-viewport]::-webkit-scrollbar{display:none}</style><div data-radix-scroll-area-viewport="" class="size-full rounded-[inherit] p-4" style="overflow: hidden scroll; mask-image: linear-gradient(transparent, white 12px, white calc(100% - 12px), transparent);"><div style="min-width: 100%; display: table;"><div class=""><a href="https://github.com/Pedro-Pathing/PedroPathing" rel="noreferrer noopener" target="_blank" class="flex flex-col gap-1.5 p-2 rounded-lg text-sm text-fd-foreground/80 transition-colors lg:flex-row lg:items-center hover:text-fd-accent-foreground hover:bg-fd-accent lg:-mx-2"><p class="flex items-center gap-2 truncate"><svg fill="currentColor" viewBox="0 0 24 24" class="size-3.5"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>Pedro-Pathing/PedroPathing</p><p class="flex text-xs items-center gap-1 text-fd-muted-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide size-3"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>142</p></a></div><div class="mb-4"><a class="flex flex-row gap-1.5 p-2 rounded-lg font-light text-sm text-fd-foreground/80 transition-colors items-center hover:text-fd-accent-foreground hover:bg-fd-accent " href="https://visualizer.pedropathing.com/" target="_blank" rel="noopenner noreferrer">Visualizer<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-3 "><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg></a></div><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing" style="padding-inline-start: calc(var(--spacing) * 2);">Introduction</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/installation" style="padding-inline-start: calc(var(--spacing) * 2);">Installation</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/dashboard" style="padding-inline-start: calc(var(--spacing) * 2);">Choosing a Dashboard</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/migrating" style="padding-inline-start: calc(var(--spacing) * 2);">Migrating</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/constants" style="padding-inline-start: calc(var(--spacing) * 2);">Constants</a><div data-state="open"><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none w-full" href="https://pedropathing.com/docs/pathing/tuning" style="padding-inline-start: calc(var(--spacing) * 2);">Tuning<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide ms-auto transition-transform" data-icon="true"><path d="m6 9 6 6 6-6"></path></svg></a><div data-state="open" id="radix-«r2»" class="overflow-hidden data-[state=closed]:animate-fd-collapsible-up data-[state=open]:animate-fd-collapsible-down relative" style="--radix-collapsible-content-height: 160px; --radix-collapsible-content-width: 254px;"><div class="absolute w-px inset-y-1 bg-fd-border start-2.5"></div><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/tuning/setup" style="padding-inline-start: calc(var(--spacing) * 6);"><div class="absolute w-px inset-y-3 z-[2] start-2.5 md:inset-y-2"></div>Setup</a><div data-state="open"><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none w-full" href="https://pedropathing.com/docs/pathing/tuning/localization" style="padding-inline-start: calc(var(--spacing) * 6);"><div class="absolute w-px inset-y-3 z-[2] start-2.5 md:inset-y-2"></div>Localization<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide ms-auto transition-transform" data-icon="true"><path d="m6 9 6 6 6-6"></path></svg></a><div data-state="open" id="radix-«rb»" class="overflow-hidden data-[state=closed]:animate-fd-collapsible-up data-[state=open]:animate-fd-collapsible-down relative" style="--radix-collapsible-content-height: 192px; --radix-collapsible-content-width: 254px;"><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/tuning/localization/drive-encoder" style="padding-inline-start: calc(var(--spacing) * 9);"><div class="absolute w-px inset-y-3 z-[2] start-2.5 md:inset-y-2"></div>Drive Encoder</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/tuning/localization/otos" style="padding-inline-start: calc(var(--spacing) * 9);"><div class="absolute w-px inset-y-3 z-[2] start-2.5 md:inset-y-2"></div>OTOS</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/tuning/localization/pinpoint" style="padding-inline-start: calc(var(--spacing) * 9);"><div class="absolute w-px inset-y-3 z-[2] start-2.5 md:inset-y-2"></div>Pinpoint</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/tuning/localization/three-wheel" style="padding-inline-start: calc(var(--spacing) * 9);"><div class="absolute w-px inset-y-3 z-[2] start-2.5 md:inset-y-2"></div>Three Wheel</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/tuning/localization/three-wheel-imu" style="padding-inline-start: calc(var(--spacing) * 9);"><div class="absolute w-px inset-y-3 z-[2] start-2.5 md:inset-y-2"></div>Three Wheel + IMU</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/tuning/localization/two-wheel" style="padding-inline-start: calc(var(--spacing) * 9);"><div class="absolute w-px inset-y-3 z-[2] start-2.5 md:inset-y-2"></div>Two Wheel</a></div></div><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/tuning/automatic" style="padding-inline-start: calc(var(--spacing) * 6);"><div class="absolute w-px inset-y-3 z-[2] start-2.5 md:inset-y-2"></div>Automatic Tuners</a><div data-state="open"><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none w-full" href="https://pedropathing.com/docs/pathing/tuning/pids" style="padding-inline-start: calc(var(--spacing) * 6);"><div class="absolute w-px inset-y-3 z-[2] start-2.5 md:inset-y-2"></div>PID Tuners<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide ms-auto transition-transform" data-icon="true"><path d="m6 9 6 6 6-6"></path></svg></a><div data-state="open" id="radix-«rc»" class="overflow-hidden data-[state=closed]:animate-fd-collapsible-up data-[state=open]:animate-fd-collapsible-down relative" style="--radix-collapsible-content-height: 128px; --radix-collapsible-content-width: 254px;"><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/tuning/pids/translational" style="padding-inline-start: calc(var(--spacing) * 9);"><div class="absolute w-px inset-y-3 z-[2] start-2.5 md:inset-y-2"></div>Translational</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/tuning/pids/heading" style="padding-inline-start: calc(var(--spacing) * 9);"><div class="absolute w-px inset-y-3 z-[2] start-2.5 md:inset-y-2"></div>Heading</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/tuning/pids/drive" style="padding-inline-start: calc(var(--spacing) * 9);"><div class="absolute w-px inset-y-3 z-[2] start-2.5 md:inset-y-2"></div>Drive</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/tuning/pids/centripetal" style="padding-inline-start: calc(var(--spacing) * 9);"><div class="absolute w-px inset-y-3 z-[2] start-2.5 md:inset-y-2"></div>Centripetal</a></div></div><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/tuning/tests" style="padding-inline-start: calc(var(--spacing) * 6);"><div class="absolute w-px inset-y-3 z-[2] start-2.5 md:inset-y-2"></div>Tests</a></div></div><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/troubleshooting" style="padding-inline-start: calc(var(--spacing) * 2);">Troubleshooting</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/pedro-v-roadrunner" style="padding-inline-start: calc(var(--spacing) * 2);">PedroPathing vs Roadrunner</a><p class="inline-flex items-center gap-2 mb-1.5 px-2 font-medium empty:mb-0 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 mt-6" style="padding-inline-start: calc(var(--spacing) * 2);">Reference</p><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/reference/interpolation" style="padding-inline-start: calc(var(--spacing) * 2);">Interpolation</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/reference/deceleration" style="padding-inline-start: calc(var(--spacing) * 2);">Deceleration</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/reference/constraints" style="padding-inline-start: calc(var(--spacing) * 2);">Constraints</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/reference/coordinates" style="padding-inline-start: calc(var(--spacing) * 2);">Coordinates</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/reference/path-builder" style="padding-inline-start: calc(var(--spacing) * 2);">Path Builder</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/reference/pathcomplete" style="padding-inline-start: calc(var(--spacing) * 2);">Detecting Path Completion</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/reference/beziercurves" style="padding-inline-start: calc(var(--spacing) * 2);">Bezier Curves</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/reference/drive-vector-algorithm" style="padding-inline-start: calc(var(--spacing) * 2);">Drive Vector Algorithm</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/reference/callbacks" style="padding-inline-start: calc(var(--spacing) * 2);">Path Callbacks</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/reference/speed-control" style="padding-inline-start: calc(var(--spacing) * 2);">Speed Control</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/reference/deceleration" style="padding-inline-start: calc(var(--spacing) * 2);">Deceleration</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/reference/optimization" style="padding-inline-start: calc(var(--spacing) * 2);">Optimization</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/reference/overshoot" style="padding-inline-start: calc(var(--spacing) * 2);">Mitigating Overshoot</a><p class="inline-flex items-center gap-2 mb-1.5 px-2 font-medium empty:mb-0 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 mt-6" style="padding-inline-start: calc(var(--spacing) * 2);">Custom</p><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/custom/curve" style="padding-inline-start: calc(var(--spacing) * 2);">Custom Curve</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/custom/drivetrain" style="padding-inline-start: calc(var(--spacing) * 2);">Custom Drivetrain</a><a data-active="true" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-fd-primary/10 text-fd-primary" href="https://pedropathing.com/docs/pathing/custom/localizer" style="padding-inline-start: calc(var(--spacing) * 2);">Custom Localizer</a><p class="inline-flex items-center gap-2 mb-1.5 px-2 font-medium empty:mb-0 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 mt-6" style="padding-inline-start: calc(var(--spacing) * 2);">Examples</p><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/examples/constants" style="padding-inline-start: calc(var(--spacing) * 2);">Example Constants</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/examples/auto" style="padding-inline-start: calc(var(--spacing) * 2);">Example Auto</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/examples/teleop" style="padding-inline-start: calc(var(--spacing) * 2);">Example TeleOp</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/examples/apriltags" style="padding-inline-start: calc(var(--spacing) * 2);">Example AprilTag Usage</a><a data-active="false" class="relative flex flex-row items-center gap-2 rounded-lg p-2 text-start text-fd-muted-foreground [overflow-wrap:anywhere] md:py-1.5 [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 transition-colors hover:bg-fd-accent/50 hover:text-fd-accent-foreground/80 hover:transition-none" href="https://pedropathing.com/docs/pathing/examples/apriltagpatternauto" style="padding-inline-start: calc(var(--spacing) * 2);">Example Motif Usage</a></div></div></div><div data-fdid="«r3»" class="flex flex-col border-t px-4 py-3" data-empty="false"><div class="flex items-center justify-end" data-fdid="«r4»" data-empty="false"><div class="flex items-center flex-1 empty:hidden"><a href="https://discord.gg/2GfC4qBP5s" rel="noreferrer noopener" target="_blank" class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors duration-100 disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none hover:bg-fd-accent hover:text-fd-accent-foreground p-1.5 [&amp;_svg]:size-5 text-fd-muted-foreground md:[&amp;_svg]:size-4.5" data-active="false"><svg class="size-6" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"></path></svg></a><a href="https://github.com/Pedro-Pathing/Docs" rel="noreferrer noopener" target="_blank" class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors duration-100 disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none hover:bg-fd-accent hover:text-fd-accent-foreground p-1.5 [&amp;_svg]:size-5 text-fd-muted-foreground md:[&amp;_svg]:size-4.5" aria-label="GitHub" data-active="false"><svg role="img" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a></div><button class="inline-flex items-center rounded-full border p-0" aria-label="Toggle Theme" data-theme-toggle=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide size-6.5 rounded-full p-1.5 text-fd-muted-foreground"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide size-6.5 rounded-full p-1.5 bg-fd-accent text-fd-accent-foreground"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button></div></div></aside><div id="nd-page" class="flex flex-1 mx-auto w-full" style="padding-top: calc(var(--fd-nav-height) + var(--fd-tocnav-height)); max-width: min(var(--fd-page-width),calc(var(--fd-layout-width) - var(--fd-sidebar-width)));"><header id="nd-tocnav" class="fixed inset-x-0 z-10 border-b backdrop-blur-sm transition-colors xl:hidden bg-fd-background/80" data-state="closed" style="top: calc(var(--fd-banner-height) + var(--fd-nav-height)); inset-inline-start: calc(var(--fd-sidebar-width) + var(--fd-layout-offset));"><button type="button" aria-controls="radix-«r21»" aria-expanded="false" data-state="closed" class="flex w-full h-(--fd-tocnav-height) items-center text-sm text-fd-muted-foreground gap-2.5 px-4 py-2.5 text-start focus-visible:outline-none [&amp;_svg]:shrink-0 [&amp;_svg]:size-4 md:px-6"><svg role="progressbar" viewBox="0 0 24 24" aria-valuenow="0.5" aria-valuemin="0" aria-valuemax="1" class=""><circle cx="12" cy="12" r="11" fill="none" stroke-width="2" class="stroke-current/25"></circle><circle cx="12" cy="12" r="11" fill="none" stroke-width="2" stroke="currentColor" stroke-dasharray="69.11503837897544" stroke-dashoffset="34.55751918948772" stroke-linecap="round" transform="rotate(-90 12 12)" class="transition-all"></circle></svg><span class="grid flex-1 *:my-auto *:row-start-1 *:col-start-1"><span class="truncate transition-all opacity-0 -translate-y-full pointer-events-none">Custom Localizer</span><span class="truncate transition-all">Hardware</span></span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide transition-transform mx-0.5"><path d="m6 9 6 6 6-6"></path></svg></button><div data-state="closed" id="radix-«r21»" hidden="" data-toc-popover="" class="overflow-hidden data-[state=closed]:animate-fd-collapsible-up data-[state=open]:animate-fd-collapsible-down flex flex-col px-4 max-h-[50vh] md:px-6" style=""></div></header><article class="flex min-w-0 w-full flex-col gap-6 px-4 pt-8 md:px-6 md:mx-auto xl:pt-12 xl:px-12"><h1 class="text-3xl font-semibold">Custom Localizer</h1><div class="prose"><p>You can create your own localizer by extending the <code>Localizer</code> class.
+This allows you to implement custom localization logic or different localization hardware that is not supported by the existing localizers.</p>
+<h3 class="flex scroll-m-28 flex-row items-center gap-2" id="hardware"><a data-card="" href="https://pedropathing.com/docs/pathing/custom/localizer#hardware" class="peer">Hardware</a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide size-3.5 shrink-0 text-fd-muted-foreground opacity-0 transition-opacity peer-hover:opacity-100" aria-label="Link to section"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></h3>
+<p>All hardware should remain in the Localizer class.
+This ensures that the localizer can access the necessary hardware components directly.
+For example, if you are using a custom sensor, you would initialize it in the constructor of your localizer class.</p>
+<h3 class="flex scroll-m-28 flex-row items-center gap-2" id="constants"><a data-card="" href="https://pedropathing.com/docs/pathing/custom/localizer#constants" class="peer">Constants</a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide size-3.5 shrink-0 text-fd-muted-foreground opacity-0 transition-opacity peer-hover:opacity-100" aria-label="Link to section"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></h3>
+<p>It is suggested that you create a Constants class for your localizer.
+This allows for easy configuration and modification of the localizer's parameters without changing the Localizer itself, although not required.
+So, for a <code>CustomLocalizer</code>, you would create a <code>CustomLocalizerConstants</code> class.
+In the <code>Constants</code> file, you would then create a <code>CustomLocalizerConstants</code> object and pass it to your localizer through the constructor.</p></div><div role="none" class="flex-1"></div><div class="flex flex-row flex-wrap items-center justify-between gap-4 empty:hidden"><p class="text-sm text-fd-muted-foreground">Last updated on 2/20/2026</p></div><div class="@container grid gap-4 pb-6 grid-cols-2"><a class="flex flex-col gap-2 rounded-lg border p-4 text-sm transition-colors hover:bg-fd-accent/80 hover:text-fd-accent-foreground @max-lg:col-span-full" href="https://pedropathing.com/docs/pathing/custom/drivetrain"><div class="inline-flex items-center gap-1.5 font-medium"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide -mx-1 size-4 shrink-0 rtl:rotate-180"><path d="m15 18-6-6 6-6"></path></svg><p>Custom Drivetrain</p></div><p class="text-fd-muted-foreground truncate">Previous Page</p></a><a class="flex flex-col gap-2 rounded-lg border p-4 text-sm transition-colors hover:bg-fd-accent/80 hover:text-fd-accent-foreground @max-lg:col-span-full text-end" href="https://pedropathing.com/docs/pathing/examples/constants"><div class="inline-flex items-center gap-1.5 font-medium flex-row-reverse"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide -mx-1 size-4 shrink-0 rtl:rotate-180"><path d="m9 18 6-6-6-6"></path></svg><p>Example Constants</p></div><p class="text-fd-muted-foreground truncate">How to write a Pedro Pathing Constants file</p></a></div></article><div id="nd-toc" class="sticky pb-2 pt-12 max-xl:hidden" style="top: calc(var(--fd-banner-height) + var(--fd-nav-height)); height: calc(100dvh - var(--fd-banner-height) - var(--fd-nav-height));"><div class="flex h-full w-(--fd-toc-width) max-w-full flex-col pe-4"><h3 class="inline-flex items-center gap-1.5 text-sm text-fd-muted-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide size-4"><path d="M15 18H3"></path><path d="M17 6H3"></path><path d="M21 12H3"></path></svg>On this page</h3><div class="relative min-h-0 text-sm ms-px overflow-auto [scrollbar-width:none] [mask-image:linear-gradient(to_bottom,transparent,white_16px,white_calc(100%-16px),transparent)] py-3"><div class="absolute start-0 top-0 rtl:-scale-x-100" style="width: 12px; height: 64px; mask-image: url(&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2012%2064%22%3E%3Cpath%20d%3D%22M11%2012%20L11%2032%20L11%2044%20L11%2064%22%20stroke%3D%22black%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20%2F%3E%3C%2Fsvg%3E&quot;);"><div role="none" class="mt-(--fd-top) h-(--fd-height) bg-fd-primary transition-all" style="--fd-top: 12px; --fd-height: 20px;"></div></div><div class="flex flex-col"><a data-active="true" href="https://pedropathing.com/docs/pathing/custom/localizer#hardware" class="prose relative py-1.5 text-sm text-fd-muted-foreground transition-colors [overflow-wrap:anywhere] first:pt-0 last:pb-0 data-[active=true]:text-fd-primary" style="padding-inline-start: 26px;"><div class="absolute inset-y-0 w-px bg-fd-foreground/10" style="inset-inline-start: 10px;"></div>Hardware</a><a data-active="false" href="https://pedropathing.com/docs/pathing/custom/localizer#constants" class="prose relative py-1.5 text-sm text-fd-muted-foreground transition-colors [overflow-wrap:anywhere] first:pt-0 last:pb-0 data-[active=true]:text-fd-primary" style="padding-inline-start: 26px;"><div class="absolute inset-y-0 w-px bg-fd-foreground/10" style="inset-inline-start: 10px;"></div>Constants</a></div></div></div></div></div></main></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
