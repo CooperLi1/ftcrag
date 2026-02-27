@@ -2,5 +2,641 @@
   "DECODE_Competition_Manual_TU24.htm": {
     "title": "DECODE Game Manual",
     "url": "https://ftc-resources.firstinspires.org/ftc/game/manual"
+  },
+  "LearnJavaForFTC.txt": {
+    "title": "Learn Java for FTC",
+    "url": "https://raw.githubusercontent.com/alan412/LearnJavaForFTC/master/LearnJavaForFTC.pdf"
+  },
+  "pathing.html": {
+    "title": "Pedro Pathing Overview",
+    "url": "https://pedropathing.com/docs/pathing"
+  },
+  "installation.html": {
+    "title": "Pedro Pathing: Installation",
+    "url": "https://pedropathing.com/docs/pathing/installation"
+  },
+  "migrating.html": {
+    "title": "Pedro Pathing: Migrating to 2.0",
+    "url": "https://pedropathing.com/docs/pathing/migrating"
+  },
+  "pedro-v-roadrunner.html": {
+    "title": "Pedro Pathing vs Road Runner",
+    "url": "https://pedropathing.com/docs/pathing/pedro-v-roadrunner"
+  },
+  "dashboard.html": {
+    "title": "Pedro Pathing: FTC Dashboard",
+    "url": "https://pedropathing.com/docs/pathing/dashboard"
+  },
+  "constants.html": {
+    "title": "Pedro Pathing: Constants",
+    "url": "https://pedropathing.com/docs/pathing/constants"
+  },
+  "troubleshooting.html": {
+    "title": "Pedro Pathing: Troubleshooting",
+    "url": "https://pedropathing.com/docs/pathing/troubleshooting"
+  },
+  "setup.html": {
+    "title": "Pedro Pathing: Tuning Setup",
+    "url": "https://pedropathing.com/docs/pathing/tuning/setup"
+  },
+  "automatic.html": {
+    "title": "Pedro Pathing: Automatic Tuning",
+    "url": "https://pedropathing.com/docs/pathing/tuning/automatic"
+  },
+  "tests.html": {
+    "title": "Pedro Pathing: Tuning Tests",
+    "url": "https://pedropathing.com/docs/pathing/tuning/tests"
+  },
+  "pids.html": {
+    "title": "Pedro Pathing: PID Tuning",
+    "url": "https://pedropathing.com/docs/pathing/tuning/pids"
+  },
+  "translational.html": {
+    "title": "Pedro Pathing: Translational PID",
+    "url": "https://pedropathing.com/docs/pathing/tuning/pids/translational"
+  },
+  "heading.html": {
+    "title": "Pedro Pathing: Heading PID",
+    "url": "https://pedropathing.com/docs/pathing/tuning/pids/heading"
+  },
+  "drive.html": {
+    "title": "Pedro Pathing: Drive PID",
+    "url": "https://pedropathing.com/docs/pathing/tuning/pids/drive"
+  },
+  "drive-encoder.html": {
+    "title": "Pedro Pathing: Drive Encoder Localization",
+    "url": "https://pedropathing.com/docs/pathing/tuning/localization/drive-encoder"
+  },
+  "two-wheel.html": {
+    "title": "Pedro Pathing: Two-Wheel Localizer",
+    "url": "https://pedropathing.com/docs/pathing/tuning/localization/two-wheel"
+  },
+  "three-wheel.html": {
+    "title": "Pedro Pathing: Three-Wheel Localizer",
+    "url": "https://pedropathing.com/docs/pathing/tuning/localization/three-wheel"
+  },
+  "three-wheel-imu.html": {
+    "title": "Pedro Pathing: Three-Wheel + IMU Localizer",
+    "url": "https://pedropathing.com/docs/pathing/tuning/localization/three-wheel-imu"
+  },
+  "otos.html": {
+    "title": "Pedro Pathing: OTOS Localizer",
+    "url": "https://pedropathing.com/docs/pathing/tuning/localization/otos"
+  },
+  "pinpoint.html": {
+    "title": "Pedro Pathing: Pinpoint Localizer",
+    "url": "https://pedropathing.com/docs/pathing/tuning/localization/pinpoint"
+  },
+  "beziercurves.html": {
+    "title": "Pedro Pathing: Bezier Curves",
+    "url": "https://pedropathing.com/docs/pathing/reference/beziercurves"
+  },
+  "callbacks.html": {
+    "title": "Pedro Pathing: Callbacks",
+    "url": "https://pedropathing.com/docs/pathing/reference/callbacks"
+  },
+  "constraints.html": {
+    "title": "Pedro Pathing: Constraints",
+    "url": "https://pedropathing.com/docs/pathing/reference/constraints"
+  },
+  "coordinates.html": {
+    "title": "Pedro Pathing: Coordinates",
+    "url": "https://pedropathing.com/docs/pathing/reference/coordinates"
+  },
+  "deceleration.html": {
+    "title": "Pedro Pathing: Deceleration",
+    "url": "https://pedropathing.com/docs/pathing/reference/deceleration"
+  },
+  "decelerationpedro.html": {
+    "title": "Pedro Pathing: Deceleration (Centripetal Force Correction)",
+    "url": "https://pedropathing.com/docs/pathing/reference/deceleration"
+  },
+  "drive-vector-algorithm.html": {
+    "title": "Pedro Pathing: Drive Vector Algorithm",
+    "url": "https://pedropathing.com/docs/pathing/reference/drive-vector-algorithm"
+  },
+  "interpolation.html": {
+    "title": "Pedro Pathing: Interpolation",
+    "url": "https://pedropathing.com/docs/pathing/reference/interpolation"
+  },
+  "optimization.html": {
+    "title": "Pedro Pathing: Optimization",
+    "url": "https://pedropathing.com/docs/pathing/reference/optimization"
+  },
+  "overshoot.html": {
+    "title": "Pedro Pathing: Overshoot",
+    "url": "https://pedropathing.com/docs/pathing/reference/overshoot"
+  },
+  "path-builder.html": {
+    "title": "Pedro Pathing: Path Builder",
+    "url": "https://pedropathing.com/docs/pathing/reference/path-builder"
+  },
+  "pathcomplete.html": {
+    "title": "Pedro Pathing: Path Complete Callbacks",
+    "url": "https://pedropathing.com/docs/pathing/reference/pathcomplete"
+  },
+  "speed-control.html": {
+    "title": "Pedro Pathing: Speed Control",
+    "url": "https://pedropathing.com/docs/pathing/reference/speed-control"
+  },
+  "curve.html": {
+    "title": "Pedro Pathing: Custom Curve",
+    "url": "https://pedropathing.com/docs/pathing/custom/curve"
+  },
+  "drivetrain.html": {
+    "title": "Pedro Pathing: Custom Drivetrain",
+    "url": "https://pedropathing.com/docs/pathing/custom/drivetrain"
+  },
+  "localizer.html": {
+    "title": "Pedro Pathing: Custom Localizer",
+    "url": "https://pedropathing.com/docs/pathing/custom/localizer"
+  },
+  "auto.html": {
+    "title": "Pedro Pathing: Auto Example",
+    "url": "https://pedropathing.com/docs/pathing/examples/auto"
+  },
+  "teleop.html": {
+    "title": "Pedro Pathing: TeleOp Example",
+    "url": "https://pedropathing.com/docs/pathing/examples/teleop"
+  },
+  "apriltags.html": {
+    "title": "Pedro Pathing: AprilTags Example",
+    "url": "https://pedropathing.com/docs/pathing/examples/apriltags"
+  },
+  "apriltagpatternauto.html": {
+    "title": "Pedro Pathing: AprilTag Pattern Auto Example",
+    "url": "https://pedropathing.com/docs/pathing/examples/apriltagpatternauto"
+  },
+  "constantspedro.html": {
+    "title": "Pedro Pathing: Constants Example",
+    "url": "https://pedropathing.com/docs/pathing/examples/constants"
+  },
+  "Bulk Reads - Game Manual 0.html": {
+    "title": "GM0: Bulk Reads",
+    "url": "https://gm0.org/en/latest/docs/software/tutorials/bulk-reads.html"
+  },
+  "Common Issues - Game Manual 0.html": {
+    "title": "GM0: Common Issues",
+    "url": "https://gm0.org/en/latest/docs/software/getting-started/common-issues.html"
+  },
+  "Computer Vision - Game Manual 0.html": {
+    "title": "GM0: Computer Vision",
+    "url": "https://gm0.org/en/latest/docs/software/tutorials/vision.html"
+  },
+  "Dead Wheels - Game Manual 0.html": {
+    "title": "GM0: Dead Wheels",
+    "url": "https://gm0.org/en/latest/docs/common-mechanisms/dead-wheels.html"
+  },
+  "Driver Station Guide - Game Manual 0.html": {
+    "title": "GM0: Driver Station Guide",
+    "url": "https://gm0.org/en/latest/docs/power-and-electronics/driver-station-guide.html"
+  },
+  "Electronics and Motion Components - Game Manual 0.html": {
+    "title": "GM0: Electronics and Motion Components",
+    "url": "https://gm0.org/en/latest/docs/power-and-electronics/index.html"
+  },
+  "Engineering Portfolio - Game Manual 0.html": {
+    "title": "GM0: Engineering Portfolio",
+    "url": "https://gm0.org/en/latest/docs/awards/portfolio.html"
+  },
+  "Fundamental Concepts of Programming - Game Manual 0.html": {
+    "title": "GM0: Fundamental Concepts of Programming",
+    "url": "https://gm0.org/en/latest/docs/software/getting-started/fundamental-concepts.html"
+  },
+  "Gamepad Usage - Game Manual 0.html": {
+    "title": "GM0: Gamepad Usage",
+    "url": "https://gm0.org/en/latest/docs/software/tutorials/gamepad.html"
+  },
+  "Know Your Lingo - Game Manual 0.html": {
+    "title": "GM0: Know Your Lingo",
+    "url": "https://gm0.org/en/latest/docs/know-your-lingo.html"
+  },
+  "LinearOpMode vs OpMode - Game Manual 0.html": {
+    "title": "GM0: LinearOpMode vs OpMode",
+    "url": "https://gm0.org/en/latest/docs/software/getting-started/linear-opmode-vs-opmode.html"
+  },
+  "Notebook Designs and Decisions - Game Manual 0.html": {
+    "title": "GM0: Notebook Designs and Decisions",
+    "url": "https://gm0.org/en/latest/docs/awards/notebook.html"
+  },
+  "Options for Programming - Game Manual 0.html": {
+    "title": "GM0: Options for Programming",
+    "url": "https://gm0.org/en/latest/docs/software/getting-started/options-for-programming.html"
+  },
+  "Reading and Writing to Hardware - Game Manual 0.html": {
+    "title": "GM0: Reading and Writing to Hardware",
+    "url": "https://gm0.org/en/latest/docs/software/getting-started/common-hardware-components.html"
+  },
+  "The Judging Process and Presentation - Game Manual 0.html": {
+    "title": "GM0: The Judging Process and Presentation",
+    "url": "https://gm0.org/en/latest/docs/awards/judging-presentation.html"
+  },
+  "Types of Awards - Game Manual 0.html": {
+    "title": "GM0: Types of Awards",
+    "url": "https://gm0.org/en/latest/docs/awards/award-types.html"
+  },
+  "Using Android Studio - Game Manual 0.html": {
+    "title": "GM0: Using Android Studio",
+    "url": "https://gm0.org/en/latest/docs/software/getting-started/using-android-studio.html"
+  },
+  "Using Telemetry - Game Manual 0.html": {
+    "title": "GM0: Using Telemetry",
+    "url": "https://gm0.org/en/latest/docs/software/tutorials/using-telemetry.html"
+  },
+  "Installation _ FTCLib Docs.html": {
+    "title": "FTCLib: Installation",
+    "url": "https://docs.ftclib.org/ftclib/installation"
+  },
+  "Command System _ FTCLib Docs.html": {
+    "title": "FTCLib: Command System",
+    "url": "https://docs.ftclib.org/ftclib/command-base/command-system"
+  },
+  "Command _ FTCLib Docs.html": {
+    "title": "FTCLib: Command",
+    "url": "https://docs.ftclib.org/ftclib/command-base/command-system/command"
+  },
+  "Command Groups _ FTCLib Docs.html": {
+    "title": "FTCLib: Command Groups",
+    "url": "https://docs.ftclib.org/ftclib/command-base/command-system/command-groups"
+  },
+  "Command Scheduler _ FTCLib Docs.html": {
+    "title": "FTCLib: Command Scheduler",
+    "url": "https://docs.ftclib.org/ftclib/command-base/command-system/command-scheduler"
+  },
+  "Binding Commands to Triggers _ FTCLib Docs.html": {
+    "title": "FTCLib: Binding Commands to Triggers",
+    "url": "https://docs.ftclib.org/ftclib/command-base/command-system/binding-commands-to-triggers"
+  },
+  "Convenience Features _ FTCLib Docs.html": {
+    "title": "FTCLib: Convenience Features",
+    "url": "https://docs.ftclib.org/ftclib/command-base/command-system/convenience-commands"
+  },
+  "Robot and CommandOpMode _ FTCLib Docs.html": {
+    "title": "FTCLib: Robot and CommandOpMode",
+    "url": "https://docs.ftclib.org/ftclib/command-base/command-system/robot-and-commandopmode"
+  },
+  "Subsystems _ FTCLib Docs.html": {
+    "title": "FTCLib: Subsystems",
+    "url": "https://docs.ftclib.org/ftclib/command-base/command-system/subsystems"
+  },
+  "Hardware _ FTCLib Docs.html": {
+    "title": "FTCLib: Hardware",
+    "url": "https://docs.ftclib.org/ftclib/features/hardware"
+  },
+  "Motors _ FTCLib Docs.html": {
+    "title": "FTCLib: Motors",
+    "url": "https://docs.ftclib.org/ftclib/features/hardware/motors"
+  },
+  "Gamepad _ FTCLib Docs.html": {
+    "title": "FTCLib: Gamepad Extensions",
+    "url": "https://docs.ftclib.org/ftclib/features/gamepad-extensions"
+  },
+  "Geometry _ FTCLib Docs.html": {
+    "title": "FTCLib: Geometry",
+    "url": "https://docs.ftclib.org/ftclib/features/geometry"
+  },
+  "Drivebases _ FTCLib Docs.html": {
+    "title": "FTCLib: Drivebases",
+    "url": "https://docs.ftclib.org/ftclib/features/drivebases"
+  },
+  "Utility Functions _ FTCLib Docs.html": {
+    "title": "FTCLib: Utility Functions",
+    "url": "https://docs.ftclib.org/ftclib/features/util"
+  },
+  "Odometry _ FTCLib Docs.html": {
+    "title": "FTCLib: Odometry",
+    "url": "https://docs.ftclib.org/ftclib/kinematics/odometry"
+  },
+  "WPILib Kinematics _ FTCLib Docs.html": {
+    "title": "FTCLib: WPILib Kinematics",
+    "url": "https://docs.ftclib.org/ftclib/kinematics/wpilib-kinematics"
+  },
+  "Differential Drive Kinematics _ FTCLib Docs.html": {
+    "title": "FTCLib: Differential Drive Kinematics",
+    "url": "https://docs.ftclib.org/ftclib/kinematics/wpilib-kinematics/differential-drive-kinematics"
+  },
+  "Differential Drive Odometry _ FTCLib Docs.html": {
+    "title": "FTCLib: Differential Drive Odometry",
+    "url": "https://docs.ftclib.org/ftclib/kinematics/wpilib-kinematics/differential-drive-odometry"
+  },
+  "Mecanum Drive Kinematics _ FTCLib Docs.html": {
+    "title": "FTCLib: Mecanum Drive Kinematics",
+    "url": "https://docs.ftclib.org/ftclib/kinematics/wpilib-kinematics/mecanum-drive-kinematics"
+  },
+  "Swerve Drive Kinematics _ FTCLib Docs.html": {
+    "title": "FTCLib: Swerve Drive Kinematics",
+    "url": "https://docs.ftclib.org/ftclib/kinematics/wpilib-kinematics/swerve-drive-kinematics"
+  },
+  "Swerve Drive Odometry _ FTCLib Docs.html": {
+    "title": "FTCLib: Swerve Drive Odometry",
+    "url": "https://docs.ftclib.org/ftclib/kinematics/wpilib-kinematics/swerve-drive-odometry"
+  },
+  "Pure Pursuit _ FTCLib Docs.html": {
+    "title": "FTCLib: Pure Pursuit",
+    "url": "https://docs.ftclib.org/ftclib/pathing/pure-pursuit"
+  },
+  "Manipulating Trajectories _ FTCLib Docs.html": {
+    "title": "FTCLib: Manipulating Trajectories",
+    "url": "https://docs.ftclib.org/ftclib/pathing/trajectory/manipulating-trajectories"
+  },
+  "Ramsete Controller _ FTCLib Docs.html": {
+    "title": "FTCLib: Ramsete Controller",
+    "url": "https://docs.ftclib.org/ftclib/pathing/trajectory/ramsete-controller"
+  },
+  "Trajectory Constraints _ FTCLib Docs.html": {
+    "title": "FTCLib: Trajectory Constraints",
+    "url": "https://docs.ftclib.org/ftclib/pathing/trajectory/trajectory-constraints"
+  },
+  "Trajectory Generation _ FTCLib Docs.html": {
+    "title": "FTCLib: Trajectory Generation",
+    "url": "https://docs.ftclib.org/ftclib/pathing/trajectory/trajectory-generation"
+  },
+  "Transforming Trajectories _ FTCLib Docs.html": {
+    "title": "FTCLib: Transforming Trajectories",
+    "url": "https://docs.ftclib.org/ftclib/pathing/trajectory/transforming-trajectories"
+  },
+  "Setting Up Vision _ FTCLib Docs.html": {
+    "title": "FTCLib: Setting Up Vision",
+    "url": "https://docs.ftclib.org/ftclib/vision/computer-vision"
+  },
+  "High Goal Detection _ FTCLib Docs.html": {
+    "title": "FTCLib: High Goal Detection",
+    "url": "https://docs.ftclib.org/ftclib/vision/high-goal-detection"
+  },
+  "Ring Stack Detection _ FTCLib Docs.html": {
+    "title": "FTCLib: Ring Stack Detection",
+    "url": "https://docs.ftclib.org/ftclib/vision/ring-stack-detection"
+  },
+  "NextFTC _ NextFTC Documentation.html": {
+    "title": "NextFTC: Introduction",
+    "url": "https://nextftc.dev/nextftc/"
+  },
+  "Introduction _ NextFTC Documentation.html": {
+    "title": "NextFTC: Motors and Servos Overview",
+    "url": "https://nextftc.dev/nextftc/hardware/motors-and-servos"
+  },
+  "Getting Started _ NextFTC Documentation.html": {
+    "title": "NextFTC: Getting Started with Control",
+    "url": "https://nextftc.dev/control/getting-started"
+  },
+  "OpModes _ NextFTC Documentation.html": {
+    "title": "NextFTC: OpModes",
+    "url": "https://nextftc.dev/nextftc/concepts/opmodes"
+  },
+  "Commands _ NextFTC Documentation.html": {
+    "title": "NextFTC: Commands",
+    "url": "https://nextftc.dev/nextftc/concepts/commands"
+  },
+  "Command Groups _ NextFTC Documentation.html": {
+    "title": "NextFTC: Command Groups",
+    "url": "https://nextftc.dev/nextftc/commands/groups"
+  },
+  "Custom Commands _ NextFTC Documentation.html": {
+    "title": "NextFTC: Custom Commands",
+    "url": "https://nextftc.dev/nextftc/commands/custom-commands"
+  },
+  "Conditionals _ NextFTC Documentation.html": {
+    "title": "NextFTC: Conditionals",
+    "url": "https://nextftc.dev/nextftc/commands/conditionals"
+  },
+  "Delays _ NextFTC Documentation.html": {
+    "title": "NextFTC: Delays",
+    "url": "https://nextftc.dev/nextftc/commands/delays"
+  },
+  "Utilities _ NextFTC Documentation.html": {
+    "title": "NextFTC: Utilities",
+    "url": "https://nextftc.dev/nextftc/commands/utilities"
+  },
+  "Components _ NextFTC Documentation.html": {
+    "title": "NextFTC: Components",
+    "url": "https://nextftc.dev/nextftc/concepts/components"
+  },
+  "Subsystems _ NextFTC Documentation.html": {
+    "title": "NextFTC: Subsystems",
+    "url": "https://nextftc.dev/nextftc/concepts/subsystems"
+  },
+  "Subsystem Groups _ NextFTC Documentation.html": {
+    "title": "NextFTC: Subsystem Groups",
+    "url": "https://nextftc.dev/nextftc/concepts/subsystem-groups"
+  },
+  "Units _ NextFTC Documentation.html": {
+    "title": "NextFTC: Units",
+    "url": "https://nextftc.dev/nextftc/concepts/units"
+  },
+  "Motors _ NextFTC Documentation.html": {
+    "title": "NextFTC: Motors",
+    "url": "https://nextftc.dev/nextftc/hardware/motors-and-servos/motors"
+  },
+  "Servos _ NextFTC Documentation.html": {
+    "title": "NextFTC: Servos",
+    "url": "https://nextftc.dev/nextftc/hardware/motors-and-servos/servos"
+  },
+  "Feedback Servos _ NextFTC Documentation.html": {
+    "title": "NextFTC: Feedback Servos",
+    "url": "https://nextftc.dev/nextftc/hardware/motors-and-servos/feedback-servos"
+  },
+  "Continuous Rotation Servos _ NextFTC Documentation.html": {
+    "title": "NextFTC: Continuous Rotation Servos",
+    "url": "https://nextftc.dev/nextftc/hardware/motors-and-servos/cr-servos"
+  },
+  "SetPower _ NextFTC Documentation.html": {
+    "title": "NextFTC: SetPower Command",
+    "url": "https://nextftc.dev/nextftc/hardware/motor-and-servo-commands/setpower"
+  },
+  "SetPositions _ NextFTC Documentation.html": {
+    "title": "NextFTC: SetPositions Command",
+    "url": "https://nextftc.dev/nextftc/hardware/motor-and-servo-commands/setpositions"
+  },
+  "RunToState _ NextFTC Documentation.html": {
+    "title": "NextFTC: RunToState Command",
+    "url": "https://nextftc.dev/nextftc/hardware/motor-and-servo-commands/runtostate"
+  },
+  "Drivetrain Commands _ NextFTC Documentation.html": {
+    "title": "NextFTC: Drivetrain Commands",
+    "url": "https://nextftc.dev/nextftc/hardware/drivetrain-commands"
+  },
+  "Differential (Tank) Drivetrain _ NextFTC Documentation.html": {
+    "title": "NextFTC: Differential (Tank) Drivetrain",
+    "url": "https://nextftc.dev/nextftc/hardware/drivetrain-commands/differential"
+  },
+  "Holonomic Drivetrain _ NextFTC Documentation.html": {
+    "title": "NextFTC: Holonomic Drivetrain",
+    "url": "https://nextftc.dev/nextftc/hardware/drivetrain-commands/holonomic"
+  },
+  "Control Systems _ NextFTC Documentation.html": {
+    "title": "NextFTC: Control Systems",
+    "url": "https://nextftc.dev/control/usage/control-systems"
+  },
+  "Feedback Elements _ NextFTC Documentation.html": {
+    "title": "NextFTC: Feedback Elements",
+    "url": "https://nextftc.dev/control/usage/feedback-elements"
+  },
+  "Feedforward Elements _ NextFTC Documentation.html": {
+    "title": "NextFTC: Feedforward Elements",
+    "url": "https://nextftc.dev/control/usage/feedforward-elements"
+  },
+  "Kinetic States _ NextFTC Documentation.html": {
+    "title": "NextFTC: Kinetic States",
+    "url": "https://nextftc.dev/control/usage/kinetic-states"
+  },
+  "Configuring with the FTC Dashboard _ NextFTC Documentation.html": {
+    "title": "NextFTC: Configuring with FTC Dashboard",
+    "url": "https://nextftc.dev/control/dashboard"
+  },
+  "BindingsGetting Started _ NextFTC Documentation.html": {
+    "title": "NextFTC: Bindings Getting Started",
+    "url": "https://nextftc.dev/bindings/getting-started"
+  },
+  "NextBindings _ NextFTC Documentation.html": {
+    "title": "NextFTC: NextBindings",
+    "url": "https://nextftc.dev/bindings/"
+  },
+  "Buttons, Layers, and Callbacks _ NextFTC Documentation.html": {
+    "title": "NextFTC: Buttons, Layers, and Callbacks",
+    "url": "https://nextftc.dev/bindings/buttons"
+  },
+  "Variables and Ranges _ NextFTC Documentation.html": {
+    "title": "NextFTC: Variables and Ranges",
+    "url": "https://nextftc.dev/bindings/variables"
+  },
+  "Introduction to Open Loop Control _ CTRL ALT FTC.html": {
+    "title": "CTRL ALT FTC: Introduction to Open Loop Control",
+    "url": "https://www.ctrlaltftc.com/introduction-to-open-loop-control"
+  },
+  "Introduction to Closed Loop Control _ CTRL ALT FTC.html": {
+    "title": "CTRL ALT FTC: Introduction to Closed Loop Control",
+    "url": "https://www.ctrlaltftc.com/introduction-to-closed-loop-control"
+  },
+  "The PID Controller _ CTRL ALT FTC.html": {
+    "title": "CTRL ALT FTC: The PID Controller",
+    "url": "https://www.ctrlaltftc.com/the-pid-controller"
+  },
+  "Improvements to the PID Controller _ CTRL ALT FTC.html": {
+    "title": "CTRL ALT FTC: Practical Improvements to PID",
+    "url": "https://www.ctrlaltftc.com/the-pid-controller/practical-improvements-to-pid"
+  },
+  "Tuning Methods of A PID Controller _ CTRL ALT FTC.html": {
+    "title": "CTRL ALT FTC: Tuning Methods of a PID Controller",
+    "url": "https://www.ctrlaltftc.com/the-pid-controller/tuning-methods-of-a-pid-controller"
+  },
+  "Motion Profiling _ CTRL ALT FTC.html": {
+    "title": "CTRL ALT FTC: Motion Profiling",
+    "url": "https://www.ctrlaltftc.com/advanced/motion-profiling"
+  },
+  "Full State Feedback _ CTRL ALT FTC.html": {
+    "title": "CTRL ALT FTC: Full State Feedback",
+    "url": "https://www.ctrlaltftc.com/advanced/full-state-feedback"
+  },
+  "The Kalman Filter _ CTRL ALT FTC.html": {
+    "title": "CTRL ALT FTC: The Kalman Filter",
+    "url": "https://www.ctrlaltftc.com/advanced/the-kalman-filter"
+  },
+  "Welcome to Hello Robot! _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Welcome to Hello Robot!",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/welcome"
+  },
+  "What is an OpMode_ _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: What is an OpMode?",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/where-to-program/what-is-an-opmode"
+  },
+  "Creating an OpMode - Blocks _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Creating an OpMode (Blocks)",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/part-1/test-bed-blocks"
+  },
+  "Tackling the Basics Directory - Blocks _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Tackling the Basics Directory (Blocks)",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/part-1/tackling-the-basics-directory-blocks"
+  },
+  "Programming Motors _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Programming Motors",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/part-1/programming-motors"
+  },
+  "Programming Motors Basics _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Programming Motors Basics",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/part-1/programming-motors/programming-motors-basics"
+  },
+  "Programming Motor Telemetry _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Programming Motor Telemetry",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/part-1/programming-motors/programming-motor-telemetry"
+  },
+  "Programming a Motor with a Gamepad _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Programming a Motor with a Gamepad",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/part-1/programming-motors/programming-a-motor-with-a-gamepad"
+  },
+  "Programming Servos _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Programming Servos",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/part-1/programming-servos"
+  },
+  "Programming Servo Basics _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Programming Servo Basics",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/part-1/programming-servos/programming-servo-basics"
+  },
+  "Programming Servo Telemetry _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Programming Servo Telemetry",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/part-1/programming-servos/programming-servo-telemetry"
+  },
+  "Programming Color Sensors _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Programming Color Sensors",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/part-1/programming-color-sensors"
+  },
+  "Color Sensor Telemetry _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Color Sensor Telemetry",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/part-1/programming-color-sensors/color-sensor-telemetry"
+  },
+  "Detecting Color _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Detecting Color",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/part-2"
+  },
+  "Motor Power vs. Robot Movement _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Motor Power vs. Robot Movement",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/part-2/arcade-style-teleop-blocks/motor-power-vs.-robot-movement"
+  },
+  "Robot Control Blocks Directory _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Robot Control Blocks Directory",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/part-2/robot-navigation-blocks"
+  },
+  "Using a Gamepad _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Using a Gamepad",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/using-a-gamepad"
+  },
+  "Integrated Sensors _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Integrated Sensors",
+    "url": "https://docs.revrobotics.com/duo-control/control-system-overview/integrated-sensors"
+  },
+  "Dimensions and Important Component Locations _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Dimensions and Important Component Locations",
+    "url": "https://docs.revrobotics.com/duo-control/control-system-overview/dimensions"
+  },
+  "Common Errors in Configuration _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Common Errors in Configuration",
+    "url": "https://docs.revrobotics.com/duo-control/hello-robot-blocks/configuration/common-errors-in-configuration"
+  },
+  "Android Studio - Deploying Code Wirelessly _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Android Studio - Deploying Code Wirelessly",
+    "url": "https://docs.revrobotics.com/duo-control/managing-the-control-system/android-studio-using-wireless-adb"
+  },
+  "REV Hardware Client _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: REV Hardware Client",
+    "url": "https://docs.revrobotics.com/duo-control/managing-the-control-system/rev-hardware-client"
+  },
+  "Updating Robot Controller Application _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Updating Robot Controller Application",
+    "url": "https://docs.revrobotics.com/duo-control/managing-the-control-system/updating-robot-controller-application"
+  },
+  "Updating Robot Controller Application via Android Studio _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Updating Robot Controller Application via Android Studio",
+    "url": "https://docs.revrobotics.com/duo-control/managing-the-control-system/updating-robot-controller-application/updating-robot-controller-application-via-android-studio"
+  },
+  "Updating the Driver Hub _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Updating the Driver Hub",
+    "url": "https://docs.revrobotics.com/duo-control/managing-the-control-system/updating-the-driver-hub"
+  },
+  "Firmware Changelog _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Firmware Changelog",
+    "url": "https://docs.revrobotics.com/duo-control/managing-the-control-system/updating-firmware/firmware-changelog"
+  },
+  "Control Hub Operating System Changelog _ REV DUO Control System _ REV Robotics Documentation.html": {
+    "title": "REV: Control Hub OS Changelog",
+    "url": "https://docs.revrobotics.com/duo-control/managing-the-control-system/updating-operating-system/operating-system-changelog"
   }
 }
